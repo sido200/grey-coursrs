@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0%;
+  
+}
+body
+{
+    height: 500vh;
+}
+::-webkit-scrollbar{
+    width:15px;
+  
+}
+::-webkit-scrollbar-track{
+    background:white ;
+
+}
+::-webkit-scrollbar-thumb{
+    background:#32729A ;
+    border-radius: 30px;
+}
+/*NAV*/
+nav{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#32729A;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    z-index: 5;
+}
+.logo{
+    font-size: 17px;
+    text-align: center;
+
+}
+nav .fa-bars{
+  display: none;
+}
+.barre1,.barre2,.barre3{
+    width: 25px;
+    height: 2px;
+    border-radius: 2px;
+    margin-bottom: 3px;
+    background-color: white;
+    transition: 0.5s;
+}
+nav ul{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    font-size: 15px;
+}
+nav ul li:not(:first-child){
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+}
+nav input{
+border-radius: 40px;
+width: 150px;
+height: 30px;
+border: none;
+display: flex;
+justify-content: center;
+text-align: center;
+font-size: 15px;
+font-weight: bold;
+color: #32729A;
+}
+
+.input-with-icon {
+    position: relative;
+  }
+
+  .input-with-icon input {
+    padding-left: 40px;
+  }
+
+  .input-with-icon .icon {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    transform: translateY(-50%);
+    color: #32729A;
+  }
+  /*HOME*/
+  #home {
+    height: 700px;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 70px;
+  }
+ 
+  .oval {
+    width: 8vw;
+    position: absolute;
+    height: 88vh;
+    border-radius: 25vw;
+    background-color: #c2dce2;
+    /* box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;*/
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(45deg);
+    overflow: hidden;
+   
+  }
+  .troi,
+  .cinq,
+  .six {
+    height: 48vh;
+    position: absolute;
+  }
+  .prem {
+    position: absolute;
+    right: 50%;
+    bottom: 11%;
+  }
+  .deu {
+    position: absolute;
+    right: 30%;
+    bottom: 15%;
+  }
+  .troi {
+    top: 50%;
+    right: 29%;
+  }
+  .qua {
+    position: absolute;
+    bottom: 45%;
+    left: 95%;
+  }
+  .cinq {
+    top: 50%;
+    right: 12%;
+  }
+  .six {
+    right: -5%;
+    top: 50%;
+  }
+  .circle {
+    border-radius: 50%;
+  }
+  .uno {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    background-color: #c2dce2;
+    top: 78%;
+    right: 52%;
+  }
+  .dos {
+    position: absolute;
+    width: 515px;
+    height: 515px;
+    background-color: #889685;
+    z-index: 1;
+    opacity: 26%;
+    right: 5%;
+  }
+ 
+  #home h1{
+    font-size: 34px;
+    font-weight: 700;
+    margin: 60px 0 40px 40px;
+    z-index: 1;
+  }
+  #home P{
+    font-size: 20px;
+   max-width: 400px;
+   z-index: 1;
+   margin-left: 40px;
+  } 
+  .line{
+    width: 85%;
+    margin-top: 200px;
+    border-bottom: 1px solid #32729A;
+  }
+  .line2{
+    margin-left: 50px;
+    margin-top: 450px;
+  }
+  /*L1*/
+  #l,#s{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+  }
+  #l h2,#s h2{
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 70px;
+  }
+  #l p,#s p{
+    margin: 30px 0 200px 0;
+  }
+  .btn{
+    display: flex;
+    width: 880px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+  }
+  .btn input{
+    background-color: #32729A;
+    height: 75px;
+    width: 350px;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 38px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+  #s input{
+   margin-bottom: 20px;
+   background-color: #B7D1CF;
+  }

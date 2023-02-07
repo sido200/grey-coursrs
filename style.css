@@ -3,8 +3,10 @@
     text-decoration: none;
     list-style: none;
     margin: 0%;
+    scroll-behavior: smooth;
   
 }
+
 body
 {
     height: 500vh;
@@ -40,6 +42,7 @@ nav{
     text-align: center;
 
 }
+
 nav .fa-bars{
   display: none;
 }
@@ -61,6 +64,9 @@ nav ul li:not(:first-child){
     display: flex;
     justify-content: space-between;
     width: 110px;
+}
+nav ul li a{
+  color: white;
 }
 nav input{
 border-radius: 40px;
@@ -193,19 +199,19 @@ color: #32729A;
     margin-top: 450px;
   }
   /*L1*/
-  #l,#s{
+  .l,#s{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Inter', sans-serif;
   }
-  #l h2,#s h2{
+  .l h2,#s h2{
     font-size: 35px;
     font-weight: 700;
     margin-top: 70px;
   }
-  #l p,#s p{
+  .l p,#s p{
     margin: 30px 0 200px 0;
   }
   .btn{

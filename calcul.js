@@ -20,7 +20,7 @@ function moyenneS3() {
     /*avec l'alert 
     for (var i = 0; i < 7; i++) {
         if (isNaN(exams[i]) || exams[i] < 0 || exams[i] > 20) {
-            alert("Invalid exam point at index " + (i + 1));
+            alert("enter une note entre 0 et 20 dans la case " + (i + 1));
             return;
         }
 
@@ -28,14 +28,14 @@ function moyenneS3() {
 
     for (var i = 0; i < 6; i++) {
         if (isNaN(ccs[i]) || ccs[i] < 0 || ccs[i] > 20) {
-            alert("Invalid CC point at index " + (i + 1));
+            alert("enter une note entre 0 et 20 dans la case  " + (i + 1));
             return;
         }
     }
     */
 
     //calcule de moyenne 
-    
+
     var moyenS3 = [];
     for (var i = 0; i < 6; i++) {
         moyenS3[i] = (exams[i] * 0.6) + (ccs[i] * 0.4);

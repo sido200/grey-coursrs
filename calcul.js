@@ -1,55 +1,87 @@
-function moyenneS1() 
-{
-    var exam1 = parseFloat(document.getElementById("exam1").value);
-    var exam2 = parseFloat(document.getElementById("exam2").value);
-    var exam3 = parseFloat(document.getElementById("exam3").value);
-    var exam4 = parseFloat(document.getElementById("exam4").value);
-    var exam5 = parseFloat(document.getElementById("exam5").value);
-    var exam6 = parseFloat(document.getElementById("exam6").value);
-    var exam7 = parseFloat(document.getElementById("exam7").value);
-    var cc1 = parseFloat(document.getElementById("cc1").value);
-    var cc2 = parseFloat(document.getElementById("cc2").value);
-    var cc3 = parseFloat(document.getElementById("cc3").value);
-    var cc4 = parseFloat(document.getElementById("cc4").value);
-    var cc5 = parseFloat(document.getElementById("cc5").value);
-    var cc6 = parseFloat(document.getElementById("cc6").value);
+function moyenneS3() {
+    var exams = [       
+        parseFloat(document.getElementById("exam1").value), 
+        parseFloat(document.getElementById("exam2").value), 
+        parseFloat(document.getElementById("exam3").value), 
+        parseFloat(document.getElementById("exam4").value),
+        parseFloat(document.getElementById("exam5").value), 
+        parseFloat(document.getElementById("exam6").value),
+        parseFloat(document.getElementById("exam7").value)    
+    ];
+    var ccs = [
+        parseFloat(document.getElementById("cc1").value),
+        parseFloat(document.getElementById("cc2").value),
+        parseFloat(document.getElementById("cc3").value),
+        parseFloat(document.getElementById("cc4").value), 
+        parseFloat(document.getElementById("cc5").value), 
+        parseFloat(document.getElementById("cc6").value)    
+    ];
 
-   
-    var moyenM1 = (exam1 * 0.6) + (cc1 * 0.4);
-    var moyenM2 = (exam2 * 0.6) + (cc2 * 0.4);
-    var moyenM3 = (exam3 * 0.6) + (cc3 * 0.4);
-    var moyenM4 = (exam4 * 0.6) + (cc4 * 0.4);
-    var moyenM5 = (exam5 * 0.6) + (cc5 * 0.4);
-    var moyenM6 = (exam6 * 0.6) + (cc6 * 0.4);
+    /*avec l'alert 
+    for (var i = 0; i < 7; i++) {
+        if (isNaN(exams[i]) || exams[i] < 0 || exams[i] > 20) {
+            alert("Invalid exam point at index " + (i + 1));
+            return;
+        }
 
-    var moyen = (moyenM1 * 3 + moyenM2 * 3 + moyenM3*3 + moyenM4*2 + moyenM5*2 + moyenM6*2 +exam7) / 16;
+    }
+
+    for (var i = 0; i < 6; i++) {
+        if (isNaN(ccs[i]) || ccs[i] < 0 || ccs[i] > 20) {
+            alert("Invalid CC point at index " + (i + 1));
+            return;
+        }
+    }
+    */
+
+    //calcule de moyenne 
+    
+    var moyenS3 = [];
+    for (var i = 0; i < 6; i++) {
+        moyenS3[i] = (exams[i] * 0.6) + (ccs[i] * 0.4);
+    }
+    var moyenM7 = exams[6];
+
+    var moyen = (
+        (moyenS3[0] * 3 + moyenS3[1] * 3 + moyenS3[2] * 3 + moyenS3[3] * 2 + moyenS3[4] * 2 + moyenS3[5] * 2 + moyenM7) / 16
+    );
     document.getElementById("moyen").value = moyen;
 }
 
-function moyenneS2() 
+
+function moyenneS4() 
 {
-    var exams1 = parseFloat(document.getElementById("exams1").value);
-    var exams2 = parseFloat(document.getElementById("exams2").value);
-    var exams3 = parseFloat(document.getElementById("exams3").value);
-    var exams4 = parseFloat(document.getElementById("exams4").value);
-    var exams5 = parseFloat(document.getElementById("exams5").value);
-    var exams6 = parseFloat(document.getElementById("exams6").value);
-    var exams7 = parseFloat(document.getElementById("exams7").value);
-    var ccs1 = parseFloat(document.getElementById("ccs1").value);
-    var ccs2 = parseFloat(document.getElementById("ccs2").value);
-    var ccs3 = parseFloat(document.getElementById("ccs3").value);
-    var ccs4 = parseFloat(document.getElementById("ccs4").value);
-    var ccs5 = parseFloat(document.getElementById("ccs5").value);
-    var ccs6 = parseFloat(document.getElementById("ccs6").value);
+    var exams2 = [
 
-   
-    var moyenSM1 = (exams1 * 0.6) + (ccs1 * 0.4);
-    var moyenSM2 = (exams2 * 0.6) + (ccs2 * 0.4);
-    var moyenSM3 = (exams3 * 0.6) + (ccs3 * 0.4);
-    var moyenSM4 = (exams4 * 0.6) + (ccs4 * 0.4);
-    var moyenSM5 = (exams5 * 0.6) + (ccs5 * 0.4);
-    var moyenSM6 = (exams6 * 0.6) + (ccs6 * 0.4);
+        parseFloat(document.getElementById("exams1").value),
+        parseFloat(document.getElementById("exams2").value),
+        parseFloat(document.getElementById("exams3").value),
+        parseFloat(document.getElementById("exams4").value),
+        parseFloat(document.getElementById("exams5").value),
+        parseFloat(document.getElementById("exams6").value),
+        parseFloat(document.getElementById("exams7").value)
+    ];
 
-    var moyensem2 = (moyenSM1 * 3 + moyenSM2 * 3 + moyenSM3*3 + moyenSM4*2 + moyenSM5*2 + moyenSM6*2 +exams7) / 16;
-    document.getElementById("moyens").value = moyensem2;
+    var ccs2 = [
+
+        parseFloat(document.getElementById("ccs1").value),
+        parseFloat(document.getElementById("ccs2").value),
+        parseFloat(document.getElementById("ccs3").value),
+        parseFloat(document.getElementById("ccs4").value),
+        parseFloat(document.getElementById("ccs5").value),
+        parseFloat(document.getElementById("ccs6").value)
+    ];
+
+    var moyenS4 = [];
+    for (var i = 0; i < 6; i++) {
+        moyenS4[i] = (exams2[i] * 0.6) + (ccs2[i] * 0.4);
+    }
+    var moyenM7 = exams2[6];
+
+    var MoyenneS4 = (
+        (moyenS4[0] * 3 + moyenS4[1] * 3 + moyenS4[2] * 3 + moyenS4[3] * 2 + moyenS4[4] * 2 + moyenS4[5] * 2 + moyenM7) / 16
+    );
+    document.getElementById("moyens").value = MoyenneS4;
 }
+
+

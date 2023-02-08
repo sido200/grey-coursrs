@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0%;
+  
+}
+body
+{
+    height: 300vh;
+    background-color: #c2dce28f;
+}
+::-webkit-scrollbar{
+    width:15px;
+  
+}
+::-webkit-scrollbar-track{
+    background:white ;
+
+}
+::-webkit-scrollbar-thumb{
+    background:#32729A ;
+    border-radius: 30px;
+}
+/*NAV*/
+nav{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#32729A;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    z-index: 5;
+}
+.logo{
+    font-size: 17px;
+    text-align: center;
+
+}
+nav .fa-bars{
+  display: none;
+}
+.barre1,.barre2,.barre3{
+    width: 25px;
+    height: 2px;
+    border-radius: 2px;
+    margin-bottom: 3px;
+    background-color: white;
+    transition: 0.5s;
+}
+nav ul{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    font-size: 15px;
+}
+nav ul li:not(:first-child){
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+}
+nav input{
+border-radius: 40px;
+width: 150px;
+height: 30px;
+border: none;
+display: flex;
+justify-content: center;
+text-align: center;
+font-size: 15px;
+font-weight: bold;
+color: #32729A;
+}
+
+.input-with-icon {
+    position: relative;
+  }
+
+  .input-with-icon input {
+    padding-left: 40px;
+  }
+
+  .input-with-icon .icon {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    transform: translateY(-50%);
+    color: #32729A;
+  }
+
+
+  /*PAGE 2*/
+
+form.semestre1, form.semestre2
+{
+  padding: 100px ;
+  margin: auto;
+  overflow: hidden;
+}
+
+#module1 {
+  display: flex;
+  justify-content: space-around;
+  
+}
+#cc{
+  padding-left: 21%;
+  padding-right: 21%;
+}
+
+#module label  {
+  width: 100px;
+  display: inline-block;
+
+}
+
+#module {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+#module input{
+    
+    background-color: #88968542;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+
+}
+
+#col {
+  display: flex;
+  flex-direction: column;
+}
+#moyen, #moyens {
+    background-color: #1B628FE5;
+    border: none;
+    padding: 10px;
+    height: 40px;
+    width: 160px;
+    border-radius: 7px;
+    color: white;
+    margin: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+
+

@@ -17,6 +17,10 @@ function moyenneS3() {
         parseFloat(document.getElementById("cc6").value)    
     ];
 
+
+    // avec erreur message 
+
+
     /*avec l'alert 
     for (var i = 0; i < 7; i++) {
         if (isNaN(exams[i]) || exams[i] < 0 || exams[i] > 20) {

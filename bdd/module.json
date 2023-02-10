@@ -1,0 +1,89 @@
+{
+  "titres-modules": [
+    {
+      "id": 1,
+      "title": "ASD3"
+    },
+    {
+      "id": 2,
+      "title": "ADO"
+    },
+    {
+      "id": 3,
+      "title": "SI"
+    },
+    {
+      "id": 4,
+      "title": "TDG"
+    },
+    {
+      "id": 5,
+      "title": "LOGIQUE MATHS"
+    },
+    {
+      "id": 6,
+      "title": "MN"
+    }
+  ],
+  "info-modules": [
+    {
+      "id": 1,
+      "nommodule": "ASD3",
+      "chap1": "Les listes",
+      "introduction1": "Une liste linéaire chainée en C++ est une structure de données qui consiste enune suite d'éléments, où chacun de ces éléments pointe vers le suivant. Chaqueélément est appelé nœud et contient une valeur et une référence au nœud suivant.La dernière référence est généralement nulle pour indiquer la fin de la liste. Les listeslinéaires chainées permettent des insertions et des suppressions faciles en n'importequel point de la liste et sont souvent utilisées pour implémenter des piles, des files oudes graphes. Cependant, l'accès à un élément spécifique dans la liste peut être lentpar rapport à d'autres structures de données telles que les tableaux, car il nécessitede parcourir la liste depuis le début.",
+      "sous_titre_chap1_1": "fonction initialiser",
+      "p_st_chap1_1": "Permet d'initialiser notre pointeur debut a 0, une étape nécessaire pour la création d'une liste.",
+      "sous_titre_chap1_2": "fonction insérer début",
+      "p_st_chap1_2": "cette fonction permet de créer un element, et de l'insérer au début de notre liste, son pointeur suivant pointera donc vers l'élement qui était au début(si il existe) et notre pointeur début pointera dessus.",
+      "sous_titre_chap1_3": "fonction insérer fin",
+      "p_st_chap1_3": "Permet la création d'un élement et son insértion a la toute fin de la liste, son pointeur suivant égalera donc 0; contrairement a insererdebut, il faut parcourir toute la liste en utilisant un element local courant jusqu'a arriver a la fin; Dans le cas d'une liste vide, insererdebut sera utilisé.",
+      "sous_titre_chap1_4": "fonction parcours",
+      "p_st_chap1_4": "Nous permet d'afficher les valeurs stockées dans notre liste, utilise le méme principe que insererfin pour le parcours(utilisation d'un element courant) et a chaque itération affiche la valeur.",
+      "paragraphe": "L'avantage des listes comparé aux tableaux, c'est la possibilité de facilement supprimer des élements peu importe leur emplacement, sans décalage obligatoire.",
+      "sous_titre_chap1_5": "fonction supprimer début",
+      "p_st_chap1_5": "Si notre liste contient au moins un élement, on sauvegarde la valeur de début dans une nouvelle variable, on pointe debut vers le prochain élement si il existe, puis on supprime avec delete la variable sauvegardée.",
+      "sous_titre_chap1_6": "fonction supprimer fin",
+      "p_st_chap1_6": "Sert à supprimer le dernier élément d'une liste, en commençant par la parcourir jusqu'a arriver a l'element dont le suivant->suivant=0 (l'avant dernier element), on supprime le dernier élément avec delete element->suivant, puis on modifie le pointeur suivant du dernier en le mettant a 0.",
+      "remarque_chap_1": "insererdebut est beacoup plus optimisé que insererfin, car il permet de directement insérer sans parcourir toute la liste, et dans le cas d'une liste de + de 100 élements par exemeple, beacoup de resources seront utilisées pour le parcours.",
+      "chap2": "Les piles",
+      "intro_chap2_p1": "Les piles fonctionnent sous un système FILO(first in last out) premier inséré, dernier supprimé.",
+      "intro_chap2_p2": "On a deux méthodes pour représenter une pile :",
+      "intro_chap2_p3": "1_Contiguë(Par tableaux)",
+      "intro_chap2_p4": "2_Par liste chainée",
+      "intro_chap2_p5": "La représentation contiguë sera utilisée dans nos exemples.",
+      "sous_titre_chap2_1": "fonction initialiser",
+      "p_st_chap2_1": "Initialise notre valeur sommet a 0, et ça pour avoir une pile vide et pour pointer au premier élément de notre tableau.",
+      "sous_titre_chap2_2": "fonction pile vide",
+      "p_st_chap2_2": "Cette fonction a retour booléen permet de vérifier si notre pile est vide, en se servant du sommet ,1 si notre sommet=0, 0 sinon.Elle sera utilisée dans la fonction dépiler.",
+      "sous_titre_chap2_3": "fonction empiler",
+      "p_st_chap2_3": "On vérifie d'abord si notre pile est pleine, en comparant notre sommet avec la dimension max, si elle est pleine on ne fait rien, sinon on insère notre élément a l'adresse Sommet du tableau P.element, et on incrémente notre sommet.",
+      "sous_titre_chap2_4": "fonction dépiler",
+      "p_st_chap2_4": "On vérifie d'abord si notre pile est pleine, en comparant notre sommet avec la dimension max, si elle est pleine on ne fait rien, sinon on insère notre élément a l'adresse Sommet du tableau P.element, et on incrémente notre sommet.",
+      "sous_titre_chap2_5": "fonction afficher",
+      "p_st_chap2_5": "Pour afficher une pile, il suffit simplement de juste défiler et d'afficher à chaque itération l'élément sauvegardé.",
+      "remarque_chap_2": "Il est recommandé de faire un transfert par valeur pour l'affichage si l'exercice utilisera la pile dans d'autres questions, et ça pour conserver les valeurs",
+      "chap3": "Les files",
+      "intro_chap3_p1": "Concernant les files, elles fonctionnement sous le système FIFO (first in first out) ou le premier élément inséré sera le premier élément supprimé.",
+      "intro_chap3_p2": "Les mêmes méthodes de représentation des piles s'appliquent sur les files.",
+      "intro_chap3_p3": "La structure d'une file est quasi_similaire à la pile, à la différence qu'on a renommé Sommet en nbr_valeurs, et la fonction enfiler change presque complétement.",
+      "sous_titre_chap3_1": "fonction initialiser",
+      "p_st_chap3_1": "Tout comme l'initialisation de la pile, il suffit juste d'initialiser notre valeur nbr_valeurs a 0.",
+      "sous_titre_chap3_2": "fonction file vide",
+      "p_st_chap3_2": "Pour tester si notre file est vide, il suffit simplement de voir si notre nbr_valeurs=0 ou non.",
+      "sous_titre_chap3_3": "fonction enfiler",
+      "p_st_chap3_3": "Exactement comme la fonction empiler, on vérifie si la file est vide, on insère notre élément dans l'adresse nbr_valeurs du tableau, et on l'incrémente.",
+      "sous_titre_chap3_4": "fonction defiler",
+      "p_st_chap3_4_part1": "Suis le principe de suppression d'un élément du tableau; on commence par vérifier si la file est vide avec 'filevide', on sauvegarde le premier élément du tableau(donc f.element[0]) puis en entre dans une boucle allant de 0 jusqu'à f.nbr_valeurs-1, et ça pour décaler toute nos valeurs de 1( la 2emedeviendra la 1ere, 3eme 2eme etc....) et pour finir on décrémente notre nbr_valeurs.",
+      "p_st_chap3_4_part2": "Comme on peut le voir, c'est assez complexe de défiler un élément d'une file, dus au fait qu'on doit tout décaler à chaque fois, pour remédier à ce problème, une autre structure peut être utilisée qui est La File Circulaire.",
+      "intro_chap3_bis": "Contrairement à la file normale, la file circulaire dispose de 4 variables dans sa structure, le tableau f.element, l'entier IndiceIN, l'entier IndiceOUT, et le booléen FilePleine",
+      "sous_titre_chap3_bis_1": "fonction initialiser",
+      "p_st_chap3_bis_1": "La fonction initialiser aura pour objectif de fixer nos 2 variable indiceIN, indiceOUT a 0, ainsi que FilePleine a faux.",
+      "sous_titre_chap3_bis_2": "fonction file vide",
+      "p_st_chap3_bis_2": "2 conditions sont nécessaires pour savoir si une file est vide, lorsque IndiceIN=IndiceOUT et FilePleine est faux; (plus d'explications dans les fonctions enfiler et défiler)",
+      "sous_titre_chap3_bis_3": "fonction enfiler",
+      "p_st_chap3_bis_3": "Pour enfiler, il faut d'abord vérifier si la file est pleine, et ça seulement en utilisant notre bool filePleine, ensuite on enfile comme une file normale, avec IndiceIN faisant le même travail que nbr_valeurs, on remarque 2 changements: à l'incrémentation on incrémente IndiceIN et on on utilise modulo(reste de la division) avec la dimension max, cette étape additionnelle permet à l'indiceIN de revenir à 0 lorsque la file est pleine car circulaire; et une condition qui fixe le bool FilePleine a 1 si IndiceIN=IndiceOUT après l'enfilement.",
+      "sous_titre_chap3_bis_4": "fonction defiler",
+      "p_st_chap3_bis_4": "Pour défiler, on vérifie si la file est vide avec filevide, si non, on sauvegarde l'élément a l'indice IndiceOUT du tableau, et on incrémente l'IndiceOUT de la même manière qui IndiceIN(+1 et modulo dimension max); On fixe aussi FilePleine a faux car on a défilé, il y aura forcément au moins un espace vide dans la file après défilement."
+    }
+  ]
+}

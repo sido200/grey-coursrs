@@ -212,7 +212,7 @@ color: #32729A;
   }
   .line2{
     margin-left: 50px;
-    margin-top: 200px;
+    margin-top: 240px;
   }
   /*L1*/
   .l,#s3,#s4{
@@ -248,6 +248,7 @@ color: #32729A;
     font-weight: 600;
     line-height: 38px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
   }
   #s3,#s4{
     overflow-x: hidden;
@@ -255,6 +256,7 @@ color: #32729A;
   #s3 input,#s4 input{
    margin-bottom: 20px;
    background-color: #c9c9c9;
+   
   }
   .btns{
     display: grid;
@@ -276,6 +278,13 @@ color: #32729A;
     line-height: 38px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     cursor: pointer;
+  }
+  button:hover,input:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .not:hover{
+    transform: none;
   }
   .active-barre{
     transform: translateX(0%);  

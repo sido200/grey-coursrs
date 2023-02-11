@@ -77,7 +77,21 @@
       "sous_titre_chap3_bis_3": "fonction enfiler",
       "p_st_chap3_bis_3": "Pour enfiler, il faut d'abord vérifier si la file est pleine, et ça seulement en utilisant notre bool filePleine, ensuite on enfile comme une file normale, avec IndiceIN faisant le même travail que nbr_valeurs, on remarque 2 changements: à l'incrémentation on incrémente IndiceIN et on on utilise modulo(reste de la division) avec la dimension max, cette étape additionnelle permet à l'indiceIN de revenir à 0 lorsque la file est pleine car circulaire; et une condition qui fixe le bool FilePleine a 1 si IndiceIN=IndiceOUT après l'enfilement.",
       "sous_titre_chap3_bis_4": "fonction defiler",
-      "p_st_chap3_bis_4": "Pour défiler, on vérifie si la file est vide avec filevide, si non, on sauvegarde l'élément a l'indice IndiceOUT du tableau, et on incrémente l'IndiceOUT de la même manière qui IndiceIN(+1 et modulo dimension max); On fixe aussi FilePleine a faux car on a défilé, il y aura forcément au moins un espace vide dans la file après défilement."
+      "p_st_chap3_bis_4": "Pour défiler, on vérifie si la file est vide avec filevide, si non, on sauvegarde l'élément a l'indice IndiceOUT du tableau, et on incrémente l'IndiceOUT de la même manière qui IndiceIN(+1 et modulo dimension max); On fixe aussi FilePleine a faux car on a défilé, il y aura forcément au moins un espace vide dans la file après défilement.",
+      "chap4": "Les arbres",
+      "intro_chap4": "Un arbre binaire de tri ou de recherche, est une liste chainée composée de plusieurs éléments nommées nœuds, chaque nœud contient une clé(valeur), une adresse pointant vers un élément dont sa clé est inférieure(petit), et un autre dont son élément est supérieur(grand). Le premier nœud ajouté sera nommé Racine, et chaque nœud après sera une feuille.",
+      "p_chap4": "La structure d'un arbre de tri est ordonnée de tel que chaque élément à gauche de la racine est inférieur à celle-ci, et chaque élément à droite est supérieure. Aucun doublon ne peut exister dans un arbre.",
+      "sous_titre_chap4_1": "Fonction initialiser",
+      "p_st_chap4_1": "Tout comme les listes chainées, cette fonction permet d'initialiser notre premier élément(la racine) a 0.",
+      "sous_titre_chap4_2": "Fonction insert",
+      "p_st_chap4_2": "Une fonction récursive permettant d'insérer un élément dans notre arbre, si la racine égale à 0, on créera un nouvel élément avec la clé donnée par l'utilisateur, et on l'insère a la racine; sinon, on parcourt à droite ou à gauche dépendant de notre valeur, vu que notre arbre est un arbre de tri, si la valeur donnée est inférieure à la racine, on insère à gauche(a->petit), sinon on insère à droite(a- >grand) si c'est supérieur; On n'insère pas dans le cas de l'égalité.",
+      "sous_titre_chap4_3": "Fonction chercher",
+      "p_st_chap4_3": "Suis le même principe que la fonction insert, sauf qu'ici notre objectif est de trouver l'emplacement d'une valeur donnée si elle existe, On compare la valeur avec la clé de la racine, si elles sont égales, on sauvegarde l'adresse de la valeur dans une variable(ici nommée position); sinon si la valeur est inférieure à la clé, on appelle la fonction avec ->petit, sinon si elle est supérieure on l'appelle avec - >grand;",
+      "sous_titre_chap4_4": "Parcours",
+      "p_st_chap4_4": "La traversée d'un arbre de tri on peut la faire à différents niveaux, mais généralement 3 types de traversée sont utilisés (préfixe, infixe, suffixe) : <br> 1-Préfixé: <br> On affiche notre arbre en commençant par la racine, puis en passant au fils gauche puis droit (RGD- VGD ); le cout sera donc avant les deux appel. <br> 2-Infixé: <br> On affiche les fils gauche, la racine, puis les fils droit, en d'autres termes, permet d'afficher nos valeurs du plus petit au plus grand(GRD-GVD); le cout sera au milieu des deux appel. <br> 3-Postfixé: <br> Affichera les fils gauche, puis droit, pour finir avec la racine(GDR-GDV). Le cout sera à la fin des deux appel.",
+      "sous_titre_chap4_5": "Fonction affichage",
+      "p_st_chap4_5": "Afin d'afficher l'arbre selon un ordre spécifique, comme par exemple dans l'ordre croissant, nous pouvons écrire la ligne cout dans la position infixe, comme cela est indiqué dans le code. Cela permettra d'afficher l'arbre de manière précise et selon l'ordre souhaité.",
+      "remarque_chap_5": "La traversée d'un arbre de tri est toujours codée de la même manière, il suffi de placer les instructions nécessaires et selon l’ordre voulu."
     }
   ]
 }

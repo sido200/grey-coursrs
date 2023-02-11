@@ -60,7 +60,7 @@ nav .fa-bars{
 .items{
   display: flex;
   height: 100%;
-  width: 60%;
+  width: 40%;
   align-items: center;
   justify-content: space-evenly;
 
@@ -115,9 +115,12 @@ color: #32729A;
   }
   /*HOME*/
   #home {
-    height: auto;
+    height: 700px;
     display: flex;
-   
+   background-image:url(/assets/image/untitled\ \(2\).png);
+   background-repeat: no-repeat;
+  background-size:cover;
+
     font-family: 'Inter', sans-serif;
     position: relative;
     overflow: hidden;
@@ -125,72 +128,7 @@ color: #32729A;
     padding: 70px;
   }
  
-  .oval {
-    width: 8vw;
-    position: absolute;
-    height: 88vh;
-    border-radius: 25vw;
-    background-color: #c2dce2;
-    /* box-shadow: 7px 7px 15px 0 rgb(0 0 0 / 12%), -7px -7px 15px 0 #fff;*/
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(5deg);
-    transform: rotate(45deg);
-    overflow: hidden;
-   
-  }
-  .troi,
-  .cinq,
-  .six {
-    height: 48vh;
-    position: absolute;
-  }
-  .prem {
-    position: absolute;
-    right: 50%;
-    bottom: 11%;
-  }
-  .deu {
-    position: absolute;
-    right: 30%;
-    bottom: 15%;
-  }
-  .troi {
-    top: 50%;
-    right: 29%;
-  }
-  .qua {
-    position: absolute;
-    bottom: 45%;
-    left: 95%;
-  }
-  .cinq {
-    top: 50%;
-    right: 12%;
-  }
-  .six {
-    right: -5%;
-    top: 50%;
-  }
-  .circle {
-    border-radius: 50%;
-  }
-  .uno {
-    position: absolute;
-    width: 115px;
-    height: 115px;
-    background-color: #c2dce2;
-    top: 78%;
-    right: 52%;
-  }
-  .dos {
-    position: absolute;
-    width: 515px;
-    height: 515px;
-    background-color: #889685;
-    z-index: 1;
-    opacity: 26%;
-    right: 5%;
-  }
+  
  
   #home h1{
     font-size: 34px;
@@ -406,9 +344,12 @@ footer ul li a:hover {
     }
 
   }
-  @media screen and (max-width:770px){
+  @media screen and (max-width:820px){
+    #home{
+      height: auto;
+    }
     p{
-      max-width: 500px;
+      max-width: 600px;
       text-align: center;
     }
     .l input{

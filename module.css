@@ -1,3 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&family=Montserrat:wght@200;600&family=Open+Sans:wght@300;400&display=swap");
+
 .module-template {
   padding-top: 70px;
+}
+/*ASD3*/
+.menu {
+  height: 675px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.menu div {
+  margin: 30px;
+}
+.title h2 {
+  font-size: 150px;
+  color: #32729a;
+  font-family: "Monserrat";
+  font-weight: 500;
+}
+.buttons-menu button {
+  background-color: #32729a;
+  height: 55px;
+  width: 250px;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 38px;
+  margin: 15px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.chapitres-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*infos*/
+.infos-carres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 60%;
+  height: auto;
+  margin: 35px;
+  position: relative;
+}
+
+/*titre-element*/
+.titre-element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 910px;
+  height: 45px;
+  background-color: #c9c9c9;
+  border-radius: 25px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.titre-element-p1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #32729a;
+  border-radius: 25px;
+  height: 45px;
+  width: 200px;
+}
+.titre-element-p2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #87d1cf;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+}
+.titre-element h2 {
+  color: white;
+}
+
+/*texte-element*/
+.texte-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #32729a;
+  color: black;
+  width: 910px;
+}
+.element img {
+  width: 500px;
+  margin: 15px;
+}
+.texte-element p,
+.img-element img {
+  margin: 15px;
+}
+.p-element {
+  color: black;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+.img-element {
+  border-radius: 20px;
+  margin: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.general-infos h1 {
+  margin-left: 40px;
+  font-size: 45px;
+  color: #32729a;
+  font-family: "El Messiri";
 }

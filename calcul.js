@@ -17,14 +17,34 @@ function moyenneS3() {
         parseFloat(document.getElementById("cc6").value)    
     ];
 
+    //avec message erreur  
 
-    // avec erreur message 
+    /*document.getElementById("semestre1").addEventListener("button", function(e){
+        e.preventDefault();
+        var erreur;
+        for(var i=0; i<7; i++)
+        {
+            if(exams[i]<0 || exams[i]>20)
+            erreur = "entrez une note entre 0 et 20"
+        }
+        for(var i=0; i<6; i++)
+        {
+            if(ccs[i]<0 || ccs[i]>20)
+            {
+                erreur = "entrez une note entre 0 et 20"
+            }
+        }
+        if(erreur){
+            document.getElementById("erreur").innerHTML =erreur;
 
+            
+        }
+    })*/
 
-    /*avec l'alert 
+    /*avec l'alert */
     for (var i = 0; i < 7; i++) {
         if (isNaN(exams[i]) || exams[i] < 0 || exams[i] > 20) {
-            alert("enter une note entre 0 et 20 dans la case " + (i + 1));
+        alert("entrer une note entre 0 et 20 dans la case de EXAM " + (i + 1));
             return;
         }
 
@@ -32,12 +52,11 @@ function moyenneS3() {
 
     for (var i = 0; i < 6; i++) {
         if (isNaN(ccs[i]) || ccs[i] < 0 || ccs[i] > 20) {
-            alert("enter une note entre 0 et 20 dans la case  " + (i + 1));
+            alert("entrer une note entre 0 et 20 dans la case de CC  " + (i + 1));
             return;
         }
     }
-    */
-
+    
     //calcule de moyenne 
 
     var moyenS3 = [];
@@ -49,7 +68,7 @@ function moyenneS3() {
     var moyen = (
         (moyenS3[0] * 3 + moyenS3[1] * 3 + moyenS3[2] * 3 + moyenS3[3] * 2 + moyenS3[4] * 2 + moyenS3[5] * 2 + moyenM7) / 16
     );
-    document.getElementById("moyen").value = moyen;
+    document.getElementById("moyen").value = (Math.round(moyen * 100) / 100).toFixed(2);
 }
 
 
@@ -82,10 +101,10 @@ function moyenneS4()
     }
     var moyenM7 = exams2[6];
 
-    var MoyenneS4 = (
+    var MoyennS4 = (
         (moyenS4[0] * 3 + moyenS4[1] * 3 + moyenS4[2] * 3 + moyenS4[3] * 2 + moyenS4[4] * 2 + moyenS4[5] * 2 + moyenM7) / 16
     );
-    document.getElementById("moyens").value = MoyenneS4;
+    document.getElementById("moyens").value = (Math.round(MoyennS4 * 100) / 100).toFixed(2);
 }
 
 

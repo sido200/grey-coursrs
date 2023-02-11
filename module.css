@@ -1,4 +1,96 @@
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri&family=Montserrat:wght@200;600&family=Open+Sans:wght@300;400&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/*footer*/
+.up {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+.up {
+  height: 4px;
+}
+.down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+hr {
+  width: 80%;
+  height: 2px;
+  color: #555555;
+}
+.down h4 {
+  font-family: "poppins";
+  font-size: 17px;
+  line-height: 22.4px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  font-weight: 300;
+}
+.down p {
+  max-width: 60%;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+}
+.haut,
+.bas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  color: black;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 5px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  margin-right: 10px;
+}
+footer ul li a:hover {
+  color: #32729a;
+  font-size: 16px;
+  transition: 0.5s;
+}
+/*scroll-up btn*/
+.scroll-up-button {
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  border: none;
+  align-items: center;
+  cursor: pointer;
+}
+.scroll-up-button img {
+  width: 70px;
+  color: #2c75ff;
+}
+#scroll-up {
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  z-index: 2;
+}
+.caché {
+  display: none;
+}
 
 .module-template {
   padding-top: 70px;
@@ -7,6 +99,7 @@
 .menu {
   height: 675px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -17,7 +110,7 @@
 .title h2 {
   font-size: 150px;
   color: #32729a;
-  font-family: "Monserrat";
+  font-family: "Inter", sans-serif;
   font-weight: 500;
 }
 .buttons-menu button {
@@ -35,6 +128,7 @@
 }
 .chapitres-menu {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -42,12 +136,14 @@
 /*infos*/
 .infos-carres {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .element {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -60,6 +156,7 @@
 /*titre-element*/
 .titre-element {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   width: 910px;
@@ -71,6 +168,7 @@
 }
 .titre-element-p1 {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   background-color: #32729a;
@@ -80,6 +178,7 @@
 }
 .titre-element-p2 {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   background-color: #87d1cf;
@@ -94,6 +193,7 @@
 /*texte-element*/
 .texte-element {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -115,6 +215,7 @@
   font-size: 17px;
   font-weight: 500;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   text-align: justify;
@@ -123,6 +224,7 @@
   border-radius: 20px;
   margin: 17px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }

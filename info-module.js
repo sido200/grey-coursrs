@@ -1,3 +1,24 @@
+//scroll to the top button
+const showOnPx = 900;
+const backToTopButton = document.querySelector(".scroll-up-button");
+
+const scrollContainer = () => {
+  return document.documentElement || document.body;
+};
+
+document.addEventListener("scroll", () => {
+  if (scrollContainer().scrollTop > showOnPx) {
+    backToTopButton.classList.remove("caché");
+  } else {
+    backToTopButton.classList.add("caché");
+  }
+});
+backToTopButton.addEventListener("click", function () {
+  document.body.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
 const id = new URLSearchParams(window.location.search).get("id");
 
 const container = document.querySelector(".module-template");
@@ -27,8 +48,8 @@ const renderInfos = async () => {
           </div>
             <button>TD's</button>
             <button>TP's</button>
-            <button>examens</button>
-            <button>tests</button>
+            <button>Examens</button>
+            <button>Tests</button>
          </div>
 
       </div>
@@ -155,7 +176,7 @@ const renderInfos = async () => {
     </div>
     <div class="texte-element">
     <p>${info.p_st_chap2_1}</p>
-   <img src="./assets/image/Initialiser.png" alt="">
+  <img src="./assets/image/Initialiser (1).png" alt="">
     </div>
      </div>
 
@@ -214,6 +235,127 @@ const renderInfos = async () => {
      </div>
   
      </div>
+
+     <h1>${info.chap3}:</h1>
+    <div class="infos-carres">
+
+     <div class="element">
+    <div class="titre-element">
+   <div class="titre-element-p1"> <h2>Introduction</h2></div>
+    <div class="titre-element-p2"> <h2>1</h2></div>
+    </div>
+    <div class="texte-element">
+    <div class="p-element">
+    <p>${info.intro_chap3}</p>
+    </div>
+    <div class="img-element">
+    <img src="./assets/image/intro-file.png" alt="">
+    </div>
+    </div>
+     </div>
+
+       <div class="element">
+    <div class="titre-element">
+    <div class="titre-element-p1"> <h2>${info.sous_titre_chap3_1}</h2></div>
+    <div class="titre-element-p2"> <h2>2</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>${info.p_st_chap3_1}</p>
+   <img src="./assets/image/Initialiser.png" alt="">
+    </div>
+     </div>
+
+     <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>${info.sous_titre_chap3_2}</h2></div>
+    <div class="titre-element-p2"> <h2>3</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>${info.p_st_chap3_2}</p>
+   <img src="./assets/image/Vide.png" alt="">
+    </div>
+     </div>
+
+     <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>${info.sous_titre_chap3_3}</h2></div>
+    <div class="titre-element-p2"> <h2>4</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>${info.p_st_chap3_3}</p>
+  <img src="./assets/image/enfiler.png" alt="">
+    </div>
+     </div>
+
+      <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>${info.sous_titre_chap3_4}</h2></div>
+    <div class="titre-element-p2"> <h2>5</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>${info.p_st_chap3_4_part1}</p>
+    <img src="./assets/image/Defiler.png" alt="">
+   <p>${info.p_st_chap3_4_part2}</p>
+    </div>
+     </div>
+
+       <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>Files circulaires</h2></div>
+    <div class="titre-element-p2"> <h2>6</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>${info.intro_chap3_bis}</p>
+<img src="./assets/image/Structure (1).png" alt="">
+    </div>
+     </div>
+
+      <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>${info.sous_titre_chap3_bis_1}</h2></div>
+    <div class="titre-element-p2"> <h2>7</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>${info.p_st_chap3_bis_1}</p>
+<img src="./assets/image/initialisation.png" alt="">
+    </div>
+     </div>
+
+          <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>${info.sous_titre_chap3_bis_2}</h2></div>
+    <div class="titre-element-p2"> <h2>8</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>${info.p_st_chap3_bis_2}</p>
+<img src="./assets/image/TesterVide.png" alt="">
+    </div>
+     </div>
+
+          <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>${info.sous_titre_chap3_bis_3}</h2></div>
+    <div class="titre-element-p2"> <h2>9</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>${info.p_st_chap3_bis_3}</p>
+<img src="./assets/image/Enfiler (1).png" alt="">
+    </div>
+     </div>
+
+          <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>${info.sous_titre_chap3_bis_4}</h2></div>
+    <div class="titre-element-p2"> <h2>10</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>${info.p_st_chap3_bis_4}</p>
+<img src="./assets/image/defiler (1).png" alt="">
+    </div>
+     </div>
+  
+     </div>
+
      </div>
 
       </div>

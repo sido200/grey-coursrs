@@ -10,7 +10,7 @@ const renderModules = async () => {
 
   modules.forEach((module) => {
     template += `
-            <div class="btn">
+            <div class="btnx">
            <a href="/module.html?id=${module.id}" ><button>${module.title}</button></a>
           </div>
         `;

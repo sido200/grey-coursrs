@@ -106,5 +106,12 @@ function moyenneS4()
     );
     document.getElementById("moyens").value = (Math.round(MoyennS4 * 100) / 100).toFixed(2);
 }
-
+ //responsive
+ 
+let btn=document.querySelector('.fa-bars')
+let items=document.querySelector('.items')
+btn.addEventListener('click',function(){
+    items.classList.toggle('active-barre')
+console.log("hi");
+})
 

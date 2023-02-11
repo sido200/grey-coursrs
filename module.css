@@ -78,9 +78,8 @@ footer ul li a:hover {
   align-items: center;
   cursor: pointer;
 }
-.scroll-up-button img {
-  width: 70px;
-  color: #2c75ff;
+.scroll-up-button svg {
+  width: 40px;
 }
 #scroll-up {
   position: fixed;
@@ -233,4 +232,28 @@ footer ul li a:hover {
   font-size: 45px;
   color: #32729a;
   font-family: "El Messiri";
+}
+
+/*doc lien*/
+.divs-pdf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.doc {
+  border: 1px solid #32729a;
+  border-radius: 15px;
+  color: #32729a;
+  width: 155px;
+  margin: 35px;
+}
+.doc svg {
+  width: 40px;
+}
+.doc a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  color: #32729a;
 }

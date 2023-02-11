@@ -145,7 +145,7 @@ form.semestre1, form.semestre2
   padding: 40px;
 }
 
-#module input , #moyen{
+#module input , #moyen , #moyens{
     
     background-color: #88968542;
     border: none;
@@ -159,20 +159,6 @@ form.semestre1, form.semestre2
 #col {
   display: flex;
   flex-direction: column;
-}
-#moyens {
-    background-color: #1B628FE5;
-    border: none;
-    padding: 10px;
-    height: 40px;
-    width: 160px;
-    border-radius: 7px;
-    color: white;
-    margin: auto; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5%;
 }
 
 .line{
@@ -193,7 +179,6 @@ form.semestre1, form.semestre2
   border-radius: 10px;
   padding: 20px;
 }
-
 
 
 

@@ -101,10 +101,10 @@ function moyenneS4()
     }
     var moyenM7 = exams2[6];
 
-    var MoyenneS4 = (
+    var MoyennS4 = (
         (moyenS4[0] * 3 + moyenS4[1] * 3 + moyenS4[2] * 3 + moyenS4[3] * 2 + moyenS4[4] * 2 + moyenS4[5] * 2 + moyenM7) / 16
     );
-    document.getElementById("moyens").value = MoyenneS4;
+    document.getElementById("moyens").value = (Math.round(MoyennS4 * 100) / 100).toFixed(2);
 }
 
 

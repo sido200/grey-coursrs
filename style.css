@@ -382,6 +382,9 @@ footer ul li a:hover {
       max-width: 300px;
       text-align: center;
     }
+    #home p{
+      text-align: start;
+    }
     .l input{
       margin-top: 20px;
     }

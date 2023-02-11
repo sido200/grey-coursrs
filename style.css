@@ -4,6 +4,9 @@
     list-style: none;
     margin: 0%;
     scroll-behavior: smooth;
+    padding: 0;
+   
+    overflow-x: hidden;
   
 }
 
@@ -23,7 +26,7 @@
 /*NAV*/
 nav{
     height: 70px;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     display: flex;
     justify-content: space-evenly;
@@ -66,7 +69,7 @@ nav .fa-bars{
 
 nav ul{
     display: flex;
-    width: 600px;
+    width: 100vw;
     justify-content: space-between;
     font-size: 15px;
 }
@@ -93,6 +96,7 @@ color: #32729A;
 
 .input-with-icon {
     position: relative;
+    width: 500px;
   }
 
   .input-with-icon input {
@@ -111,8 +115,9 @@ color: #32729A;
   }
   /*HOME*/
   #home {
-    height: 700px;
+    height: auto;
     display: flex;
+   
     font-family: 'Inter', sans-serif;
     position: relative;
     overflow: hidden;
@@ -222,6 +227,7 @@ color: #32729A;
     align-items: center;
     font-family: 'Inter', sans-serif;
   }
+  
   .l h2,#s3 h2,#s4 h2{
     font-size: 35px;
     font-weight: 700;
@@ -261,7 +267,7 @@ color: #32729A;
   .btns{
     display: grid;
     grid-template-columns: 350px 350px;
-    width: 100%;
+    width: 100vw;
     justify-content: center;
     gap:20px 200px  ;
   }
@@ -293,6 +299,10 @@ color: #32729A;
     nav .fa-bars{
       display: block;
     }
+    button:hover,input:hover{
+      transform: none;
+     
+    }
     .items ul{
       flex-direction:column ;
       align-items: center;
@@ -309,7 +319,7 @@ color: #32729A;
       height: 100%;
      position:fixed ;
      top: 70px;
-    right: 0px;
+    right: 0;
     transform: translateX(-100%);
    text-align: center;
      width: 100%;
@@ -326,4 +336,44 @@ color: #32729A;
       display: none;
     }
 
+  }
+  @media screen and (max-width:770px){
+    p{
+      max-width: 500px;
+      text-align: center;
+    }
+    .l input{
+      margin-top: 20px;
+    }
+    .btn {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0px;
+    }
+    .btns{
+      grid-template-columns: 350px ;
+    justify-content: center;
+    align-items: center;
+    }
+  }
+  @media screen and (max-width:480px){
+    p{
+      max-width: 300px;
+      text-align: center;
+    }
+    .l input{
+      margin-top: 20px;
+    }
+    .btn {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0px;
+    }
+    .btns{
+      grid-template-columns: 350px ;
+    justify-content: center;
+    align-items: center;
+    }
   }

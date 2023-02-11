@@ -295,6 +295,75 @@ color: #32729A;
   .active-barre{
     transform: translateX(0%);  
     transition: 0.5s; }
+    /*footer*/
+    footer{
+      font-family: 'Inter', sans-serif;
+    }
+.up {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+.up {
+  height: 4px;
+}
+.down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+hr {
+  width: 80%;
+  height: 2px;
+  color: #555555;
+}
+.down h4 {
+ 
+  font-size: 17px;
+  line-height: 22.4px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  font-weight: 300;
+}
+.down p {
+  max-width: 60%;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+}
+.haut,
+.bas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  color: black;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 5px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  margin-right: 10px;
+}
+footer ul li a:hover {
+  color: #32729a;
+  font-size: 16px;
+  transition: 0.5s;
+}
   @media screen and (max-width:1024px)  {
     nav .fa-bars{
       display: block;

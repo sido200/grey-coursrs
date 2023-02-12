@@ -62,12 +62,15 @@ footer ul li a {
   text-decoration: none;
   color: black;
   font-size: 14px;
-  margin-right: 10px;
+  margin-right: 3px;
 }
 footer ul li a:hover {
   color: #32729a;
   font-size: 16px;
   transition: 0.5s;
+}
+footer img {
+  width: 40px;
 }
 /*scroll-up btn*/
 .scroll-up-button {

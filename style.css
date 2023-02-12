@@ -325,6 +325,16 @@ footer ul li a:hover {
   transition: 0.5s;
 }
   @media screen and (max-width:1024px)  {
+    .logo img {
+      height: 20px;
+      width: 20px;
+     }
+     .logo h2{
+      font-size: 13px;
+     }
+     .logo {
+      width: 100px;
+     }
     *{
       overflow-x: hidden;
     }
@@ -370,6 +380,8 @@ footer ul li a:hover {
 
   }
   @media screen and (max-width:820px){
+   
+    
     #home{
       height: auto;
     }

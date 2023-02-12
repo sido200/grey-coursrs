@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
     padding: 0;
    
-    overflow-x: hidden;
+   
   
 }
 ::-webkit-scrollbar{
@@ -122,6 +122,19 @@ color: #32729A;
     color: #32729A;
   }
 @media screen and (max-width:1024px)  {
+  *{
+    overflow-x: hidden;
+  }
+  .logo img {
+    height: 20px;
+    width: 20px;
+   }
+   .logo h2{
+    font-size: 13px;
+   }
+   .logo {
+    width: 100px;
+   }
   nav .fa-bars{
     display: block;
   }

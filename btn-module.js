@@ -1,4 +1,4 @@
-const container = document.querySelector(".btns");
+//const container = document.querySelector(".btns");
 
 const renderModules = async () => {
   let uri = "http://localhost:3000/titres-modules";

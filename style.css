@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+html{
+  overflow-x: hidden;
+}
 *{
     text-decoration: none;
     list-style: none;
@@ -6,7 +9,7 @@
     scroll-behavior: smooth;
     padding: 0;
    
-    overflow-x: hidden;
+ 
   
 }
 
@@ -177,10 +180,13 @@ color: #32729A;
   .btn{
     display: flex;
     width: 880px;
+   
     justify-content: space-between;
     margin-bottom: 50px;
+    
 
   }
+
   .btn input{
     background-color: #32729A;
     height: 75px;
@@ -193,6 +199,8 @@ color: #32729A;
     line-height: 38px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     cursor: pointer;
+    transition: 0.5s;
+
   }
   #s3,#s4{
     overflow-x: hidden;
@@ -200,6 +208,7 @@ color: #32729A;
   #s3 input,#s4 input{
    margin-bottom: 20px;
    background-color: #c9c9c9;
+ 
    
   }
   .btns{
@@ -222,6 +231,7 @@ color: #32729A;
     line-height: 38px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     cursor: pointer;
+    transition: 0.5s;
   }
   button:hover,input:hover{
     transform: scale(1.1);
@@ -371,6 +381,9 @@ footer ul li a:hover {
     p{
       max-width: 300px;
       text-align: center;
+    }
+    #home p{
+      text-align: start;
     }
     .l input{
       margin-top: 20px;

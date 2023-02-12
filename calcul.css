@@ -9,8 +9,6 @@
     overflow-x: hidden;
   
 }
-
-
 ::-webkit-scrollbar{
     width:15px;
   
@@ -60,7 +58,7 @@ nav .fa-bars{
 .items{
   display: flex;
   height: 100%;
-  width: 60%;
+  width: 40%;
   align-items: center;
   justify-content: space-evenly;
 

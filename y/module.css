@@ -276,7 +276,7 @@ footer ul li a:hover {
     margin-right: 25px;
   }
 }
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 480px) {
   .menu {
     height: 400px;
     display: flex;
@@ -285,7 +285,7 @@ footer ul li a:hover {
     justify-content: center;
   }
   .title h2 {
-    font-size: 100px;
+    font-size: 75px;
   }
   .menu div {
     margin: 0;

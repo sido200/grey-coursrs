@@ -314,6 +314,6 @@ footer ul li a:hover {
   .p-element {
     width: 345px;
     overflow: visible;
-    text-align: justify;
+    text-align: left;
   }
 }

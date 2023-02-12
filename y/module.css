@@ -312,10 +312,8 @@ footer ul li a:hover {
   .img-element,
   .titre-element,
   .p-element {
-    width: 370px;
+    width: 345px;
     overflow: visible;
-  }
-  .p-element {
-    margin-right: 25px;
+    text-align: justify;
   }
 }

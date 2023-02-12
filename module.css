@@ -77,6 +77,7 @@ footer ul li a:hover {
   border: none;
   align-items: center;
   cursor: pointer;
+  z-index: 2;
 }
 .scroll-up-button svg {
   width: 40px;
@@ -86,6 +87,7 @@ footer ul li a:hover {
   bottom: 15px;
   right: 10px;
   z-index: 2;
+  overflow: hidden;
 }
 .caché {
   display: none;
@@ -123,6 +125,7 @@ footer ul li a:hover {
   font-weight: 600;
   line-height: 38px;
   margin: 15px;
+  cursor: pointer;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .chapitres-menu {
@@ -146,10 +149,9 @@ footer ul li a:hover {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  max-width: 60%;
+  /*max-width: 60%;*/
   height: auto;
   margin: 35px;
-  position: relative;
 }
 
 /*titre-element*/
@@ -256,4 +258,64 @@ footer ul li a:hover {
   justify-content: center;
   list-style: none;
   color: #32729a;
+}
+
+@media screen and (max-width: 768px) {
+  .element img {
+    width: 300px;
+  }
+  .element,
+  .texte-element,
+  .img-element,
+  .titre-element,
+  .p-element {
+    width: 600px;
+    overflow: visible;
+  }
+  .p-element {
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .menu {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .title h2 {
+    font-size: 100px;
+  }
+  .menu div {
+    margin: 0;
+  }
+  .buttons-menu button {
+    background-color: #32729a;
+    height: 55px;
+    width: 150px;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 38px;
+    margin: 15px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+  .element img {
+    width: 200px;
+  }
+  .element,
+  .texte-element,
+  .img-element,
+  .titre-element,
+  .p-element {
+    width: 370px;
+    overflow: visible;
+  }
+  .p-element {
+    margin-right: 25px;
+  }
 }

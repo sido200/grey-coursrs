@@ -33,7 +33,535 @@
     </header>
     <main>
       <div class="module-template">
-        <!-- inject nom module,btns chapitres,btn td btn tp et btn test btn exam here from js -->
+
+
+      <div class="menu">
+
+      <div class="title">
+      <h2>ASD3</h2>
+      </div>
+
+        <div class ="buttons-menu">
+        <div class ="chapitres-menu">
+      <a href="#chap1"><button>Les listes</button></a>
+      <a href="#chap2"><button>Les piles</button></a>
+      <a href="#chap3"><button>Les files</button></a>
+      <a href="#chap4"><button>Les arbres</button></a>
+            <a href="#TD"><button>TD's</button></a>
+         </div>
+      </div>
+      </div>
+      
+      <div class="general-infos">
+
+      <h1 id="chap1">Les listes:</h1>
+     <div class="infos-carres">
+
+     <div class="element">
+    <div class="titre-element">
+   <div class="titre-element-p1"> <h2>Introduction</h2></div>
+    <div class="titre-element-p2"> <h2>1</h2></div>
+    </div>
+    <div class="texte-element">
+    <div class="p-element">
+    <p>Une liste linéaire chainée en C++ est une structure de données qui consiste enune suite d'éléments, où chacun de ces éléments pointe vers le suivant.   <br> Chaque élément est appelé nœud et contient une valeur et une référence au nœud suivant.La dernière référence est généralement nulle pour indiquer la fin de la liste.   <br> Les listes linéaires chainées permettent des insertions et des suppressions faciles en n'importequel point de la liste et sont souvent utilisées pour implémenter des piles, des files oudes graphes.  <br> Cependant, l'accès à un élément spécifique dans la liste peut être lentpar rapport à d'autres structures de données telles que les tableaux, car il nécessitede parcourir la liste depuis le début.</p>
+    </div>
+    <div class="img-element">
+    <img src="./assets/image/image_1_liste.png" alt="">
+    </div>
+    </div>
+     </div>
+
+       <div class="element">
+    <div class="titre-element">
+    <div class="titre-element-p1"> <h2>fonction initialiser</h2></div>
+    <div class="titre-element-p2"> <h2>2</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Permet d'initialiser notre pointeur debut a 0, une étape nécessaire pour la création d'une liste.</p>
+    <img src="./assets/image/Initialiser Liste.png" alt="">
+    </div>
+     </div>
+
+     <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>fonction insérer début</h2></div>
+    <div class="titre-element-p2"> <h2>3</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>cette fonction permet de créer un element, et de l'insérer au début de notre liste, son pointeur suivant pointera donc vers l'élement qui était au début(si il existe) et notre pointeur début pointera dessus</p>
+    <img src="./assets/image/Insérer en tête Liste.png" alt="">
+    </div>
+     </div>
+
+     <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>fonction insérer fin</h2></div>
+    <div class="titre-element-p2"> <h2>4</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Permet la création d'un élement et son insértion a la toute fin de la liste, son pointeur suivant égalera donc 0; contrairement a insererdebut, il faut parcourir toute la liste en utilisant un element local courant jusqu'a arriver a la fin; Dans le cas d'une liste vide, insererdebut sera utilisé.</p>
+    <img src="./assets/image/InsertFin.png" alt="">
+    </div>
+     </div>
+
+      <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>fonction parcours</h2></div>
+    <div class="titre-element-p2"> <h2>5</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Nous permet d'afficher les valeurs stockées dans notre liste, utilise le méme principe que insererfin pour le parcours(utilisation d'un element courant) et a chaque itération affiche la valeur</p>
+    <img src="./assets/image/Parcourir Liste.png" alt="">
+    <p>L'avantage des listes comparé aux tableaux, c'est la possibilité de facilement supprimer des élements peu importe leur emplacement, sans décalage obligatoire.</p>
+    </div>
+     </div>
+
+       <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>fonction supp début</h2></div>
+    <div class="titre-element-p2"> <h2>6</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Si notre liste contient au moins un élement, on sauvegarde la valeur de début dans une nouvelle variable, on pointe debut vers le prochain élement si il existe, puis on supprime avec delete la variable sauvegardée.</p>
+   <img src="./assets/image/suppdebutcode.png" alt="">
+    </div>
+     </div>
+
+       <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>fonction supp fin</h2></div>
+    <div class="titre-element-p2"> <h2>7</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Sert à supprimer le dernier élément d'une liste, en commençant par la parcourir jusqu'a arriver a l'element dont le suivant->suivant=0 (l'avant dernier element), on supprime le dernier élément avec delete element->suivant, puis on modifie le pointeur suivant du dernier en le mettant a 0.</p>
+    <img src="./assets/image/suppfincode.png" alt="">
+    </div>
+     </div>
+
+        <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>Remarque</h2></div>
+    <div class="titre-element-p2"> <h2>8</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>insererdebut est beacoup plus optimisé que insererfin, car il permet de directement insérer sans parcourir toute la liste, et dans le cas d'une liste de + de 100 élements par exemeple, beacoup de resources seront utilisées pour le parcours.</p>
+    </div>
+     </div>
+</div>
+ <h1 id="chap2">Les piles</h1>
+    <div class="infos-carres">
+
+     <div class="element">
+    <div class="titre-element">
+   <div class="titre-element-p1"> <h2>Introduction</h2></div>
+    <div class="titre-element-p2"> <h2>1</h2></div>
+    </div>
+    <div class="texte-element">
+    <div class="p-element">
+    <p>Les piles fonctionnent sous un système FILO(first in last out) premier inséré, dernier supprimé. <br> On a deux méthodes pour représenter une pile : <br> 1_Contiguë(Par tableaux) <br> 2_Par liste chainée <br> La représentation contiguë sera utilisée dans nos exemples. </p>
+    </div>
+    <div class="img-element">
+    <img src="./assets/image/329556558_744202173988507_7473546778924599511_n.png" alt="">
+    </div>
+    </div>
+     </div>
+
+       <div class="element">
+    <div class="titre-element">
+    <div class="titre-element-p1"> <h2>fonction initialiser</h2></div>
+    <div class="titre-element-p2"> <h2>2</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Initialise notre valeur sommet a 0, et ça pour avoir une pile vide et pour pointer au premier élément de notre tableau.</p>
+  <img src="./assets/image/Initialiser (1).png" alt="">
+    </div>
+     </div>
+
+     <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>fonction pile vide</h2></div>
+    <div class="titre-element-p2"> <h2>3</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Cette fonction a retour booléen permet de vérifier si notre pile est vide, en se servant du sommet ,1 si notre sommet=0, 0 sinon.Elle sera utilisée dans la fonction dépiler.</p>
+   <img src="./assets/image/TestVide.png" alt="">
+    </div>
+     </div>
+
+     <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>fonction empiler</h2></div>
+    <div class="titre-element-p2"> <h2>4</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>On vérifie d'abord si notre pile est pleine, en comparant notre sommet avec la dimension max, si elle est pleine on ne fait rien, sinon on insère notre élément a l'adresse Sommet du tableau P.element, et on incrémente notre sommet.</p>
+   <img src="./assets/image/Empiler.png" alt="">
+    </div>
+     </div>
+
+      <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>$fonction dépiler</h2></div>
+    <div class="titre-element-p2"> <h2>5</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>On vérifie d'abord si notre pile est pleine, en comparant notre sommet avec la dimension max, si elle est pleine on ne fait rien, sinon on insère notre élément a l'adresse Sommet du tableau P.element, et on incrémente notre sommet.</p>
+   <img src="./assets/image/Depiler.png" alt="">
+    </div>
+     </div>
+
+       <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>fonction afficher</h2></div>
+    <div class="titre-element-p2"> <h2>6</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Pour afficher une pile, il suffit simplement de juste défiler et d'afficher à chaque itération l'élément sauvegardé.</p>
+<img src="./assets/image/Affichage.png" alt="">
+    </div>
+     </div>
+
+      <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>Remarque</h2></div>
+    <div class="titre-element-p2"> <h2>7</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Il est recommandé de faire un transfert par valeur pour l'affichage si l'exercice utilisera la pile dans d'autres questions, et ça pour conserver les valeurs</p>
+    </div>
+     </div>
+  
+     </div>
+
+     <h1 id="chap3">Les files:</h1>
+    <div class="infos-carres">
+
+     <div class="element">
+    <div class="titre-element">
+   <div class="titre-element-p1"> <h2>Introduction</h2></div>
+    <div class="titre-element-p2"> <h2>1</h2></div>
+    </div>
+    <div class="texte-element">
+    <div class="p-element">
+    <p>Concernant les files, elles fonctionnement sous le système FIFO (first in first out) ou le premier élément inséré sera le premier élément supprimé. <br> Les mêmes méthodes de représentation des piles s'appliquent sur les files. <br> La structure d'une file est quasi_similaire à la pile, à la différence qu'on a renommé Sommet en nbr_valeurs, et la fonction enfiler change presque complétement.</p>
+    </div>
+    <div class="img-element">
+    <img src="./assets/image/intro-file.png" alt="">
+    </div>
+    </div>
+     </div>
+
+       <div class="element">
+    <div class="titre-element">
+    <div class="titre-element-p1"> <h2>fonction initialiser</h2></div>
+    <div class="titre-element-p2"> <h2>2</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Tout comme l'initialisation de la pile, il suffit juste d'initialiser notre valeur nbr_valeurs a 0.</p>
+   <img src="./assets/image/Initialiser.png" alt="">
+    </div>
+     </div>
+
+     <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>fonction file vide</h2></div>
+    <div class="titre-element-p2"> <h2>3</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Pour tester si notre file est vide, il suffit simplement de voir si notre nbr_valeurs=0 ou non.</p>
+   <img src="./assets/image/Vide.png" alt="">
+    </div>
+     </div>
+
+     <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>fonction enfiler</h2></div>
+    <div class="titre-element-p2"> <h2>4</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Exactement comme la fonction empiler, on vérifie si la file est vide, on insère notre élément dans l'adresse nbr_valeurs du tableau, et on l'incrémente.</p>
+  <img src="./assets/image/enfiler.png" alt="">
+    </div>
+     </div>
+
+      <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>fonction defiler</h2></div>
+    <div class="titre-element-p2"> <h2>5</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Suis le principe de suppression d'un élément du tableau; on commence par vérifier si la file est vide avec 'filevide', on sauvegarde le premier élément du tableau(donc f.element[0]) puis en entre dans une boucle allant de 0 jusqu'à f.nbr_valeurs-1, et ça pour décaler toute nos valeurs de 1( la 2emedeviendra la 1ere, 3eme 2eme etc....) et pour finir on décrémente notre nbr_valeurs.</p>
+    <img src="./assets/image/Defiler.png" alt="">
+   <p>Comme on peut le voir, c'est assez complexe de défiler un élément d'une file, dus au fait qu'on doit tout décaler à chaque fois, pour remédier à ce problème, une autre structure peut être utilisée qui est La File Circulaire./p>
+    </div>
+     </div>
+
+       <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>Files circulaires</h2></div>
+    <div class="titre-element-p2"> <h2>6</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Contrairement à la file normale, la file circulaire dispose de 4 variables dans sa structure, le tableau f.element, l'entier IndiceIN, l'entier IndiceOUT, et le booléen FilePleine</p>
+<img src="./assets/image/Structure (1).png" alt="">
+    </div>
+     </div>
+
+      <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>fonction initialiser</h2></div>
+    <div class="titre-element-p2"> <h2>7</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>La fonction initialiser aura pour objectif de fixer nos 2 variable indiceIN, indiceOUT a 0, ainsi que FilePleine a faux.</p>
+<img src="./assets/image/initialisation.png" alt="">
+    </div>
+     </div>
+
+          <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>fonction file vide</h2></div>
+    <div class="titre-element-p2"> <h2>8</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>2 conditions sont nécessaires pour savoir si une file est vide, lorsque IndiceIN=IndiceOUT et FilePleine est faux; (plus d'explications dans les fonctions enfiler et défiler)</p>
+<img src="./assets/image/TesterVide.png" alt="">
+    </div>
+     </div>
+
+          <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>fonction enfiler</h2></div>
+    <div class="titre-element-p2"> <h2>9</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Pour enfiler, il faut d'abord vérifier si la file est pleine, et ça seulement en utilisant notre bool filePleine, ensuite on enfile comme une file normale, avec IndiceIN faisant le même travail que nbr_valeurs, on remarque 2 changements: à l'incrémentation on incrémente IndiceIN et on on utilise modulo(reste de la division) avec la dimension max, cette étape additionnelle permet à l'indiceIN de revenir à 0 lorsque la file est pleine car circulaire; et une condition qui fixe le bool FilePleine a 1 si IndiceIN=IndiceOUT après l'enfilement.</p>
+<img src="./assets/image/Enfiler (1).png" alt="">
+    </div>
+     </div>
+
+          <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>fonction defiler</h2></div>
+    <div class="titre-element-p2"> <h2>10</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Pour défiler, on vérifie si la file est vide avec filevide, si non, on sauvegarde l'élément a l'indice IndiceOUT du tableau, et on incrémente l'IndiceOUT de la même manière qui IndiceIN(+1 et modulo dimension max); On fixe aussi FilePleine a faux car on a défilé, il y aura forcément au moins un espace vide dans la file après défilement.</p>
+<img src="./assets/image/defiler (1).png" alt="">
+    </div>
+     </div>
+  
+     </div>
+
+   <h1 id="chap4">Les arbres:</h1>
+    <div class="infos-carres">
+
+     <div class="element">
+    <div class="titre-element">
+   <div class="titre-element-p1"> <h2>Introduction</h2></div>
+    <div class="titre-element-p2"> <h2>1</h2></div>
+    </div>
+    <div class="texte-element">
+    <div class="p-element">
+    <p>Un arbre binaire de tri ou de recherche, est une liste chainée composée de plusieurs éléments nommées nœuds, chaque nœud contient une clé(valeur), une adresse pointant vers un élément dont sa clé est inférieure(petit), et un autre dont son élément est supérieur(grand). Le premier nœud ajouté sera nommé Racine, et chaque nœud après sera une feuille.</p>
+    </div>
+    <div class="img-element">
+    <img src="./assets/image/arbre-intro-2.png" alt="">
+    </div>
+    <p>La structure d'un arbre de tri est ordonnée de tel que chaque élément à gauche de la racine est inférieur à celle-ci, et chaque élément à droite est supérieure. Aucun doublon ne peut exister dans un arbre.</p>
+    <div class="img-element">
+<img src="./assets/image/Declaration-arbre.png" alt="">
+    </div>
+    </div>
+     </div>
+
+       <div class="element">
+    <div class="titre-element">
+    <div class="titre-element-p1"> <h2>Fonction initialiser</h2></div>
+    <div class="titre-element-p2"> <h2>2</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Tout comme les listes chainées, cette fonction permet d'initialiser notre premier élément(la racine) a 0.</p>
+   <img src="./assets/image/Initialisation-arbre.png" alt="">
+    </div>
+     </div>
+
+     <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>Fonction insert</h2></div>
+    <div class="titre-element-p2"> <h2>3</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Une fonction récursive permettant d'insérer un élément dans notre arbre, si la racine égale à 0, on créera un nouvel élément avec la clé donnée par l'utilisateur, et on l'insère a la racine; sinon, on parcourt à droite ou à gauche dépendant de notre valeur, vu que notre arbre est un arbre de tri, si la valeur donnée est inférieure à la racine, on insère à gauche(a->petit), sinon on insère à droite(a- >grand) si c'est supérieur; On n'insère pas dans le cas de l'égalité.</p>
+   <img src="./assets/image/insert-arbre.png" alt="">
+    </div>
+     </div>
+
+     <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>Fonction chercher</h2></div>
+    <div class="titre-element-p2"> <h2>4</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Suis le même principe que la fonction insert, sauf qu'ici notre objectif est de trouver l'emplacement d'une valeur donnée si elle existe, On compare la valeur avec la clé de la racine, si elles sont égales, on sauvegarde l'adresse de la valeur dans une variable(ici nommée position); sinon si la valeur est inférieure à la clé, on appelle la fonction avec ->petit, sinon si elle est supérieure on l'appelle avec - >grand</p>
+<img src="./assets/image/Recherch.png" alt="">
+    </div>
+     </div>
+
+      <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>Parcours</h2></div>
+    <div class="titre-element-p2"> <h2>5</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>La traversée d'un arbre de tri on peut la faire à différents niveaux, mais généralement 3 types de traversée sont utilisés (préfixe, infixe, suffixe) : <br> 1-Préfixé: <br> On affiche notre arbre en commençant par la racine, puis en passant au fils gauche puis droit (RGD- VGD ); le cout sera donc avant les deux appel. <br> 2-Infixé: <br> On affiche les fils gauche, la racine, puis les fils droit, en d'autres termes, permet d'afficher nos valeurs du plus petit au plus grand(GRD-GVD); le cout sera au milieu des deux appel. <br> 3-Postfixé: <br> Affichera les fils gauche, puis droit, pour finir avec la racine(GDR-GDV). Le cout sera à la fin des deux appel</p>
+    <img src="./assets/image/arbre-intro-1.jpg" alt="">
+    </div>
+     </div>
+
+       <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>Fonction affichage</h2></div>
+    <div class="titre-element-p2"> <h2>6</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Afin d'afficher l'arbre selon un ordre spécifique, comme par exemple dans l'ordre croissant, nous pouvons écrire la ligne cout dans la position infixe, comme cela est indiqué dans le code. Cela permettra d'afficher l'arbre de manière précise et selon l'ordre souhaité.</p>
+<img src="./assets/image/Affichage-arbre.png" alt="">
+
+    </div>
+     </div>
+
+        <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>Remarque</h2></div>
+    <div class="titre-element-p2"> <h2>7</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>La traversée d'un arbre de tri est toujours codée de la même manière, il suffi de placer les instructions nécessaires et selon l'ordre voulu.</p>
+    </div>
+     </div>
+
+      
+
+</div>
+
+<h1 id="TD">Exercices</h1>
+   <div class="divs-pdf">
+   
+   
+             
+
+      <div class="doc">
+        <a
+          href="https://drive.google.com/drive/folders/1DxX6khEOMZDXFUndigPfIa7iH68_feUL"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            viewBox="0 0 1024 1024"
+            class="icon"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#32729a"
+            stroke="#32729a"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M576 102.4H268.8c-14.08 0-25.6 11.52-25.6 25.6v742.4c0 14.08 11.52 25.6 25.6 25.6h512c14.08 0 25.6-11.52 25.6-25.6V332.8L576 102.4z"
+                fill="#ffff"
+              ></path>
+              <path
+                d="M780.8 908.8H268.8c-21.76 0-38.4-16.64-38.4-38.4V128c0-21.76 16.64-38.4 38.4-38.4h312.32L819.2 327.68V870.4c0 21.76-16.64 38.4-38.4 38.4zM268.8 115.2c-7.68 0-12.8 5.12-12.8 12.8v742.4c0 7.68 5.12 12.8 12.8 12.8h512c7.68 0 12.8-5.12 12.8-12.8V337.92L570.88 115.2H268.8z"
+                fill="#ffff32729a"
+              ></path>
+              <path
+                d="M576 307.2c0 14.08 11.52 25.6 25.6 25.6h204.8L576 102.4v204.8z"
+                fill="#ffff008181"
+              ></path>
+              <path
+                d="M806.4 345.6H601.6c-21.76 0-38.4-16.64-38.4-38.4V102.4c0-5.12 2.56-10.24 7.68-11.52 5.12-2.56 10.24-1.28 14.08 2.56l230.4 230.4c3.84 3.84 5.12 8.96 2.56 14.08-1.28 5.12-6.4 7.68-11.52 7.68zM588.8 133.12V307.2c0 7.68 5.12 12.8 12.8 12.8h174.08L588.8 133.12zM332.8 435.2h371.2v25.6H332.8zM332.8 524.8h371.2v25.6H332.8z"
+                fill="#ffff32729a"
+              ></path>
+              <path
+                d="M332.8 614.4h371.2v25.6H332.8z"
+                fill="#ffff32729a"
+              ></path>
+              <path
+                d="M332.8 716.8h371.2v25.6H332.8z"
+                fill="#ffff32729a"
+              ></path>
+            </g>
+          </svg>
+          <h4> tableaux/listes</h4>
+        </a>
+      </div>
+
+      <div class="doc">
+        <a
+          href="https://drive.google.com/drive/folders/1eqOpMLSCX0AfQxDSMgpQerD8ZDumJhpL"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            viewBox="0 0 1024 1024"
+            class="icon"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#32729a"
+            stroke="#32729a"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M576 102.4H268.8c-14.08 0-25.6 11.52-25.6 25.6v742.4c0 14.08 11.52 25.6 25.6 25.6h512c14.08 0 25.6-11.52 25.6-25.6V332.8L576 102.4z"
+                fill="#ffff"
+              ></path>
+              <path
+                d="M780.8 908.8H268.8c-21.76 0-38.4-16.64-38.4-38.4V128c0-21.76 16.64-38.4 38.4-38.4h312.32L819.2 327.68V870.4c0 21.76-16.64 38.4-38.4 38.4zM268.8 115.2c-7.68 0-12.8 5.12-12.8 12.8v742.4c0 7.68 5.12 12.8 12.8 12.8h512c7.68 0 12.8-5.12 12.8-12.8V337.92L570.88 115.2H268.8z"
+                fill="#ffff32729a"
+              ></path>
+              <path
+                d="M576 307.2c0 14.08 11.52 25.6 25.6 25.6h204.8L576 102.4v204.8z"
+                fill="#ffff008181"
+              ></path>
+              <path
+                d="M806.4 345.6H601.6c-21.76 0-38.4-16.64-38.4-38.4V102.4c0-5.12 2.56-10.24 7.68-11.52 5.12-2.56 10.24-1.28 14.08 2.56l230.4 230.4c3.84 3.84 5.12 8.96 2.56 14.08-1.28 5.12-6.4 7.68-11.52 7.68zM588.8 133.12V307.2c0 7.68 5.12 12.8 12.8 12.8h174.08L588.8 133.12zM332.8 435.2h371.2v25.6H332.8zM332.8 524.8h371.2v25.6H332.8z"
+                fill="#ffff32729a"
+              ></path>
+              <path
+                d="M332.8 614.4h371.2v25.6H332.8z"
+                fill="#ffff32729a"
+              ></path>
+              <path
+                d="M332.8 716.8h371.2v25.6H332.8z"
+                fill="#ffff32729a"
+              ></path>
+            </g>
+          </svg>
+          <h4>Arbres</h4>
+        </a>
+      </div>
+   
+   </div>
+     </div>
+
+      </div>
+
+    
+
+
       </div>
     </main>
     <footer>
@@ -53,11 +581,6 @@
           de ce site, en particulier l'équipe de Résumily.
         </p>
         <div class="bas">
-          <ul>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Contactez-nous</a></li>
-            <li><a href="#">Politique de confidentialité</a></li>
-          </ul>
           <h4>© RÉSUMILY —All rights reserved</h4>
         </div>
       </div>
@@ -92,6 +615,6 @@
         </svg>
       </button>
     </div>
-    <script src="info-module.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

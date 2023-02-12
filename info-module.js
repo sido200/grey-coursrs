@@ -18,7 +18,7 @@ backToTopButton.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
-
+/*
 const id = new URLSearchParams(window.location.search).get("id");
 
 const container = document.querySelector(".module-template");
@@ -569,4 +569,4 @@ const renderInfos = async () => {
   }
 };
 
-window.addEventListener("DOMContentLoaded", () => renderInfos());
+window.addEventListener("DOMContentLoaded", () => renderInfos());*/

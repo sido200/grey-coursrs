@@ -152,27 +152,31 @@ function changingborder() {
 const navs = document.querySelectorAll("nav");
 const uls = document.querySelectorAll("nav ul");
 const h2s = document.querySelectorAll("nav .logo a");
-document.addEventListener("scroll", function () {
-  let current = "";
-  if (scrollY >= 70 && window.innerWidth > 576) {
-    navs.forEach((nav) => {
-      nav.classList.add("active-nav");
-    });
-    uls.forEach((ul) => {
-      ul.classList.add("active");
-    });
-    h2s.forEach((h2) => {
-      h2.classList.add("active");
-    });
-  } else {
-    navs.forEach((nav) => {
-      nav.classList.remove("active-nav");
-    });
-    uls.forEach((ul) => {
-      ul.classList.remove("active");
-    });
-    h2s.forEach((h2) => {
-      h2.classList.remove("active");
-    });
-  }
+const docs = document.querySelectorAll("body");
+
+docs.forEach((doc) => {
+  doc.addEventListener("scroll", function () {
+    let current = "";
+    if (scrollY >= 70 && window.innerWidth > 576) {
+      navs.forEach((nav) => {
+        nav.classList.add("active-nav");
+      });
+      uls.forEach((ul) => {
+        ul.classList.add("active");
+      });
+      h2s.forEach((h2) => {
+        h2.classList.add("active");
+      });
+    } else {
+      navs.forEach((nav) => {
+        nav.classList.remove("active-nav");
+      });
+      uls.forEach((ul) => {
+        ul.classList.remove("active");
+      });
+      h2s.forEach((h2) => {
+        h2.classList.remove("active");
+      });
+    }
+  });
 });

@@ -320,7 +320,7 @@ footer img {
   .logo {
     width: 100px;
   }
-  * {
+  overflow-x:not(.interactif, .opacity, .display-grid-sinjab) * {
     overflow-x: hidden;
   }
   nav .fa-bars {

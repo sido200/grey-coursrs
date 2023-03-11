@@ -149,17 +149,21 @@ function changingborder() {
 }
 
 //nav effect
-const nav = document.querySelector("nav");
+const navs = document.querySelectorAll("nav");
 const ul = document.querySelector("nav ul");
 const h2 = document.querySelector("nav .logo a");
 document.addEventListener("scroll", function () {
   let current = "";
   if (scrollY >= 70 && window.innerWidth > 576) {
-    nav.classList.add("active-nav");
+    navs.forEach((nav) => {
+      nav.classList.add("active-nav");
+    });
     ul.classList.add("active");
     h2.classList.add("active");
   } else {
-    nav.classList.remove("active-nav");
+    navs.forEach((nav) => {
+      nav.classList.remove("active-nav");
+    });
     ul.classList.remove("active");
     h2.classList.remove("active");
   }

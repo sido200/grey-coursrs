@@ -455,6 +455,9 @@ footer img {
   .displays {
     margin-top: 30px;
   }
+  .divs-pdf {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 762px) {
   .example {
@@ -472,6 +475,9 @@ footer img {
   }
   .displays {
     margin-top: 30px;
+  }
+  .divs-pdf {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 480px) {

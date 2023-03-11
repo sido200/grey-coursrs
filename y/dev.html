@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/image/logo_V2.png"
+      type="image/x-icon"
+    />
+    <title>RÉSUMILY</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="module.css" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-WPQJ2PCGT6"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-WPQJ2PCGT6");
+  </script>
+  <body>
+    <header>
+      <nav>
+        <i class="fa-solid fa-bars"></i>
+        <div class="logo">
+          <a href="/index.html"
+            ><img src="/assets/image/logo_V2.png" alt="" />
+            <h2>RÉSUMILY</h2></a
+          >
+        </div>
+        <div class="items">
+          <ul>
+            <li><a href="/calcul.html">CALCULER LA MOYENNE</a></li>
+            <li><a href="/index.html#l2">LICENCE 2</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="module-template">
+        <div class="menu">
+          <div class="title">
+            <h2>DEV WEB</h2>
+          </div>
+
+          <div class="buttons-menu">
+            <div class="chapitres-menu">
+              <a href="#chap1"><button>HTML</button></a>
+              <a href="#chap2"><button>CSS</button></a>
+              <a href="#chap3"><button class="js">JS</button></a>
+              <a href="#chap4"><button class="js">PHP</button></a>
+              <a href="#TD"><button>TP's</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="general-infos">
+          <h1 id="chap1">HTML:</h1>
+          <div class="infos-carres">
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>Introduction</h2></div>
+                <div class="titre-element-p2"><h2>1</h2></div>
+              </div>
+              <div class="texte-element">
+                <div class="p-element">
+                  <p>
+                    HTML = Hyper Text Markup Language. <br />
+                    HTML est le code utilisé pour structurer une page web et son
+                    contenu et il est essentiellement composé d'elements appelés
+                    balises. <br />
+                    HTML n'est pas un langage de programmation. C'est un langage
+                    de balises qui définit la structure de votre contenu<br />En
+                    gros les titres paragraphes images liens icones seront tous
+                    declarés dans votre document HTML!Vous comprendrez un peut
+                    plus par la suite,voici ci dessous l'exemple d'un document
+                    HTML.
+                  </p>
+                </div>
+                <div class="img-element">
+                  <img src="./images/eg-html-se.png" alt="" class="html-1" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>Html structure</h2></div>
+                <div class="titre-element-p2"><h2>2</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Comme dans l'image ci dessous,tout fichier html commence par
+                  "!DOCTYPE html" qui a pour job de seulement definir le
+                  document comme étant de type HTML5. <br />Ensuite il y a "
+                  html lang="en" " qui indique seulement la langue de la
+                  webpage,ça aide les navigateurs internet et moteurs de
+                  recherches. <br />Par la suite vous allez trouver le tag head
+                  dans lequel vous trouverez des metadonnées(ne sont pas
+                  affichés dans le site) qui servent à définir le titre du
+                  document, le jeu de caractères, les styles, les scripts et
+                  d'autres méta-informations. <br />
+                  On y met(dans head) souvent des liens vers des bibliothéques
+                  d'icons(font-awesome par exemple) mais aussi un lien vers le
+                  fichier css!
+                </p>
+                <img src="./images/html-eg-head.png" alt="" />
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>H1,H2,..</h2></div>
+                <div class="titre-element-p2"><h2>3</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Les headings sont définis par des balises(tags) h1..h6
+                  <br />h1 est celle qui est la plus grande et h6 est la plus
+                  petite. <br />Ces tags servent pour les titres et sous titres
+                  de notre page!
+                </p>
+                <div class="h-images">
+                  <img src="./images/H-html-eg.png" alt="" class="h-code" />
+                  <img src="./images/h-pratique.png" alt="" class="h-code" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>p</h2></div>
+                <div class="titre-element-p2"><h2>4</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Définit par la balise p,les paragraphes servent comme son nom
+                  l'indique à y mettre des paragraphes(long textes),faut
+                  vraiment étre idiot pour ne pas comprendre.....
+                </p>
+                <img src="./images/html-p.png" alt="" />
+                <img src="./images/p-result.png" alt="" />
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>liens</h2></div>
+                <div class="titre-element-p2"><h2>5</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Les liens sont définits par la balise &#60;a&gt; ,dans cette
+                  balise on y trouve differents attributs(parametres) dont le
+                  plus important est href dans laquelle on met le lien souhaité.
+                </p>
+                <img src="./images/lien-ytb_code.png" alt="" />
+                <img src="./images/lien-ytb-result.png" alt="" />
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>img</h2></div>
+                <div class="titre-element-p2"><h2>6</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Les images HTML sont définies avec la balise &#60;img&gt;
+                  <br />Le fichier source
+                  <span class="img-sens">src</span> (path de l'image) et texte à
+                  afficher si l'image ne s'affiche pas
+                  <span class="img-sens">alt</span> sont fournis en tant
+                  qu'attributs.
+                </p>
+                <div class="h-images">
+                  <img src="./images/imgsrc-eg.png" alt="" />
+                  <img src="./images/logo1-01.png" alt="logo gdsc" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>br et hr</h2></div>
+                <div class="titre-element-p2"><h2>7</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Le tag &#60;br&gt; sert à sauter la ligne,quant à &#60;hr&gt;
+                  :c'est un tag servant à tracer une ligne fine montrant que
+                  l'on change de sujet (ou bien section),vous comprendrez mieux
+                  en voyant l'exemple ci dessous
+                </p>
+                <img src="./images/code-br-hr.png" alt="" />
+                <img src="./images/eg-br-hr.png" alt="" />
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>ul li</h2></div>
+                <div class="titre-element-p2"><h2>8</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  &#60;ul&gt;sert à déclarer une liste qui contient des
+                  elements,ces derniers sont declares à l'interieur de la balise
+                  &#60;ul&gt; par des balises &#60;li&gt;. <br />On l'utilise
+                  beaucoup dans les navbars!
+                </p>
+                <div class="h-images">
+                  <img src="./images/ul-li.png" alt="" />
+                  <img src="./images/ul_li_eg-html.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>button</h2></div>
+                <div class="titre-element-p2"><h2>9</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Comme son nom l'indique cela sert à mettre un boutton.On met à
+                  l'interieur de la balise le texte qui doit etre afficher dans
+                  le boutton.
+                </p>
+                <div class="h-images">
+                  <img src="./images/btn-html.png" alt="" />
+                  <img src="./images/btn-html-aff.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>input</h2></div>
+                <div class="titre-element-p2"><h2>10</h2></div>
+              </div>
+              <div class="texte-element inputtexte">
+                <p>
+                  Ce tag spécifie un champ de saisie dans lequel l'utilisateur
+                  peut saisir des données et peut être affiché de plusieurs
+                  manières, selon l'attribut type.Il y a 22 types mais vous n'en
+                  utliliserez que peu.Les plus importants sont
+                  type="button,checkbox,date,password,submit,text".
+                </p>
+                <div class="h-images">
+                  <img src="./images/input-code.png" alt="" />
+                  <img src="./images/input-aff.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>span</h2></div>
+                <div class="titre-element-p2"><h2>11</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Il sert à colorier ou souligner un mot ou une phrase
+                  particuliere dans un paragraphe.Il est aussi utulisé pour
+                  d'autres fonctions d'ailleurs il ressemble beaucoup à
+                  l'element div mais div est de niveau bloc et span de niveau
+                  ligne.
+                </p>
+                <div class="h-images">
+                  <img src="./images/span-code.png" alt="" />
+                  <img src="./images/span-aff.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>div</h2></div>
+                <div class="titre-element-p2"><h2>12</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Sert à diviser et mieux structurer notre HTML afin de pouvoir
+                  réaliser le style que l'on veut.parfois il on veut appliquer
+                  un style special sur notre site et pour cela vous allez devoir
+                  diviser votre site principalement en divs. <br />Ne vous
+                  inquiétez pas si vous n'avez pas compris du 1er coup il faut
+                  de la pratique
+                </p>
+                <div class="h-images">
+                  <img src="./images/div-code.png" alt="" />
+                  <img src="./images/div-eg.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>class</h2></div>
+                <div class="titre-element-p2"><h2>13</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Attribut que l'on peut donner à tout nos tags HTML,sert à
+                  appliquer un effet css sur un tag qui porte ce nom ci.En gros
+                  à appeler le tag dans le fichier css et y donner des
+                  parametres(couleur,size,...) vous allez encore plus comprendre
+                  <a href="">ici</a>.
+                </p>
+                <div class="h-images">
+                  <img src="./images/div-code.png" alt="" />
+                  <img src="./images/class-html-eg.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>id</h2></div>
+                <div class="titre-element-p2"><h2>14</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Méme chose que pour class sauf que il peut étre utiliser pour
+                  créer des liens internes,c'est à dire des liens dans une page
+                  qui t'emmennent à un autre endroit dans la même page.
+                </p>
+                <div class="h-images">
+                  <img src="./images/id-html.png" alt="" />
+                  <img src="./images/id-lien.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>iframe</h2></div>
+                <div class="titre-element-p2"><h2>15</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Sert à afficher un site ou une video ytb ou une map ou tout
+                  autre page html exterieure utilisable dans notre page courante
+                  comme cette video youtube par exemple:
+                </p>
+                <iframe
+                  width="460"
+                  height="260"
+                  src="https://www.youtube.com/embed/aRGdDy18qfY"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>semantic</h2></div>
+                <div class="titre-element-p2"><h2>16</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  La semantique c'est un peut comme le plan de votre site,sa
+                  structure,son squelette. <br />
+                  Une semantique est formé de plusieurs tags comme vous le voyez
+                  ci dessous.
+                </p>
+                <img
+                  src="./images/img_sem_elements.gif"
+                  class="semantic-img"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <h1 id="chap2">CSS:</h1>
+          <div class="infos-carres">
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>Introduction</h2></div>
+                <div class="titre-element-p2"><h2>1</h2></div>
+              </div>
+              <div class="texte-element">
+                <div class="p-element">
+                  <p>
+                    CSS est le langage que nous utilisons pour styliser un
+                    document HTML. <br />
+                    Nous allons y trouver pleins et pleins de paramétres,vous
+                    serez surement perdus au début, mais ne vous inquiétez pas
+                    ici vous allez apprendre des bases qui vous propulserons
+                    bien plus loin par la suite.
+                  </p>
+                </div>
+                <div class="h-images">
+                  <img src="./images/meme1.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>Syntaxe</h2></div>
+                <div class="titre-element-p2"><h2>2</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  On ne peut pas faire plus simple comme syntaxe,on choisit ce
+                  que l'on veut modifier(selector),vous allez voir les 3
+                  principaux types de selector par la suite. <br />
+                  Ensuite on ouvre le bloc de déclarations dans lequel on donne
+                  les propriétés(properties) souhaités,voici un exemple ci
+                  dessous:
+                </p>
+                <div class="h-images">
+                  <img src="./images/selector-eg.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>Selector</h2></div>
+                <div class="titre-element-p2"><h2>3</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Ici nous allons vous montrer les 3 selecteurs les plus
+                  utilisés et les plus simples: <br />
+                  En fonction du nom(type) de tag:par eg nav,p,ul,.... <br />
+                  En fonction de l'identifiant(id) en commancant par un # suivit
+                  du nom de l'id par eg : #home <br />
+                  En fonction de la classe en commencant par un point suivi du
+                  nom de la classe comme par eg: .titre
+                </p>
+                <div class="selectorimgss">
+                  <img src="./images/section.png" alt="" />
+                  <img src="./images/id-css.png" alt="" />
+                  <img src="./images/selector-eg.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>Link css to html</h2></div>
+                <div class="titre-element-p2"><h2>4</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Pour que votre css soit appliqué à votre html et fonctionne
+                  correctement il est impératif de les lier et ce par une ligne
+                  de code simple qui doit étre mise dans le head du html
+                  concerné.
+                </p>
+                <div class="h-images">
+                  <img src="./images/lienhtmlcss.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>css units</h2></div>
+                <div class="titre-element-p2"><h2>5</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Il y a 2 types d'unités: <br />
+                  Absolues(la taille ne change pas qlq soit la taille de
+                  l'écran)et sont :cm,mm,in(inches = 96px = 2.54cm),px(pixels
+                  est le plus utilisé),pt(points),pc(picas) <br />
+                  Relatives(la taille est relative à une autre taille(celle du
+                  parent ou de l'ecran par exemple)et sont : em(relative au
+                  fontsize de l'element,soit la taille du texte de
+                  l'element),ex(rarement utilisé),ch,rem(relative au font size à
+                  l'element root),vw(1vw = 1% du width du viewport(taille de
+                  l'ecran fans lequel vous etes)),vh(1vw = 1% du height du
+                  viewport),vmin,vmax,%(relative au parent)
+                </p>
+                <div class="h-images">
+                  <img src="./images/valuescss.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>colors</h2></div>
+                <div class="titre-element-p2"><h2>6</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Pour appliquer une couleur à un texte il suffit d'utiliser la
+                  property color dans votre bloc de properties et de donner soit
+                  le nom de la couleur soit le code hexadécimal de la couleur.
+                </p>
+                <div class="display">
+                  <img
+                    src="/assets/color.png"
+                    alt=""
+                    style="height: 140px; max-width: 300px"
+                  />
+                  <div class="displays">
+                    <button onclick="changecolor()">color blue</button>
+                    <button onclick="changecolors()">color green</button>
+                  </div>
+                  <img src="/assets/colorblue.png" id="color" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>background colors</h2></div>
+                <div class="titre-element-p2"><h2>7</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Méme chose que pour la couleur sauf que cette fois c'est pas
+                  appliqué au texte mais au background(la surface).
+                </p>
+                <div class="display">
+                  <img
+                    src="/assets/background.png"
+                    alt=""
+                    style="height: 140px; max-width: 300px"
+                  />
+                  <div class="displays">
+                    <button onclick="changebackground()">
+                      background blue
+                    </button>
+                    <button onclick="changebackgrounds()">
+                      background green
+                    </button>
+                  </div>
+                  <img src="/assets/blue.png" id="background" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>borders</h2></div>
+                <div class="titre-element-p2"><h2>8</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  On peut styliser les borders(limites de notre div ou autre tag
+                  html),il y a plusieurs properties pour cela,vous trouverez ci
+                  dessous quelques exemples.
+                </p>
+                <div class="display">
+                  <img
+                    src="/assets/border.png"
+                    alt=""
+                    style="height: 160px; max-width: 300px"
+                  />
+                  <div class="displays">
+                    <button onclick="changeborder()">with border</button>
+                    <button onclick="changingborder()">without border</button>
+                  </div>
+                  <img src="/assets/withborder.png" id="border" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>margins</h2></div>
+                <div class="titre-element-p2"><h2>9</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Les margins sont utilisées pour créer de l'espace autour des
+                  éléments, en dehors de toute bordure définie.Vous comprendrez
+                  mieux avec l'exemple ci dessous!
+                </p>
+                <div class="display">
+                  <img
+                    src="/assets/margin.png"
+                    alt=""
+                    style="height: 140px; max-width: 270px"
+                  />
+                  <div class="displays">
+                    <button onclick="changem()">with margin</button>
+                    <button onclick="changingm()">without margin</button>
+                  </div>
+                  <img src="/assets/withmargin.png" alt="" id="images" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>padding</h2></div>
+                <div class="titre-element-p2"><h2>10</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Il est utilisé pour créer de l'espace autour du contenu d'un
+                  élément, à l'intérieur de toute bordure définie.Beaucoup le
+                  confondent avec margin mais ce n'est pas la méme chose: <br />
+                  Le padding créer de l'espace à l'interieur de l'element
+                  spécifié et le margin applique de l'espace à l'éxtérieur!!!!
+                </p>
+                <div class="display">
+                  <img
+                    src="/assets/padding.png"
+                    alt=""
+                    style="height: 140px; max-width: 270px"
+                  />
+                  <div class="displays">
+                    <button onclick="change()">without padding</button>
+                    <button onclick="changing()">with padding</button>
+                  </div>
+                  <img src="/assets/withpadd.png" alt="" id="image" />
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>height weight</h2></div>
+                <div class="titre-element-p2"><h2>11</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Ces deux propriétés servent à spécifier la longueur(width) et
+                  largeur(height).
+                </p>
+                <div class="example">
+                  <img src="/assets/image/snippet (2).png" class="w1" alt="" />
+                  <img
+                    src="/assets/image/snippet (3).png"
+                    class="w2 active"
+                    alt=""
+                  />
+                  <div class="btnw">
+                    <button class="btn1w">H=200px w=100px</button>
+                    <button class="btn2w">H=100px w=200px</button>
+                  </div>
+                  <div class="ex">
+                    <div class="wh"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>text specs</h2></div>
+                <div class="titre-element-p2"><h2>12</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  On peut donner plusieurs properties à notre texte,vous
+                  trouverez les plus importantes dans l'exemple ci dessous.
+                </p>
+                <div class="example">
+                  <img src="/assets/image/snippet (5).png" class="w1" alt="" />
+                  <div class="ex">
+                    <div class="text1">text 1</div>
+                    <div class="text2">text 2</div>
+                    <div class="text3">text 3</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>box model</h2></div>
+                <div class="titre-element-p2"><h2>13</h2></div>
+              </div>
+              <div class="nv-elemnt">
+                <p>
+                  C'est essentiellement une box qui entoure chaque élément HTML.
+                  Il comprend : margins en <span class="grr">green</span>,
+                  borders en <span class="greyy">grey</span>, padding en
+                  <span class="blu">bleu</span> et le content(contenu réel).
+                </p>
+                <div class="margin">
+                  <div class="border">
+                    <div class="padding">
+                      <div class="content">
+                        <h4>content</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>lists(ul ol)</h2></div>
+                <div class="titre-element-p2"><h2>14</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Il y a plusieurs properties pour donner un style spécifique
+                  aux ul ,nottament pour enlever les "markers/bullets"voici les
+                  plus importantes ci dessous:
+                </p>
+                <div class="example">
+                  <img src="/assets/image/snippet (6).png" class="ul1" alt="" />
+                  <div class="btnL">
+                    <button class="btnl">css off</button>
+                  </div>
+                  <div class="ex">
+                    <ul class="ul">
+                      <li>home</li>
+                      <li>about</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>links</h2></div>
+                <div class="titre-element-p2"><h2>15</h2></div>
+              </div>
+              <div class="texte-element">
+                <p>
+                  Les liens peuvent être stylisés avec n'importe quel propriété
+                  CSS.
+                </p>
+                <div class="example">
+                  <img src="/assets/image/snippet (9).png" class="l1" alt="" />
+                  <div class="btnlk">
+                    <button class="btnlk">css off</button>
+                  </div>
+                  <div class="ex">
+                    <a class="a" href="/index.html">resumily</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>z-index</h2></div>
+                <div class="titre-element-p2"><h2>16</h2></div>
+              </div>
+              <div class="texte-element z">
+                <p>
+                  Sert à spécifier quel élément doit être placé devant ou
+                  derrière les autres.
+                </p>
+                <div class="example">
+                  <img src="/assets/image/snippet (7).png" class="iz1" alt="" />
+                  <img
+                    src="/assets/image/snippet (8).png"
+                    class="iz2 active"
+                    alt=""
+                  />
+                  <div class="btnz">
+                    <button class="btnz">inverse z index</button>
+                  </div>
+                  <div class="ex">
+                    <div class="z1">z1</div>
+                    <div class="z2">z2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>opacity</h2></div>
+                <div class="titre-element-p2"><h2>17</h2></div>
+              </div>
+              <div class="nv-elemnt">
+                <p>Il spécifie l'opacité/transparence d'un élément.</p>
+                <div class="interactif">
+                  <img src="./images/opacity-jeu.png" alt="" />
+                  <button class="btn-opacity">opacity 1</button>
+                  <div class="opacity">
+                    <img
+                      src="./images/chipmunk_1f43f-fe0f.png"
+                      alt=""
+                      class="sinjab"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>overflow</h2></div>
+                <div class="titre-element-p2"><h2>18</h2></div>
+              </div>
+              <div class="nv-elemnt">
+                <p>
+                  Il controle si l'on doit afficher le surplus qui dépasse les
+                  borders d'un élément.
+                </p>
+                <div class="interactif">
+                  <img src="./images/Snap (2).png" alt="" />
+                  <button class="btn-overflow">overflow hidden</button>
+                  <div class="overflo">
+                    <img src="./images/chipmunk_1f43f-fe0f.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>flexbox</h2></div>
+                <div class="titre-element-p2"><h2>19</h2></div>
+              </div>
+              <div class="nv-elemnt">
+                <p>
+                  Il est trés important et sert à spécifier l'alignement et
+                  l'emplacement des éelements par rapport à son parent!
+                </p>
+                <div class="interactif">
+                  <img src="./images/flex-sinjab.png" alt="" />
+                  <div class="flex-btns part1">
+                    <button class="btn-flex ttcenter">
+                      justify-content:center <br />
+                      align-items:center
+                    </button>
+                    <button class="btn-flex alignstart">
+                      justify-content:center <br />
+                      align-items:flex-start
+                    </button>
+                    <button class="btn-flex alignend">
+                      justify-content:center <br />
+                      align-items:flex-end
+                    </button>
+                  </div>
+                  <div class="flex-btns part2">
+                    <button class="btn-flex spacebet">
+                      justify-content:space-between <br />
+                      align-items:center
+                    </button>
+                    <button class="btn-flex spacear">
+                      justify-content:space-around <br />
+                      align-items:center
+                    </button>
+                    <button class="btn-flex spaceven">
+                      justify-content:space-evenly <br />
+                      align-items:center
+                    </button>
+                  </div>
+                  <div class="display-flex-sinjab">
+                    <img
+                      src="./images/chipmunk_1f43f-fe0f.png"
+                      alt=""
+                      class="sinjab flex-sinjab"
+                    />
+                    <img
+                      src="./images/chipmunk_1f43f-fe0f.png"
+                      alt=""
+                      class="sinjab flex-sinjab"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>grid</h2></div>
+                <div class="titre-element-p2"><h2>20</h2></div>
+              </div>
+              <div class="nv-elemnt">
+                <p>
+                  Il sert à ordoner des élements comme un tableau,en divisant le
+                  parent en columns et rows.Vous l'utiliserez souvent plus tard
+                  il est donc important de le comprendre!
+                </p>
+                <div class="interactif">
+                  <img src="./images/grid-sinjab.png" alt="" class="snap-img" />
+
+                  <div class="display-grid-sinjab">
+                    <img
+                      src="./images/1678472606811.jpg"
+                      alt=""
+                      class="sinjab sinjab-grid"
+                    />
+                    <img
+                      src="./images/1678472640781.jpg"
+                      alt=""
+                      class="sinjab sinjab-grid"
+                    />
+                    <img
+                      src="./images/1678472670055.jpg"
+                      alt=""
+                      class="sinjab sinjab-grid"
+                    />
+                    <img
+                      src="./images/1678472698715.jpg"
+                      alt=""
+                      class="sinjab sinjab-grid"
+                    />
+                    <img
+                      src="./images/1678472735098.jpg"
+                      alt=""
+                      class="sinjab sinjab-grid"
+                    />
+                    <img
+                      src="./images/1678524298991.jpg"
+                      alt=""
+                      class="sinjab sinjab-grid"
+                    />
+                    <img
+                      src="./images/chipmunk_1f43f-fe0f.png"
+                      alt=""
+                      class="sinjab sinjab-grid"
+                    />
+                    <img
+                      src="./images/chipmunk_1f43f-fe0f.png"
+                      alt=""
+                      class="sinjab sinjab-grid"
+                    />
+                    <img
+                      src="./images/chipmunk_1f43f-fe0f.png"
+                      alt=""
+                      class="sinjab sinjab-grid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1"><h2>responsive</h2></div>
+                <div class="titre-element-p2"><h2>21</h2></div>
+              </div>
+              <div class="nv-elemnt">
+                <p>
+                  Il sert à ce que notre css soit adapté à tout type de format
+                  écran en modifiant certaines css properties données
+                  auparavant. <br />
+                  Il faut toujours commencer par le plus grand écran(ordi ->
+                  tablette -> telephone) sinon votre respo ne fonctionnera pas!
+                </p>
+                <div class="interactif">
+                  <img src="./images/respo eg.png" alt="" class="snap-img" />
+                  <img
+                    src="./images/responsive-ecrans.jpg"
+                    alt=""
+                    class="respo-ecran"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <h1 id="TD">Exercices</h1>
+            <div class="divs-pdf">
+              <div class="doc">
+                <a
+                  href="https://drive.google.com/drive/folders/1xl3Fqko2mTKsDPBH5sRwUdIdpy8Ka6h9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="icon"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#32729a"
+                    stroke="#32729a"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M576 102.4H268.8c-14.08 0-25.6 11.52-25.6 25.6v742.4c0 14.08 11.52 25.6 25.6 25.6h512c14.08 0 25.6-11.52 25.6-25.6V332.8L576 102.4z"
+                        fill="#ffff"
+                      ></path>
+                      <path
+                        d="M780.8 908.8H268.8c-21.76 0-38.4-16.64-38.4-38.4V128c0-21.76 16.64-38.4 38.4-38.4h312.32L819.2 327.68V870.4c0 21.76-16.64 38.4-38.4 38.4zM268.8 115.2c-7.68 0-12.8 5.12-12.8 12.8v742.4c0 7.68 5.12 12.8 12.8 12.8h512c7.68 0 12.8-5.12 12.8-12.8V337.92L570.88 115.2H268.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                      <path
+                        d="M576 307.2c0 14.08 11.52 25.6 25.6 25.6h204.8L576 102.4v204.8z"
+                        fill="#ffff008181"
+                      ></path>
+                      <path
+                        d="M806.4 345.6H601.6c-21.76 0-38.4-16.64-38.4-38.4V102.4c0-5.12 2.56-10.24 7.68-11.52 5.12-2.56 10.24-1.28 14.08 2.56l230.4 230.4c3.84 3.84 5.12 8.96 2.56 14.08-1.28 5.12-6.4 7.68-11.52 7.68zM588.8 133.12V307.2c0 7.68 5.12 12.8 12.8 12.8h174.08L588.8 133.12zM332.8 435.2h371.2v25.6H332.8zM332.8 524.8h371.2v25.6H332.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                      <path
+                        d="M332.8 614.4h371.2v25.6H332.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                      <path
+                        d="M332.8 716.8h371.2v25.6H332.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                    </g>
+                  </svg>
+                  <h4>TP01:HTML</h4>
+                </a>
+              </div>
+
+              <div class="doc">
+                <a
+                  href="https://drive.google.com/drive/folders/1k8sByoPoVRP1jAs8JNpSci8m52IExTsP"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="icon"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#32729a"
+                    stroke="#32729a"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M576 102.4H268.8c-14.08 0-25.6 11.52-25.6 25.6v742.4c0 14.08 11.52 25.6 25.6 25.6h512c14.08 0 25.6-11.52 25.6-25.6V332.8L576 102.4z"
+                        fill="#ffff"
+                      ></path>
+                      <path
+                        d="M780.8 908.8H268.8c-21.76 0-38.4-16.64-38.4-38.4V128c0-21.76 16.64-38.4 38.4-38.4h312.32L819.2 327.68V870.4c0 21.76-16.64 38.4-38.4 38.4zM268.8 115.2c-7.68 0-12.8 5.12-12.8 12.8v742.4c0 7.68 5.12 12.8 12.8 12.8h512c7.68 0 12.8-5.12 12.8-12.8V337.92L570.88 115.2H268.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                      <path
+                        d="M576 307.2c0 14.08 11.52 25.6 25.6 25.6h204.8L576 102.4v204.8z"
+                        fill="#ffff008181"
+                      ></path>
+                      <path
+                        d="M806.4 345.6H601.6c-21.76 0-38.4-16.64-38.4-38.4V102.4c0-5.12 2.56-10.24 7.68-11.52 5.12-2.56 10.24-1.28 14.08 2.56l230.4 230.4c3.84 3.84 5.12 8.96 2.56 14.08-1.28 5.12-6.4 7.68-11.52 7.68zM588.8 133.12V307.2c0 7.68 5.12 12.8 12.8 12.8h174.08L588.8 133.12zM332.8 435.2h371.2v25.6H332.8zM332.8 524.8h371.2v25.6H332.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                      <path
+                        d="M332.8 614.4h371.2v25.6H332.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                      <path
+                        d="M332.8 716.8h371.2v25.6H332.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                    </g>
+                  </svg>
+                  <h4>TP02:CSS</h4>
+                </a>
+              </div>
+              <div class="doc">
+                <a
+                  href="https://drive.google.com/drive/folders/16ONtAb9P3JaYsjVn0wxAz8v39k8WjIf3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="icon"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#32729a"
+                    stroke="#32729a"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M576 102.4H268.8c-14.08 0-25.6 11.52-25.6 25.6v742.4c0 14.08 11.52 25.6 25.6 25.6h512c14.08 0 25.6-11.52 25.6-25.6V332.8L576 102.4z"
+                        fill="#ffff"
+                      ></path>
+                      <path
+                        d="M780.8 908.8H268.8c-21.76 0-38.4-16.64-38.4-38.4V128c0-21.76 16.64-38.4 38.4-38.4h312.32L819.2 327.68V870.4c0 21.76-16.64 38.4-38.4 38.4zM268.8 115.2c-7.68 0-12.8 5.12-12.8 12.8v742.4c0 7.68 5.12 12.8 12.8 12.8h512c7.68 0 12.8-5.12 12.8-12.8V337.92L570.88 115.2H268.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                      <path
+                        d="M576 307.2c0 14.08 11.52 25.6 25.6 25.6h204.8L576 102.4v204.8z"
+                        fill="#ffff008181"
+                      ></path>
+                      <path
+                        d="M806.4 345.6H601.6c-21.76 0-38.4-16.64-38.4-38.4V102.4c0-5.12 2.56-10.24 7.68-11.52 5.12-2.56 10.24-1.28 14.08 2.56l230.4 230.4c3.84 3.84 5.12 8.96 2.56 14.08-1.28 5.12-6.4 7.68-11.52 7.68zM588.8 133.12V307.2c0 7.68 5.12 12.8 12.8 12.8h174.08L588.8 133.12zM332.8 435.2h371.2v25.6H332.8zM332.8 524.8h371.2v25.6H332.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                      <path
+                        d="M332.8 614.4h371.2v25.6H332.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                      <path
+                        d="M332.8 716.8h371.2v25.6H332.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                    </g>
+                  </svg>
+                  <h4>TP03:exos HTML</h4>
+                </a>
+              </div>
+
+              <div class="doc">
+                <a
+                  href="https://drive.google.com/drive/folders/1Bpb4waUwmRB31nl4IyCExxXB9wwTjJzT"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="icon"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#32729a"
+                    stroke="#32729a"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M576 102.4H268.8c-14.08 0-25.6 11.52-25.6 25.6v742.4c0 14.08 11.52 25.6 25.6 25.6h512c14.08 0 25.6-11.52 25.6-25.6V332.8L576 102.4z"
+                        fill="#ffff"
+                      ></path>
+                      <path
+                        d="M780.8 908.8H268.8c-21.76 0-38.4-16.64-38.4-38.4V128c0-21.76 16.64-38.4 38.4-38.4h312.32L819.2 327.68V870.4c0 21.76-16.64 38.4-38.4 38.4zM268.8 115.2c-7.68 0-12.8 5.12-12.8 12.8v742.4c0 7.68 5.12 12.8 12.8 12.8h512c7.68 0 12.8-5.12 12.8-12.8V337.92L570.88 115.2H268.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                      <path
+                        d="M576 307.2c0 14.08 11.52 25.6 25.6 25.6h204.8L576 102.4v204.8z"
+                        fill="#ffff008181"
+                      ></path>
+                      <path
+                        d="M806.4 345.6H601.6c-21.76 0-38.4-16.64-38.4-38.4V102.4c0-5.12 2.56-10.24 7.68-11.52 5.12-2.56 10.24-1.28 14.08 2.56l230.4 230.4c3.84 3.84 5.12 8.96 2.56 14.08-1.28 5.12-6.4 7.68-11.52 7.68zM588.8 133.12V307.2c0 7.68 5.12 12.8 12.8 12.8h174.08L588.8 133.12zM332.8 435.2h371.2v25.6H332.8zM332.8 524.8h371.2v25.6H332.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                      <path
+                        d="M332.8 614.4h371.2v25.6H332.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                      <path
+                        d="M332.8 716.8h371.2v25.6H332.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                    </g>
+                  </svg>
+                  <h4>TP04:JS DOM</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="up">
+        <hr />
+      </div>
+      <div class="down">
+        <div class="haut"></div>
+        <p>
+          Ce site n'est pas affilié aux sites officiels de l'université de
+          Boumerdès. Il a été créé par une équipe d'étudiants passionnés pour
+          aider les autres étudiants à réussir leurs études en informatique.
+        </p>
+
+        <p>
+          Nous remercions toutes les personnes qui ont contribué à la réussite
+          de ce site, en particulier l'équipe de Résumily.
+        </p>
+        <div class="bas">
+          <ul>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1QWWu7JSLnSfsHKbWjuicVW8LvDXKlXCs/view?usp=share_link"
+                ><img src="./assets/image/android-svgrepo-com.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://web.facebook.com/profile.php?id=100090109067553"
+                ><img src="./assets/image/facebook-svgrepo-com (3).svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="mailto:Resumily23@gmail.com"
+                ><img src="./assets/image/email-svgrepo-com.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+          <h4>© RÉSUMILY —All rights reserved</h4>
+        </div>
+      </div>
+    </footer>
+    <div id="scroll-up">
+      <button class="scroll-up-button caché">
+        <svg
+          fill="#32729a"
+          viewBox="0 0 200 200"
+          data-name="Layer 1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke="#32729a"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke="#CCCCCC"
+            stroke-width="0.4"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <title></title>
+            <path
+              d="M114,74.5a19.92,19.92,0,0,0-28.5,0L57,103a9.9,9.9,0,0,0,14,14L99.5,88.5,128,117a9.9,9.9,0,0,0,14-14Z"
+            ></path>
+            <path
+              d="M100,15a85,85,0,1,0,85,85A84.93,84.93,0,0,0,100,15Zm0,150a65,65,0,1,1,65-65A64.87,64.87,0,0,1,100,165Z"
+            ></path>
+          </g>
+        </svg>
+      </button>
+    </div>
+    <script src="jeu.js"></script>
+    <script src="info-module.js"></script>
+  </body>
+</html>

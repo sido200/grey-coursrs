@@ -99,14 +99,7 @@ btnz.addEventListener("click", () => {
   img2z.classList.toggle("active");
 });
 btnlk.addEventListener("click", () => {
-  exlk.classList.toggle("off-css");
   exlk.classList.toggle("a");
-  if (exlk.classList.value === "a") {
-    btnlk.innerText = "css off";
-  }
-  if (exlk.classList.value === "off-css") {
-    btnlk.innerText = "css on";
-  }
 });
 
 //for color
@@ -156,34 +149,18 @@ function changingborder() {
 }
 
 //nav effect
-const navs = document.querySelectorAll("nav");
-const uls = document.querySelectorAll("nav ul");
-const h2s = document.querySelectorAll("nav .logo a");
-const docs = document.querySelectorAll("body");
-
-docs.forEach((doc) => {
-  doc.addEventListener("scroll", function () {
-    let current = "";
-    if (scrollY >= 70 && window.innerWidth > 576) {
-      navs.forEach((nav) => {
-        nav.classList.add("active-nav");
-      });
-      uls.forEach((ul) => {
-        ul.classList.add("active");
-      });
-      h2s.forEach((h2) => {
-        h2.classList.add("active");
-      });
-    } else {
-      navs.forEach((nav) => {
-        nav.classList.remove("active-nav");
-      });
-      uls.forEach((ul) => {
-        ul.classList.remove("active");
-      });
-      h2s.forEach((h2) => {
-        h2.classList.remove("active");
-      });
-    }
-  });
+const nav = document.querySelector("nav");
+const ul = document.querySelector("nav ul");
+const h2 = document.querySelector("nav .logo a");
+document.addEventListener("scroll", function () {
+  let current = "";
+  if (scrollY >= 70 && window.innerWidth > 576) {
+    nav.classList.add("active-nav");
+    ul.classList.add("active");
+    h2.classList.add("active");
+  } else {
+    nav.classList.remove("active-nav");
+    ul.classList.remove("active");
+    h2.classList.remove("active");
+  }
 });

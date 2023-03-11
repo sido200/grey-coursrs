@@ -229,7 +229,7 @@ ul.active a {
 }
 
 .btns input {
-  background-color: #b7d1cf;
+  background-color: #b7d1cf !important;
   height: 75px;
   width: 350px;
   border: none;

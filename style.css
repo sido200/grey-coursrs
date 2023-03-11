@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 html {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100%;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 * {
@@ -427,5 +437,8 @@ footer img {
     grid-template-columns: 350px;
     justify-content: center;
     align-items: center;
+  }
+  ::-webkit-scrollbar {
+    width: 0;
   }
 }

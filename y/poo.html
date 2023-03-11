@@ -268,12 +268,12 @@
      </div>
 
      
-     <h1  class="poo-grand-titre">Les principaux concepts de la POO :L'encapsulation,L'héritage ,Le polymorphisme:</h1>
+     <h1 id="chap3" class="poo-grand-titre">Les principaux concepts de la POO :L'encapsulation,L'héritage ,Le polymorphisme:</h1>
     <div class="infos-carres">
 
      <div class="element">
     <div class="titre-element">
-   <div class="titre-element-p1" id="chap3"> <h2>L'encapsulation:</h2></div>
+   <div class="titre-element-p1"> <h2>L'encapsulation:</h2></div>
     <div class="titre-element-p2"> <h2>1</h2></div>
     </div>
     <div class="texte-element">
@@ -295,7 +295,7 @@ l’une des méthodes qui nous permet de modifier cet attribut (s’il existe).<
 
        <div class="element">
     <div class="titre-element">
-    <div class="titre-element-p1" id="chap4"> <h2>L'héritage :</h2></div>
+    <div class="titre-element-p1"> <h2>L'héritage :</h2></div>
     <div class="titre-element-p2"> <h2>2</h2></div>
     </div>
     <div class="texte-element">
@@ -308,7 +308,7 @@ méthodes d'une classe existante, tout en ajoutant des fonctionnalités supplém
 
      <div class="element">
     <div class="titre-element">
-     <div class="titre-element-p1" id="chap5"> <h2>Le polymorphisme:</h2></div>
+     <div class="titre-element-p1"> <h2>Le polymorphisme:</h2></div>
     <div class="titre-element-p2"> <h2>3</h2></div>
     </div>
     <div class="texte-element">
@@ -445,8 +445,22 @@ spécifique.</p>
         </svg>
       </button>
     </div>
+    <script > const nav = document.querySelector("nav");
+      const ul = document.querySelector("nav ul");
+      const h2 = document.querySelector("nav .logo a");
+      document.addEventListener("scroll", function () {
+        let current = "";
+        if (scrollY >= 70 && window.innerWidth > 576) {
+          nav.classList.add("active-nav");
+          ul.classList.add("active");
+          h2.classList.add("active");
+        } else {
+          nav.classList.remove("active-nav");
+          ul.classList.remove("active");
+          h2.classList.remove("active");
+        }
+      });</script>
     <script src="main.js"></script>
-    <script src="jeu.js"></script>
     <script src="info-module.js"></script>
   </body>
 </html>

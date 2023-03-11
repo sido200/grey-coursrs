@@ -268,12 +268,12 @@
      </div>
 
      
-     <h1  class="poo-grand-titre">Les principaux concepts de la POO :L'encapsulation,L'héritage ,Le polymorphisme:</h1>
+     <h1 id="chap3" class="poo-grand-titre">Les principaux concepts de la POO :L'encapsulation,L'héritage ,Le polymorphisme:</h1>
     <div class="infos-carres">
 
      <div class="element">
     <div class="titre-element">
-   <div class="titre-element-p1" id="chap3"> <h2>L'encapsulation:</h2></div>
+   <div class="titre-element-p1"> <h2>L'encapsulation:</h2></div>
     <div class="titre-element-p2"> <h2>1</h2></div>
     </div>
     <div class="texte-element">
@@ -295,7 +295,7 @@ l’une des méthodes qui nous permet de modifier cet attribut (s’il existe).<
 
        <div class="element">
     <div class="titre-element">
-    <div class="titre-element-p1" id="chap4"> <h2>L'héritage :</h2></div>
+    <div class="titre-element-p1"> <h2>L'héritage :</h2></div>
     <div class="titre-element-p2"> <h2>2</h2></div>
     </div>
     <div class="texte-element">
@@ -308,7 +308,7 @@ méthodes d'une classe existante, tout en ajoutant des fonctionnalités supplém
 
      <div class="element">
     <div class="titre-element">
-     <div class="titre-element-p1" id="chap5"> <h2>Le polymorphisme:</h2></div>
+     <div class="titre-element-p1"> <h2>Le polymorphisme:</h2></div>
     <div class="titre-element-p2"> <h2>3</h2></div>
     </div>
     <div class="texte-element">
@@ -327,59 +327,6 @@ spécifique.</p>
 <h1 id="TD">Exercices</h1>
    <div class="divs-pdf">
    
-
-  <div class="doc">
-        <a
-          href="https://drive.google.com/drive/folders/1ZIy6bgr7zCf0m5soL9sts93tr9RRfxFR"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg
-            viewBox="0 0 1024 1024"
-            class="icon"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#32729a"
-            stroke="#32729a"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M576 102.4H268.8c-14.08 0-25.6 11.52-25.6 25.6v742.4c0 14.08 11.52 25.6 25.6 25.6h512c14.08 0 25.6-11.52 25.6-25.6V332.8L576 102.4z"
-                fill="#ffff"
-              ></path>
-              <path
-                d="M780.8 908.8H268.8c-21.76 0-38.4-16.64-38.4-38.4V128c0-21.76 16.64-38.4 38.4-38.4h312.32L819.2 327.68V870.4c0 21.76-16.64 38.4-38.4 38.4zM268.8 115.2c-7.68 0-12.8 5.12-12.8 12.8v742.4c0 7.68 5.12 12.8 12.8 12.8h512c7.68 0 12.8-5.12 12.8-12.8V337.92L570.88 115.2H268.8z"
-                fill="#ffff32729a"
-              ></path>
-              <path
-                d="M576 307.2c0 14.08 11.52 25.6 25.6 25.6h204.8L576 102.4v204.8z"
-                fill="#ffff008181"
-              ></path>
-              <path
-                d="M806.4 345.6H601.6c-21.76 0-38.4-16.64-38.4-38.4V102.4c0-5.12 2.56-10.24 7.68-11.52 5.12-2.56 10.24-1.28 14.08 2.56l230.4 230.4c3.84 3.84 5.12 8.96 2.56 14.08-1.28 5.12-6.4 7.68-11.52 7.68zM588.8 133.12V307.2c0 7.68 5.12 12.8 12.8 12.8h174.08L588.8 133.12zM332.8 435.2h371.2v25.6H332.8zM332.8 524.8h371.2v25.6H332.8z"
-                fill="#ffff32729a"
-              ></path>
-              <path
-                d="M332.8 614.4h371.2v25.6H332.8z"
-                fill="#ffff32729a"
-              ></path>
-              <path
-                d="M332.8 716.8h371.2v25.6H332.8z"
-                fill="#ffff32729a"
-              ></path>
-            </g>
-          </svg>
-          <h4>COURS</h4>
-        </a>
-      </div>
-
-
 
       <div class="doc">
         <a
@@ -431,10 +378,6 @@ spécifique.</p>
           <h4>TP01:INTRO</h4>
         </a>
       </div>
-
-
-
-
    
    </div>
      </div>
@@ -502,8 +445,22 @@ spécifique.</p>
         </svg>
       </button>
     </div>
+    <script > const nav = document.querySelector("nav");
+      const ul = document.querySelector("nav ul");
+      const h2 = document.querySelector("nav .logo a");
+      document.addEventListener("scroll", function () {
+        let current = "";
+        if (scrollY >= 70 && window.innerWidth > 576) {
+          nav.classList.add("active-nav");
+          ul.classList.add("active");
+          h2.classList.add("active");
+        } else {
+          nav.classList.remove("active-nav");
+          ul.classList.remove("active");
+          h2.classList.remove("active");
+        }
+      });</script>
     <script src="main.js"></script>
-    <script src="jeu.js"></script>
     <script src="info-module.js"></script>
   </body>
 </html>

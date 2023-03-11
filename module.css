@@ -475,6 +475,16 @@ footer img {
   }
 }
 @media screen and (max-width: 480px) {
+  .element,
+  .divs-pdf {
+    margin-right: 140px;
+  }
+  #TD {
+    margin-right: 150px;
+  }
+  .divs-pdf {
+    flex-direction: column;
+  }
   .menu {
     height: 400px;
     display: flex;
@@ -516,7 +526,7 @@ footer img {
   .titre-element,
   .p-element,
   .nv-elemnt {
-    width: 345px;
+    width: 332px;
     overflow: visible;
     text-align: left;
   }
@@ -778,4 +788,7 @@ iframe {
 }
 .js {
   background-color: grey !important;
+}
+.img-sens {
+  color: #32729a;
 }

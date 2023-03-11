@@ -99,14 +99,7 @@ btnz.addEventListener("click", () => {
   img2z.classList.toggle("active");
 });
 btnlk.addEventListener("click", () => {
-  exlk.classList.toggle("off-css");
   exlk.classList.toggle("a");
-  if (exlk.classList.value === "a") {
-    btnlk.innerText = "css off";
-  }
-  if (exlk.classList.value === "off-css") {
-    btnlk.innerText = "css on";
-  }
 });
 
 //for color

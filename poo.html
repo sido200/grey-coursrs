@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+      rel="shortcut icon"
+      href="./assets/image/logo_V2.png"
+      type="image/x-icon"
+    />
+    <title>RÉSUMILY</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="module.css" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WPQJ2PCGT6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WPQJ2PCGT6');
+</script>
+  <body>
+    <header>
+      <nav>
+        <i class="fa-solid fa-bars"></i>
+        <div class="logo">
+          <a href="/index.html"><img src="/assets/image/logo_V2.png" alt="" />
+            <h2>RÉSUMILY</h2></a>
+        </div>
+        <div class="items">
+          <ul>
+            <li><a href="/calcul.html">CALCULER LA MOYENNE</a></li>
+            <li><a href="/index.html#l2">LICENCE 2</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="module-template">
+
+
+      <div class="menu">
+
+      <div class="title">
+      <h2>POO</h2>
+      </div>
+
+        <div class ="buttons-menu">
+        <div class ="chapitres-menu">
+              <a href="#chap1"><button class="btn-poo-tel">Concept de base</button></a>
+              <a href="#chap2"><button class="btn-poo-tel" >Interaction</button></a>
+              <a href="#chap3"><button class="btn-poo-tel">Encapsulation</button></a>
+              <a href="#chap4"><button class="btn-poo-tel">Héritage</button></a>
+              <a href="#chap5"><button class="btn-poo-tel">Polymorphisme</button></a>
+            <a href="#TD"><button class="btn-poo-tel">TD's</button></a>
+         </div>
+      </div>
+      </div>
+      
+      <div class="general-infos">
+
+      <h1 id="chap1">Concept de base:</h1>
+     <div class="infos-carres">
+
+     <div class="element">
+    <div class="titre-element">
+   <div class="titre-element-p1"> <h2>Introduction</h2></div>
+    <div class="titre-element-p2"> <h2>1</h2></div>
+    </div>
+    <div class="texte-element">
+    <div class="p-element">
+    <p> La Programmation Orientée Objet (POO) est un paradigme de
+                    programmation qui permet de modéliser des concepts du monde
+                    réel en utilisant des objets, qui sont des instances de
+                    classes. Cette approche permet de structurer le code de
+                    manière modulaire, en regroupant les données et les méthodes
+                    qui leur sont associées dans des entités autonomes, les
+                    objets.</p>
+    </div>
+    </div>
+     </div>
+
+       <div class="element">
+    <div class="titre-element">
+    <div class="titre-element-p1"> <h2>Objet:</h2></div>
+    <div class="titre-element-p2"> <h2>2</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>En POO un objet = identité + états + comportements
+                  <br /><br />
+                  <strong>L’identité :</strong> est le nom de l’objet (nom de
+                  variable). <br /><br />
+                  <strong>L’états :</strong> se sont les valeurs donner aux
+                  attributs (variables) contenu dans l’objet. <br /><br />
+                  <strong>Comportement :</strong> se sont les méthodes (fonction
+                  procédure) contenues dans l’objet.</p>
+    </div>
+     </div>
+
+     <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>Classe:</h2></div>
+    <div class="titre-element-p2"> <h2>3</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>  une classe est une structure comme celle des enregistrements
+                  elle contient des variables (on les appellera les attributs)
+                  mais aussi des fonctions et procédures (on les appellera
+                  méthodes). Et elle d’écrit l’état et le comportement d’un
+                  objet.</p>
+    <img src="./assets/image/ClasseImage.png" alt="">
+    </div>
+     </div>
+
+     <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>instance:</h2></div>
+    <div class="titre-element-p2"> <h2>4</h2></div>
+    </div>
+    <div class="texte-element">
+    <p> l’instance d’une classe est comme une occurrence, on dit qu’un
+                  objet est une instance d’une classe.</p>
+    <img src="./assets/image/ClasseObjetInstance.png" alt="">
+    <p>
+                  Donc en gros on peut schématiser l’Objet, la Classe et
+                  l’Instance de cette manière : <br /><br /><strong
+                    >Classe</strong
+                  >
+                  = attributs + méthodes + mécanisme d’instanciation.
+                  <br /><br /><strong>Instance (objet)</strong> = valeurs
+                  d’attributs + accès aux méthodes Remarque.
+                </p>
+                <p>
+                    <img src="./assets/image/InstanceClasseImage.png" alt="">
+                  <br /><strong style="color: red;"> Remarque : </strong>l’instance peut accéder à
+                  toutes les méthodes de sa classe, mais elle n’est pas obligée
+                  de les utiliser.
+                </p>
+    </div>
+     </div>
+
+   
+</div>
+ <h1 id="chap2">Interaction</h1>
+    <div class="infos-carres">
+
+     <div class="element">
+    <div class="titre-element">
+   <div class="titre-element-p1"> <h2>Introduction</h2></div>
+    <div class="titre-element-p2"> <h2>1</h2></div>
+    </div>
+    <div class="texte-element">
+    <div class="p-element interaction">
+    <p>  L'interaction entre objets se fait généralement par l'envoi
+                    de messages. Un objet peut envoyer un message à un autre
+                    objet pour demander une action ou une information. L'objet
+                    qui reçoit le message peut répondre en envoyant un message
+                    de retour ou en effectuant une action.<br />
+                    Un message veut dire appel d’une méthode de l’objet B par
+                    l’objet A.<br /><br />
+                    Par exemple, supposons que nous ayons deux objets, une
+                    voiture et un conducteur. Le conducteur peut envoyer un
+                    message à la voiture pour lui demander de démarrer le
+                    moteur. La voiture peut répondre en envoyant un message de
+                    confirmation au conducteur ou en commençant à démarrer le
+                    moteur.</p>
+    </div>
+    <div class="img-element">
+    <img src="./assets/image/Interaction.png" alt="">
+    </div>
+        <p class="interaction">
+                  Dans cette exemple la classe <strong>Conducteur</strong> à une
+                  référence à un objet <strong>Voiture</strong>, et même la
+                  classe <strong>Voiture</strong> à une référence à un objet
+                  <strong>Conducteur</strong>, si l’une de ces classes n’a pas
+                  de référence sur l’autre alors elle ne peut pas envoyer de
+                  message.
+                </p>
+                <p class="interaction">
+                  <br />Exemple : si la classe Voiture n’a pas de référence à un
+                  objet Conducteur Alors :<br />
+                </p>
+                <div class="img-element">
+                  <img src="assets/image/InteractionSansRepence.png" alt="" />
+                </div>
+
+                <p class="interaction">
+                  <br /><br />Voici un exemple de code en JAVA qui illustre
+                  cette interaction entre deux objets :
+                </p>
+
+                <div class="img-element">
+                  <img src="assets/image/received_975790323596121.webp" alt="" />
+                </div>
+
+                <div class="img-element">
+                  <img src="assets/image/received_893955091877373.webp" alt="" />
+                </div>
+
+                <div class="img-element">
+                  <img src="assets/image/received_147711798216317.webp" alt="" />
+                </div>
+                <p class="interaction">
+                  Dans cet exemple, la classe <strong>Voiture</strong> définit
+                  une méthode <strong>demarrer_moteur</strong> qui affiche que
+                  le moteur de la voiture démarre.<br /><br />
+                  La classe <strong>Conducteur</strong> a une référence à un
+                  objet <strong>Voiture</strong> et a une méthode
+                  <strong>demarrer_voiture</strong> qui appelle la méthode
+                  <strong>demarrer_moteur</strong> de l'objet Voiture et affiche
+                  que le conducteur démarre la voiture. <br /><br />Lorsque nous
+                  créons une instance de la classe
+                  <strong>Conducteur</strong> et appelons sa méthode
+                  <strong>demarrer_voiture</strong>, nous voyons l'interaction
+                  entre les deux objets. Le conducteur envoie un message à la
+                  voiture pour démarrer le moteur, et la Voiture effectue une
+                  action en démarrant le moteur.
+                </p>
+    </div>
+     </div>
+
+       <div class="element">
+    <div class="titre-element">
+    <div class="titre-element-p1 constucteur"> <h2>Constructeur – Destructeur:</h2></div>
+    <div class="titre-element-p2"> <h2>2</h2></div>
+    </div>
+    <div class="texte-element">
+     <p>
+                  <strong>Un constructeur :</strong> est une opération
+                  (Mécanisme d’instanciation ) de classe qui va construire
+                  l’instance (l’objet) de la classe. Le nom de cette méthode est
+                  identique à celui de sa classe. <br /><br /><strong
+                    >Un destructeur :</strong
+                  >
+                  est une opération de classe qui détruit des objets. Cette
+                  méthode libère donc de l'espace mémoire.
+                </p>
+    </div>
+     </div>
+
+     <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1 constucteur"> <h2>Classe concrète-abstraite:</h2></div>
+    <div class="titre-element-p2"> <h2>3</h2></div>
+    </div>
+    <div class="texte-element">
+    <p> <strong>Une classe concrète:</strong> est une classe qu'il est
+                  possible d'instancier. <br /><br /><strong
+                    >Une classe abstraite:</strong
+                  >
+                  N’est pas instanciable, elle relève purement de l'organisation
+                  et son objectif est uniquement lié à la spécification
+                  (description exhaustive d'un module).</p>
+    </div>
+     </div>
+
+  
+     </div>
+
+     
+     <h1 id="chap3" class="poo-grand-titre">Les principaux concepts de la POO :L'encapsulation,L'héritage ,Le polymorphisme:</h1>
+    <div class="infos-carres">
+
+     <div class="element">
+    <div class="titre-element">
+   <div class="titre-element-p1"> <h2>L'encapsulation:</h2></div>
+    <div class="titre-element-p2"> <h2>1</h2></div>
+    </div>
+    <div class="texte-element">
+    <div class="p-element">
+    <p class="interaction">Consiste à regrouper les données associées en une seule unité
+pour garantir une meilleure gestion et une meilleure sécurité des données.</p>
+    </div>
+    <div class="img-element">
+    <img src="./assets/image/encapsulation.png" alt="">
+    </div>
+    <p class="interaction">La sécurité consiste à définir dans chaque méthode le niveau de visibilité (private,
+public, protect), pour limiter l’interaction des objets entre elle.
+Exemple : dans un objet A on peut modifier et utiliser tous les attributs et méthodes
+qui sont défini dans un niveau public avec un autre objet B qui est référencer par l’objet A.
+Mais pour modifier un attribut qui est défini dans un niveau privé, on doit passer par
+l’une des méthodes qui nous permet de modifier cet attribut (s’il existe).</p>
+    </div>
+     </div>
+
+       <div class="element">
+    <div class="titre-element">
+    <div class="titre-element-p1"> <h2>L'héritage :</h2></div>
+    <div class="titre-element-p2"> <h2>2</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Permet de définir une nouvelle classe en reprenant les propriétés et les
+méthodes d'une classe existante, tout en ajoutant des fonctionnalités supplémentaires.</p>
+   <img src="./assets/image/1200px-Heritage_informatique.svg.png" alt="">
+   <p>Une Classe peut appartenir à une arborescence de Classes.</p>
+    </div>
+     </div>
+
+     <div class="element">
+    <div class="titre-element">
+     <div class="titre-element-p1"> <h2>Le polymorphisme:</h2></div>
+    <div class="titre-element-p2"> <h2>3</h2></div>
+    </div>
+    <div class="texte-element">
+    <p>Permet à chaque objet d'implémenter une méthode de manière
+spécifique.</p>
+    <img src="./assets/image/Polymorphisme.png" alt="">
+    <p>On à implémenté la méthode DitBonjour() de maniére spécifique pour chaque objet.</p>
+    </div>
+     </div>
+
+  
+     </div>
+
+
+
+<h1 id="TD">Exercices</h1>
+   <div class="divs-pdf">
+   
+
+      <div class="doc">
+        <a
+          href="https://drive.google.com/drive/folders/1bI1DtzJb0nGJ-pMivKCgHj3-3P4AT9e2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            viewBox="0 0 1024 1024"
+            class="icon"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#32729a"
+            stroke="#32729a"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M576 102.4H268.8c-14.08 0-25.6 11.52-25.6 25.6v742.4c0 14.08 11.52 25.6 25.6 25.6h512c14.08 0 25.6-11.52 25.6-25.6V332.8L576 102.4z"
+                fill="#ffff"
+              ></path>
+              <path
+                d="M780.8 908.8H268.8c-21.76 0-38.4-16.64-38.4-38.4V128c0-21.76 16.64-38.4 38.4-38.4h312.32L819.2 327.68V870.4c0 21.76-16.64 38.4-38.4 38.4zM268.8 115.2c-7.68 0-12.8 5.12-12.8 12.8v742.4c0 7.68 5.12 12.8 12.8 12.8h512c7.68 0 12.8-5.12 12.8-12.8V337.92L570.88 115.2H268.8z"
+                fill="#ffff32729a"
+              ></path>
+              <path
+                d="M576 307.2c0 14.08 11.52 25.6 25.6 25.6h204.8L576 102.4v204.8z"
+                fill="#ffff008181"
+              ></path>
+              <path
+                d="M806.4 345.6H601.6c-21.76 0-38.4-16.64-38.4-38.4V102.4c0-5.12 2.56-10.24 7.68-11.52 5.12-2.56 10.24-1.28 14.08 2.56l230.4 230.4c3.84 3.84 5.12 8.96 2.56 14.08-1.28 5.12-6.4 7.68-11.52 7.68zM588.8 133.12V307.2c0 7.68 5.12 12.8 12.8 12.8h174.08L588.8 133.12zM332.8 435.2h371.2v25.6H332.8zM332.8 524.8h371.2v25.6H332.8z"
+                fill="#ffff32729a"
+              ></path>
+              <path
+                d="M332.8 614.4h371.2v25.6H332.8z"
+                fill="#ffff32729a"
+              ></path>
+              <path
+                d="M332.8 716.8h371.2v25.6H332.8z"
+                fill="#ffff32729a"
+              ></path>
+            </g>
+          </svg>
+          <h4>TP01:INTRO</h4>
+        </a>
+      </div>
+   
+   </div>
+     </div>
+
+      </div>
+
+    
+
+
+      </div>
+    </main>
+    <footer>
+      <div class="up">
+        <hr />
+      </div>
+      <div class="down">
+        <div class="haut"></div>
+        <p>
+          Ce site n'est pas affilié aux sites officiels de l'université de
+          Boumerdès. Il a été créé par une équipe d'étudiants passionnés pour
+          aider les autres étudiants à réussir leurs études en informatique.
+        </p>
+
+        <p>
+          Nous remercions toutes les personnes qui ont contribué à la réussite
+          de ce site, en particulier l'équipe de Résumily.
+        </p>
+        <div class="bas">
+           <ul>
+                  <li><a href="https://drive.google.com/file/d/1QWWu7JSLnSfsHKbWjuicVW8LvDXKlXCs/view?usp=share_link"><img src="./assets/image/android-svgrepo-com.svg" alt=""></a></li>
+                  <li><a href="https://web.facebook.com/profile.php?id=100090109067553"><img src="./assets/image/facebook-svgrepo-com (3).svg" alt=""></a></li>
+                  <li><a href="mailto:Resumily23@gmail.com"><img src="./assets/image/email-svgrepo-com.svg" alt=""></a></li>
+                </ul>
+          <h4>© RÉSUMILY —All rights reserved</h4>
+        </div>
+      </div>
+    </footer>
+    <div id="scroll-up">
+      <button class="scroll-up-button caché">
+        <svg
+          fill="#32729a"
+          viewBox="0 0 200 200"
+          data-name="Layer 1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke="#32729a"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke="#CCCCCC"
+            stroke-width="0.4"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <title></title>
+            <path
+              d="M114,74.5a19.92,19.92,0,0,0-28.5,0L57,103a9.9,9.9,0,0,0,14,14L99.5,88.5,128,117a9.9,9.9,0,0,0,14-14Z"
+            ></path>
+            <path
+              d="M100,15a85,85,0,1,0,85,85A84.93,84.93,0,0,0,100,15Zm0,150a65,65,0,1,1,65-65A64.87,64.87,0,0,1,100,165Z"
+            ></path>
+          </g>
+        </svg>
+      </button>
+    </div>
+    <script src="main.js"></script>
+    <script src="info-module.js"></script>
+  </body>
+</html>

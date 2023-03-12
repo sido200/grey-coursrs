@@ -88,7 +88,8 @@ footer img {
 #scroll-up {
   position: fixed;
   bottom: 15px;
-  right: 10px;
+  left: 100px;
+  width: fit-content;
   z-index: 2;
   overflow: hidden;
 }
@@ -392,7 +393,7 @@ footer img {
   align-items: center;
   justify-content: center;
 }
-
+/*respo tablet*/
 @media screen and (max-width: 768px) {
   .element img {
     width: 300px;
@@ -463,6 +464,7 @@ footer img {
     margin-right: 35px !important;
   }
 }
+/*respo tablet s et s*/
 @media screen and (max-width: 762px) {
   .example {
     display: flex;
@@ -484,6 +486,7 @@ footer img {
     flex-direction: column;
   }
 }
+/*respo tel*/
 @media screen and (max-width: 480px) {
   .element,
   .divs-pdf {
@@ -582,9 +585,11 @@ footer img {
     font-size: 14px;
   }
 }
+
 .titre-element-p1.constucteur {
   width: 300px;
 }
+/*css exemples interactifs couleurs -> padding*/
 .displays {
   display: flex;
   flex-direction: column;
@@ -637,7 +642,7 @@ footer img {
   color: white;
   cursor: pointer;
 }
-
+/*imgs partie html*/
 .h-images,
 .selectorimgss {
   display: flex;
@@ -652,7 +657,7 @@ footer img {
 .semantic-img {
   width: 200px !important;
 }
-
+/*partie boxmodel*/
 .margin {
   width: 350px;
   height: 200px;
@@ -676,7 +681,7 @@ footer img {
   align-items: center;
   justify-content: center;
 }
-
+/*exemple interactif s*/
 .interactif {
   width: 850px;
   height: 230px;
@@ -781,7 +786,7 @@ iframe {
 .alignend {
   align-items: flex-end;
 }
-/**/
+/* boxmodel part2*/
 .grr {
   color: #87d1cf;
 }
@@ -801,6 +806,7 @@ iframe {
 .sinjab-grid {
   width: 45px !important;
 }
+/*last modifs*/
 .respo-ecran {
   margin-left: 110px;
 }
@@ -815,5 +821,9 @@ iframe {
   background-color: grey !important;
 }
 .img-sens {
+  color: #32729a;
+}
+.css-lien-btn {
+  text-decoration: none;
   color: #32729a;
 }

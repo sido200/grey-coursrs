@@ -345,7 +345,7 @@ footer img {
   .logo {
     width: 100px;
   }
-  overflow-x:not(.interactif, .opacity, .display-grid-sinjab) * {
+  *:not(.interactif, .opacity, .display-grid-sinjab) {
     overflow-x: hidden;
   }
   nav .fa-bars {
@@ -440,5 +440,8 @@ footer img {
   }
   ::-webkit-scrollbar {
     width: 0;
+  }
+  .items {
+    width: 100vw !important;
   }
 }

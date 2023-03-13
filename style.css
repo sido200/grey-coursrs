@@ -125,20 +125,8 @@ nav input {
   transform: translateY(-50%);
   color: #32729a;
 }
-.active-nav {
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: white;
-  color: #32729a !important;
-  transition: 0.5s;
-}
-.active-nav a:hover {
-  color: #b7d1cf;
-}
-ul.active a {
-  color: #32729a !important;
-}
-.active h2 {
-  color: #32729a;
+nav.scroll {
+  background-color: red;
 }
 /*HOME*/
 #home {

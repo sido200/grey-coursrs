@@ -17,6 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://{{cdn}}/prismjs@v1.x/themes/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="module.css" />
   </head>
@@ -321,16 +322,22 @@
               <div class="element">
               <div class="titre-element">
                 <div class="titre-element-p1 bdd"><h2>SHOW</h2></div>
-                <div class="titre-element-p2"><h2>4</h2></div>
+                <div class="titre-element-p2"><h2>3</h2></div>
               </div>
               <div class="texte-element">
 
                 <div class="p-element" id="partie1">
                   <p>
                       Show est utilisé pour afficher des informations sur une base de données <br>
-                  SHOW DATABASES ; : <br> Pour afficher toutes les Bases de données qui existent dans notre SGBDR.
                   </p>
                 </div>
+                <div class="h-images code" >
+                      
+                 <pre><code class="language-sql codeligne"> SHOW DATABASES ;</code></pre> <br>
+                </div>
+                 <p>
+                  Pour afficher toutes les Bases de données qui existent dans notre SGBDR.
+                 </p> 
 
               </div>
             </div>
@@ -356,8 +363,18 @@
                   </p>
                 </div>
 
-                <div class="h-images" >
-                <img src="/assets/bdd2.png" alt="" id="pic2" >
+                <div class="h-images code" >
+                <pre><code class="language-sql"> mysql> show tables;
++---------------------------+
+| Tables_in_cabinet_medical |
++---------------------------+
+| consultation              |
+| medecin                   |
+| medicament                |
+| patient                   |
+| prescrire                 |
++---------------------------+
+5 rows in set (0.51 sec)</code></pre>
               </div>
 
               </div>
@@ -376,8 +393,23 @@
                   </p>
                 </div>
 
-                <div class="h-images" >
-                <img src="/assets/bdd3.png" alt="" id="pic3" >
+                <div class="h-images code" >
+                <pre class="tel-code2"><code class="language-sql">mysql> show create table medecin;
++--------------------+
+| Table   | Create Table|
++---------+----------+
+| medecin | CREATE TABLE `medecin` (
+  `MatMed` int NOT NULL,
+  `NomMed` varchar(30) NOT NULL,
+  `PreMed` varchar(30) NOT NULL,
+  `SpeMed` varchar(30) NOT NULL,
+  `AdrMed` text,
+  `TelMed` int DEFAULT NULL,
+  PRIMARY KEY (`MatMed`),
+  UNIQUE KEY `TelMed` (`TelMed`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
++---------+-------------------------+
+1 row in set (2.61 sec)</code></pre>
               </div>
               
               </div>
@@ -398,16 +430,34 @@
                   </p>
                 </div>
 
-                <div class="h-images" >
-                <img src="/assets/bdd4.png" alt="" id="pic4" >
+                 <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql"> mysql> show columns from medecin;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| MatMed | int         | NO   | PRI | NULL    |       |
+| NomMed | varchar(30) | NO   |     | NULL    |       |
+| PreMed | varchar(30) | NO   |     | NULL    |       |
+| SpeMed | varchar(30) | NO   |     | NULL    |       |
+| AdrMed | text        | YES  |     | NULL    |       |
+| TelMed | int         | YES  | UNI | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+6 rows in set (1.12 sec)</code></pre>
               </div>
               <div class="p-element" >
                 <p id="left" >
-                  note : on peut remplacer ’ Show Columns From ‘ par ‘DESC’.
+                  note : on peut remplacer  <pre><code class="language-sql codeligne"> Show Columns From</code></pre>  <span class="par">par</span>  <pre><code class="language-sql codeligne"> DESC</code></pre>
                 </p>
               </div>
-              <div class="h-images">
-                <img src="/assets/bdd5.png" alt=""  id="pic5" >
+               <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql"> mysql> desc medicament;
++-----------+------+------+-----+---------+-------+
+| Field     | Type | Null | Key | Default | Extra |
++-----------+------+------+-----+---------+-------+
+| codeMedic | int  | NO   | PRI | NULL    |       |
+| LIbMedic  | text | YES  |     | NULL    |       |
++-----------+------+------+-----+---------+-------+
+2 rows in set (0.28 sec)</code></pre>
               </div>
               
               </div>
@@ -416,21 +466,27 @@
             
                <div class="element">
               <div class="titre-element">
-                <div class="titre-element-p1 bdd"><h2>CREATE   </h2></div>
+                <div class="titre-element-p1 bdd"><h2>CREATE</h2></div>
                 <div class="titre-element-p2"><h2>7</h2></div>
               </div>
               <div class="texte-element">
 
-                <div class="p-element" id="partie1">
+                <div class="p-element alter" id="partie1">
                   <p>
                   CREATE est utilisée pour créer des objets dans une base de données en SQL. <br>
-                  CREATE DATABASE Name_DB; // Exemple CREATE DATABASE tp1 ; <br>
-                  CREATE TABLE Name_table (....);
+                  <pre><code class="language-sql codeligne"> CREATE DATABASE Name_DB;</code></pre> <br><p>Exemple:</p> <br> <pre><code class="language-sql codeligne">CREATE DATABASE tp1 ;</code></pre> <br> <pre><code class="language-sql codeligne"> CREATE TABLE Name_table (....);</code></pre>
+
+                 
                   </p>
                 </div>
 
-                <div class="h-images" >
-                <img src="/assets/bdd6.png" alt="" id="pic6" >
+                 <div class="h-images code" >
+                <pre><code class="language-sql"> mysql> create table hotel(
+    -> numhotel int,
+    -> nomhotel varchar(30),
+    -> ville varchar(30)
+    -> );
+Query OK, 0 rows affected (0.17 sec)</code></pre>
               </div>
               
               </div>
@@ -441,18 +497,19 @@
        <div class="element">
               <div class="titre-element">
                 <div class="titre-element-p1 bdd"><h2>USE  </h2></div>
-                <div class="titre-element-p2"><h2>7</h2></div>
+                <div class="titre-element-p2"><h2>8</h2></div>
               </div>
               <div class="texte-element">
 
-                <div class="p-element" id="partie1">
+                <div class="p-element alter2" id="partie1">
                   <p>
-                  Use est utilisée pour sélectionner une base de données existante ; <br> USE Name_BDD ; <br> Exemple : USE tp1 ;
-                  </p>
+                  Use est utilisée pour sélectionner une base de données existante  </p>
+                  <pre><code class="langage-sql codeligne"> USE Name_BDD ;</code></pre> <span>Exemple:</span><pre><code class="langage-sql codeligne">  USE tp1 ;</code></pre> 
+                  
                 </div>
-
-                <div class="h-images" >
-                <img src="/assets/bdd7.png" alt="" id="pic7" >
+                <div class="h-images code" >
+                <pre><code class="language-sql">mysql> use store;
+Database changed</code></pre>
               </div>
               
               </div>
@@ -463,7 +520,7 @@
              <div class="element">
               <div class="titre-element">
                 <div class="titre-element-p1 bdd"><h2>SELECT </h2></div>
-                <div class="titre-element-p2"><h2>8</h2></div>
+                <div class="titre-element-p2"><h2>9</h2></div>
               </div>
               <div class="texte-element">
 
@@ -474,57 +531,115 @@
                   BDD.
                   </p>
                 </div>
-
-                <div class="h-images" >
-                <img src="/assets/bdd8.png" alt="" id="pic8" >
+               <div class="h-images code" >
+                <pre><code class="language-sql">mysql> select "hello sinjab!";
++---------------+
+| hello sinjab! |
++---------------+
+| hello sinjab! |
++---------------+
+1 row in set (0.00 sec)</code></pre>
               </div>
-               
+                <div class="h-images code" >
+                <pre><code class="language-sql">mysql> select 5+5+6+9+8+9+(5*8);
++-------------------+
+| 5+5+6+9+8+9+(5*8) |
++-------------------+
+|                82 |
++-------------------+
+1 row in set (0.04 sec)</code></pre>
+              </div>
               
               <div class="p-element" >
                 <p id="left" >
                   Sinon si on veut afficher toute la table on peut utiliser (*) à la place des noms de la colonne :  <br>
-                  SELECT * FROM hotel;
+                 <pre><code class="language-sql codeligne">  SELECT * FROM hotel;</code></pre>
                 </p>
               </div>
-              <div class="h-images">
-                <img src="/assets/bdd10.png" alt="" style="width: 300px; height: 220px;" id="pic10" >
+               <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql tabtab">mysql> select * from hotel;
++----------+-----------+-----------+
+| numhotel | nomhotel  | ville     |
++----------+-----------+-----------+
+|       18 | El amine  | Boumerdes |
+|       12 | El Badre  | Boumerdes |
+|       13 | Salim     | alger     |
+|       14 | AZ        | Alger     |
+|      185 | Jumia     | Chine     |
+|    18198 | Parisien  | paris     |
+|     1468 |           | Boumerdes |
+|     1887 | Hamadach  | tlemcen   |
+|      118 | abdelAziz | tlemcen   |
++----------+-----------+-----------+
+9 rows in set (0.00 sec)</code></pre>
               </div>
-              <div class="p-element" >
+              <div class="p-element">
                 <p id="left" >
                   Aussi si on veut préciser notre recherche dans la table nous allons utiliser WHERE <br> Exemple : <br>
-                  SELECT * FROM hotel WHERE nomhotel = ‘AZ’;
-
+          <pre class="tel-code"><code class="langage-sql tabtab"> SELECT * FROM hotel WHERE nomhotel = ‘AZ’;</code></pre>   
               </div>
-              <div class="h-images">
-                <img src="/assets/bdd11.png" alt=""  id="pic11">
+             <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> SELECT * FROM hotel WHERE nomhotel = 'AZ';
++----------+----------+-------+
+| numhotel | nomhotel | ville |
++----------+----------+-------+
+|       14 | AZ       | Alger |
++----------+----------+-------+
+1 row in set (0.04 sec)</code></pre>
               </div>
               <div class="p-element" >
                 <p id="left" >
                   Si nous voulons sélectionner tous les attributs qui contiennent un alphabet précis nous allons <br>
                   utiliser le mot clé LIKE a la place de =, et le % aussi : <br>
-                  SELECT * FROM hotel WHERE nomhotel LIKE ‘%A%’; <br>
+               <pre class="tel-code"><code class="langage-sql tabtab"> SELECT * FROM hotel WHERE nomhotel LIKE '%A%';</code></pre>   <br>
                   % on le lit : <br>
-                  %A% : quelque soit + A + quelque soit ; // un mot qui contient ‘a’
+                  %A% : quelque soit + A + quelque soit ;(un mot qui contient 'a')
                 </p>
               </div>
-              <div class="h-images">
-                <img src="/assets/bdd12.png" alt=""  id="pic12" >
+               <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> SELECT * FROM hotel WHERE nomhotel LIKE '%a%';
++----------+-----------+-----------+
+| numhotel | nomhotel  | ville     |
++----------+-----------+-----------+
+|       18 | El amine  | Boumerdes |
+|       12 | El Badre  | Boumerdes |
+|       13 | Salim     | alger     |
+|       14 | AZ        | Alger     |
+|      185 | Jumia     | Chine     |
+|    18198 | Parisien  | paris     |
+|     1887 | Hamadach  | tlemcen   |
+|      118 | abdelAziz | tlemcen   |
++----------+-----------+-----------+
+8 rows in set (0.07 sec)</code></pre>
               </div>
               <div class="p-element" >
                 <p id="left" >
-                  A% : A + quelque soit ; // un mot qui débute par ‘a’
+                  A% : A + quelque soit ;(un mot qui débute par 'a')
                 </p>
               </div>
-              <div class="h-images">
-                <img src="/assets/bdd13.png" alt=""  id="pic13">
+              <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> SELECT * FROM hotel WHERE nomhotel LIKE 'a%';
++----------+-----------+---------+
+| numhotel | nomhotel  | ville   |
++----------+-----------+---------+
+|       14 | AZ        | Alger   |
+|      118 | abdelAziz | tlemcen |
++----------+-----------+---------+
+2 rows in set (0.00 sec)</code></pre>
               </div>
               <div class="p-element" >
                 <p id="left" >
-                  %A : quelque soit + A ; // un mot qui se termine par ‘a’
+                  %A : quelque soit + A ;(un mot qui se termine par 'a')
                 </p>
               </div>
-              <div class="h-images">
-                <img src="/assets/bdd14.png" alt=""  id="pic14">
+              <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> SELECT * FROM hotel WHERE nomhotel LIKE '%a';
++----------+----------+-------+
+| numhotel | nomhotel | ville |
++----------+----------+-------+
+|      185 | Jumia    | Chine |
++----------+----------+-------+
+1 row in set (0.00 sec)</code></pre>
               </div>
 
 
@@ -538,19 +653,20 @@
              <div class="element">
               <div class="titre-element">
                 <div class="titre-element-p1 bdd"><h2>INSERT </h2></div>
-                <div class="titre-element-p2"><h2>9</h2></div>
+                <div class="titre-element-p2"><h2>10</h2></div>
               </div>
               <div class="texte-element">
 
                 <div class="p-element" id="partie1">
                   <p>
                   Insert est utilisé pour ajouter des éléments dans une table, pour cela on utilise : <br>
-                  INSERT INTO Name_Table VALUES (valeur1, valeur2...);
+                <pre class="tel-code3"><code class="langage-sql codeligne code3">INSERT INTO Name_Table VALUES (valeur1, valeur2...);</code></pre>   
                   </p>
                 </div>
 
-                <div class="h-images">
-                <img src="/assets/bdd15.png" alt=""  id="pic15" >
+                <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> insert into hotel values (13,"Salim","alger");
+Query OK, 1 row affected (0.07 sec)</code></pre>
               </div>
               
               </div>
@@ -562,55 +678,99 @@
              <div class="element">
               <div class="titre-element">
                 <div class="titre-element-p1 bdd"><h2>ALTER</h2></div>
-                <div class="titre-element-p2"><h2>10</h2></div>
+                <div class="titre-element-p2"><h2>11</h2></div>
               </div>
               <div class="texte-element">
 
-                <div class="p-element" id="partie1">
+                <div class="p-element alter" id="partie1">
                   <p>
                   Alter est un mot clé pour modifier la conception de la table elle-même, il suffit juste d’écrire : <br>
-                   Alter Table Name_table [mot clé] instruction; <br>
-                   Nous avons dans le mot clé : drop et add qu’on va utiliser pour supprimer ou ajouter des
+                 <pre class="tel-code"><code class="langage-sql tabtab"> Alter Table Name_table [mot clé] instruction;</code></pre>  <br>
+                 <p> Nous avons dans le mot clé : drop et add qu’on va utiliser pour supprimer ou ajouter des
                    instructions.
-                  Exemple <br>Si on veut ajouter une Colonne Nombre Etoile on doit utiliser la syntaxe suivante : <br>
-                   ALTER TABLE Name_table ADD COLUMN Name_column Type_column;
+                  Exemple: <br>Si on veut ajouter une Colonne Nombre Etoile on doit utiliser la syntaxe suivante: <br></p> 
+                 <pre class="tel-code"><code class="langage-sql tabtab"> ALTER TABLE Name_table ADD COLUMN Name_column Type_column;</code></pre> 
                   </p>
                 </div>
 
-                <div class="h-images">
-                <img src="/assets/bdd16.png" alt=""  id="pic16" >
-                <img src="/assets/bdd17.png" alt=""  id="pic17" >
+                <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> alter table hotel add column etoile int ;
+Query OK, 0 rows affected (2.24 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from hotel;
++----------+-----------+-----------+--------+
+| numhotel | nomhotel  | ville     | etoile |
++----------+-----------+-----------+--------+
+|       18 | El amine  | Boumerdes |   NULL |
+|       12 | El Badre  | Boumerdes |   NULL |
+|       13 | Salim     | alger     |   NULL |
+|       14 | AZ        | Alger     |   NULL |
+|      185 | Jumia     | Chine     |   NULL |
+|    18198 | Parisien  | paris     |   NULL |
+|     1468 |           | Boumerdes |   NULL |
+|     1887 | Hamadach  | tlemcen   |   NULL |
+|      118 | abdelAziz | tlemcen   |   NULL |
++----------+-----------+-----------+--------+
+9 rows in set (0.00 sec)</code></pre>
               </div>
 
                 <div class="p-element" >
                 <p id="left" >
                   Exemple si on a oublié de définir une clé primaire a notre table donc pas de panique, nous
                   pouvant la définir avec ALTER comme suite :
-                  ALTER TABLE Name_table ADD PRIMARY KEY (Select_Column);
+                 <pre class="tel-code"><code class="langage-sql tabtab">ALTER TABLE Name_table ADD PRIMARY KEY (Select_Column);</code></pre> 
                 </p>
               </div>
-              <div class="h-images">
-                <img src="/assets/bdd18.png" alt=""  id="pic18" >
+               <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> alter table hotel add primary key (numhotel);
+Query OK, 0 rows affected (3.76 sec)
+Records: 0  Duplicates: 0  Warnings: 0</code></pre>
               </div>
               <div class="p-element" >
                 <p id="left" >
                   Et comme nous le remarquons, notre table a maintenant une clé primaire :
                 </p>
               </div>
-              <div class="h-images">
-                <img src="/assets/bdd19.png" alt=""  id="pic19">
+              <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> desc hotel;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| numhotel | int         | NO   | PRI | NULL    |       |
+| nomhotel | varchar(30) | YES  |     | NULL    |       |
+| ville    | varchar(30) | YES  |     | NULL    |       |
+| etoile   | int         | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.56 sec)</code></pre>
               </div>
               <div class="p-element" >
                 <p id="left" >
                   On peut aussi utiliser Drop au lieu de ADD pour supprimer quelque chose dans notre table : <br>
-                   ALTER TABLE Name_table DROP COLUMN Name_column;
+                  <pre class="tel-code"><code class="langage-sql codeligne code3"> ALTER TABLE Name_table DROP COLUMN Name_column;</code></pre> 
                 </p>
               </div>
-              <div class="h-images">
-                <img src="/assets/bdd20.png" alt=""  id="pic20" >
-                <img src="/assets/bdd21.png" alt=""  id="pic21">
-              </div>
+              <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> alter table hotel drop column etoile;
+Query OK, 0 rows affected (0.47 sec)
+Records: 0  Duplicates: 0  Warnings: 0
 
+mysql> select * from hotel;
++----------+-----------+-----------+
+| numhotel | nomhotel  | ville     |
++----------+-----------+-----------+
+|       12 | El Badre  | Boumerdes |
+|       13 | Salim     | alger     |
+|       14 | AZ        | Alger     |
+|       18 | El amine  | Boumerdes |
+|      118 | abdelAziz | tlemcen   |
+|      185 | Jumia     | Chine     |
+|     1468 |           | Boumerdes |
+|     1887 | Hamadach  | tlemcen   |
+|    18198 | Parisien  | paris     |
++----------+-----------+-----------+
+9 rows in set (0.00 sec)</code></pre>
+              </div>
               
               </div>
             </div>
@@ -618,8 +778,8 @@
 
                <div class="element">
               <div class="titre-element">
-                <div class="titre-element-p1 bdd"><h2>UPDATE   </h2></div>
-                <div class="titre-element-p2"><h2>11</h2></div>
+                <div class="titre-element-p1 bdd"><h2>UPDATE</h2></div>
+                <div class="titre-element-p2"><h2>12</h2></div>
               </div>
               <div class="texte-element">
 
@@ -629,12 +789,46 @@
                   Update permet de modifier une instance d’une table, on peut changer le nom ou prénom et même 
                   les deux selon ce dont on a besoin.
                   La syntaxe est comme suit : <br>
-                  Update name_table SET column_1= ‘valeur1’, column_2= ‘valeur2’ WHERE condition
+                <pre class="tel-code44"><code class="langage-sql codeligne tel-code4"> Update name_table SET column_1='valeur1',column_2='valeur2' WHERE condition</code></pre> 
                   </p>
                 </div>
 
-               <div class="h-images">
-                <img src="/assets/bdd22.png" alt=""  id="pic23">
+                <div class="h-images code" >
+                <pre class="tel-code2"><code class="language-sql">mysql> select * from hotel;
++----------+-----------+-----------+
+| numhotel | nomhotel  | ville     |
++----------+-----------+-----------+
+|       12 | El Badre  | Boumerdes |
+|       13 | Salim     | alger     |
+|       14 | AZ        | Alger     |
+|       18 | El amine  | Boumerdes |
+|      118 | abdelAziz | tlemcen   |
+|      185 | Jumia     | Chine     |
+|     1468 |           | Boumerdes |
+|     1887 | Hamadach  | tlemcen   |
+|    18198 | Parisien  | paris     |
++----------+-----------+-----------+
+9 rows in set (0.00 sec)
+
+mysql> update hotel set nomhotel='sinjab-hotel' where numhotel = 14 ;
+Query OK, 1 row affected (0.18 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from hotel;
++----------+--------------+-----------+
+| numhotel | nomhotel     | ville     |
++----------+--------------+-----------+
+|       12 | El Badre     | Boumerdes |
+|       13 | Salim        | alger     |
+|       14 | sinjab-hotel | Alger     |
+|       18 | El amine     | Boumerdes |
+|      118 | abdelAziz    | tlemcen   |
+|      185 | Jumia        | Chine     |
+|     1468 |              | Boumerdes |
+|     1887 | Hamadach     | tlemcen   |
+|    18198 | Parisien     | paris     |
++----------+--------------+-----------+
+9 rows in set (0.00 sec)</code></pre>
               </div>
               
               </div>
@@ -646,7 +840,7 @@
              <div class="element">
               <div class="titre-element">
                 <div class="titre-element-p1 bdd"><h2>DELETE  </h2></div>
-                <div class="titre-element-p2"><h2>12</h2></div>
+                <div class="titre-element-p2"><h2>13</h2></div>
               </div>
               <div class="texte-element">
 
@@ -655,12 +849,26 @@
                    Delete est une commande pour supprimer une ou plusieurs lignes (selon la condition) dans une 
                   table SQL. <br>
                   La requête s’écrit comme ça : <br>
-                  DELETE FROM name_table WHERE condition;
+                    <pre><code class="langage-sql codeligne delete">DELETE FROM name_table WHERE condition;</code></pre> 
                   </p>
                 </div>
 
-              <div class="h-images">
-                <img src="/assets/bdd24.png" alt=""  id="pic24" >
+               <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> delete from hotel where ville='boumerdes';
+Query OK, 3 rows affected (1.20 sec)
+
+mysql> select * from hotel;
++----------+--------------+---------+
+| numhotel | nomhotel     | ville   |
++----------+--------------+---------+
+|       13 | Salim        | alger   |
+|       14 | sinjab-hotel | Alger   |
+|      118 | abdelAziz    | tlemcen |
+|      185 | Jumia        | Chine   |
+|     1887 | Hamadach     | tlemcen |
+|    18198 | Parisien     | paris   |
++----------+--------------+---------+
+6 rows in set (0.00 sec)</code></pre>
               </div>
               
               </div>
@@ -671,17 +879,15 @@
                 <div class="element">
               <div class="titre-element">
                 <div class="titre-element-p1 bdd"><h2>DROP</h2></div>
-                <div class="titre-element-p2"><h2>12</h2></div>
+                <div class="titre-element-p2"><h2>14</h2></div>
               </div>
-              <div class="texte-element">
+              <div class="texte-element drop">
 
                 <div class="p-element" id="partie1">
                   <p>
                     On utilise DROP pour supprimer un objet (Table, BDD, View...) ; <br>
-                  DROP name_table; <br>
-                  Drop name_BDD; <br>
-                   PRIMARY KEY: <br>
-                  FOREIGN KEY:
+                  <pre><code class="langage-sql codeligne">DROP name_table;</code></pre>    <br>
+                  <pre><code class="langage-sql codeligne"> Drop name_BDD;</code></pre>    <br>
                   </p>
                 </div>
               
@@ -762,7 +968,8 @@
         </svg>
       </button>
     </div>
-   
+   <script src="https://{{cdn}}/prismjs@v1.x/components/prism-core.min.js"></script>
+	<script src="https://{{cdn}}/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="jeu.js"></script>
     <script src="info-module.js"></script>
     <script src="main.js"></script>

@@ -250,10 +250,10 @@ input:hover {
 .active-barre {
   transform: translateX(0%);
   transition: 0.5s;
-} /*
+}
 .bdd-btn-open {
   background-color: #b7d1cf !important;
-}*/
+}
 /*footer*/
 footer {
   font-family: "Inter", sans-serif;

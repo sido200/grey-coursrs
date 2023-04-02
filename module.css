@@ -393,6 +393,18 @@ footer img {
   align-items: center;
   justify-content: center;
 }
+
+/*titres bdd*/
+.titre-element-p1.bdd h2 {
+  font-size: 14px;
+}
+.titre-element-p1.bdd.longsm h2 {
+  font-size: 11px;
+}
+
+.titre-element-p1.bdd.longsmp h2 {
+  font-size: 9px;
+}
 /*respo tablet*/
 @media screen and (max-width: 768px) {
   .element img {
@@ -462,6 +474,16 @@ footer img {
   .p-element.interaction p,
   .interaction {
     margin-right: 35px !important;
+  }
+  .titre-element-p1.bdd h2 {
+    font-size: 14px;
+  }
+  .titre-element-p1.bdd.longsm h2 {
+    font-size: 11px;
+  }
+
+  .titre-element-p1.bdd.longsmp h2 {
+    font-size: 9px;
   }
 }
 /*respo tablet s et s*/

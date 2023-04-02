@@ -405,6 +405,11 @@ footer img {
 .titre-element-p1.bdd.longsmp h2 {
   font-size: 9px;
 }
+/*sql*/
+code {
+  background-color: black;
+  color: white;
+}
 /*respo tablet*/
 @media screen and (max-width: 768px) {
   .element img {

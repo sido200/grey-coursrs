@@ -17,6 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://{{cdn}}/prismjs@v1.x/themes/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="module.css" />
   </head>
@@ -328,7 +329,7 @@
                 <div class="p-element" id="partie1">
                   <p>
                       Show est utilisé pour afficher des informations sur une base de données <br>
-                  SHOW DATABASES ; : <br> Pour afficher toutes les Bases de données qui existent dans notre SGBDR.
+                 <pre><code class="language-sql"> SHOW DATABASES ;</code></pre> Pour afficher toutes les Bases de données qui existent dans notre SGBDR.
                   </p>
                 </div>
 
@@ -356,8 +357,19 @@
                   </p>
                 </div>
 
-                <div class="h-images" >
-                <img src="/assets/bdd2.png" alt="" id="pic2" >
+                      <div class="h-images">
+                 <pre><code class="language-sql"> mysql> show tables;
++---------------------------+
+| Tables_in_cabinet_medical |
++---------------------------+
+| consultation              |
+| medecin                   |
+| medicament                |
+| patient                   |
+| prescrire                 |
++---------------------------+
+5 rows in set (0.51 sec)
+</code></pre>
               </div>
 
               </div>
@@ -403,7 +415,7 @@
               </div>
               <div class="p-element" >
                 <p id="left" >
-                  note : on peut remplacer ’ Show Columns From ‘ par ‘DESC’.
+                  note : on peut remplacer  <pre><code class="language-sql"> Show Columns From</code></pre>  par  <pre><code class="language-sql"> DESC</code></pre>
                 </p>
               </div>
               <div class="h-images">
@@ -416,7 +428,7 @@
             
                <div class="element">
               <div class="titre-element">
-                <div class="titre-element-p1 bdd"><h2>CREATE   </h2></div>
+                <div class="titre-element-p1 bdd"><h2>CREATE</h2></div>
                 <div class="titre-element-p2"><h2>7</h2></div>
               </div>
               <div class="texte-element">
@@ -424,8 +436,9 @@
                 <div class="p-element" id="partie1">
                   <p>
                   CREATE est utilisée pour créer des objets dans une base de données en SQL. <br>
-                  CREATE DATABASE Name_DB; // Exemple CREATE DATABASE tp1 ; <br>
-                  CREATE TABLE Name_table (....);
+                  <pre><code class="language-sql"> CREATE DATABASE Name_DB;</code></pre> <br> Exemple :<pre><code class="language-sql">CREATE DATABASE tp1 ; <br>  CREATE TABLE Name_table (....);</code></pre>  
+
+                 
                   </p>
                 </div>
 
@@ -762,7 +775,8 @@
         </svg>
       </button>
     </div>
-   
+   <script src="https://{{cdn}}/prismjs@v1.x/components/prism-core.min.js"></script>
+	<script src="https://{{cdn}}/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="jeu.js"></script>
     <script src="info-module.js"></script>
     <script src="main.js"></script>

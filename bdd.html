@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/image/logo_V2.png"
+      type="image/x-icon"
+    />
+    <title>RÉSUMILY</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="module.css" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-WPQJ2PCGT6"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-WPQJ2PCGT6");
+  </script>
+  <body>
+    <header>
+      <nav>
+        <i class="fa-solid fa-bars"></i>
+        <div class="logo">
+          <a href="/index.html"
+            ><img src="/assets/image/logo_V2.png" alt="" />
+            <h2>RÉSUMILY</h2></a
+          >
+        </div>
+        <div class="items">
+          <ul>
+            <li><a href="/calcul.html">CALCULER LA MOYENNE</a></li>
+            <li><a href="/index.html#l2">LICENCE 2</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="module-template">
+        <div class="menu">
+          <div class="title">
+            <h2>Bdd</h2>
+          </div>
+
+          <div class="buttons-menu">
+            <div class="chapitres-menu">
+              <a href="#partheori" ><button id="part1" >Partie theorie</button></a>
+              <a href="#partpratique"><button id="part2">Partie Pratique</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="general-infos">
+          <h1 id="partheori">Partie theorie</h1>
+          <div class="infos-carres">
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2>Pourqoui ce module?</h2></div>
+                <div class="titre-element-p2"><h2>1</h2></div>
+              </div>
+              <div class="texte-element">
+                <div class="p-element">
+                  <p>
+                    Le module BDD (Base de données) est une suite logique du module SI(Systèmes d’information)  étudiés en S3. <br> <br>
+                    La ou dans SI tout était sur papier, ce module nous permettra d’appliquer sur machines et de 
+                     programmer nos bases de données; ce qui deviendra nécessaire pour plus tard lorsqu’on 
+                      créera un logiciel assez conséquent ou bien des sites Web dynamiques (Projet de fin d’étude par exemple).
+                    <br> <br>
+                    On se basera sur les derniers chapitres étudiés, le MCD et le MLD-R.
+
+                  </p>
+               </div>  
+              </div>
+            </div>
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd longsm"><h2 id="def">Définition d'une base de données:</h2></div>
+                <div class="titre-element-p2"><h2>2</h2></div>
+              </div>
+              <div class="texte-element">
+                <div class="p-element">
+                  <p>
+                  
+                    Une BDD est un moyen de stockage de données ordonné et structuré permettant de facilement <br> accéder, modifier, mettre à jour, et supprimer toute données d’une manière simple et optimisée <br> en se servant d’un SGBD pour toute opération.
+                  </p>
+               </div>  
+              </div>
+            </div>
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2  id="defi" >Définition d’un SGBD:</h2></div>
+                <div class="titre-element-p2"><h2>3</h2></div>
+              </div>
+              <div class="texte-element">
+                <div class="p-element">
+                  <p>
+                    Un système de Gestion de Base de Données est un logiciel qui fait office de lien entre la BDD et <br> toute application s’en servant; Il gère toutes modifications sur les données. <br>
+                    Il permet donc de créer, modifier et contrôler l'accès au BDD.
+
+                  </p>
+               </div>  
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd longsmp"><h2   id="fich">Pourquoi utiliser une BDD au lieu de fichiers:</h2></div>
+                <div class="titre-element-p2"><h2>4</h2></div>
+              </div>
+              <div class="texte-element">
+                <div class="p-element" >
+                <p>
+                  Avant les BDD, et encore aujourd’hui dans certains cas, le stockage à base de fichiers est utilisé. <br>
+
+                  Plusieurs problèmes apparaissent en utilisant ce système, dont: <br>
+                  
+                  La décentralisation: <br> ou chaque application crée ses propres fichiers pour stocker ses données, une application volumineuse aura donc un nombre <br> très conséquent de fichiers. <br>
+                  
+                  La Redondance: <br> si chaque application a ses propres fichiers, et que ces applications sont liées, plusieurs données seront dupliquées, L’espace <br> de stockage deviendra limité et le programme sera non-optimisé. <br>
+                  La Dépendance Logique et Physique: <br> Pour mettre à jour notre système(pour modifier une donnée par exemple) il devient nécessaire de parcourir tous les fichiers un à un pour <br> modifier toute occurrence de cette donnée. <br>
+
+                  La BDD corrige tous ces problèmes et ça en transformant toutes les données en une seule <br> collection logiquement liée et seulement accessible et modifiable par un SGBD (Système de gestion de base de données); <br>
+                  Les applications utilisant ces données enverront alors des requêtes au SGBD qui se chargera des modifications nécessaires. <br>
+
+                  Comparé au système à base de fichiers, les BDD permettent de stocker plusieurs fichiers de <br> taille relativement large de façon sécurisée, tout en permettant à plusieurs applications et utilisateurs d’y accéder en même temps. <br>
+                </p>
+              </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd" id="archi"><h2>Architecture de la BDD:</h2></div>
+                <div class="titre-element-p2"><h2>5</h2></div>
+              </div>
+              <div class="texte-element">
+                <div class="p-element">
+
+                  <p>
+                    Une BDD est composée de 3 niveaux: <br> <br>
+                    
+                    Niveau Externe: <br> <br>
+                    Ce niveau est composé de plusieurs vues, qui sont une visualisation unique des données fournies par le SGBD uniques pour chaque utilisateurs; 
+                    Il permet donc à chaque application/utilisateur d’exploiter les données pour afficher les relations nécessaires. <br>
+                    Il est donc possible de modifier les données dans ce niveau pour changer la vue de l’utilisateur, mais ces changements n’affectent pas le reste des niveaux. <br> <br>
+                    
+                    Niveau Conceptuel: <br> <br>
+                    Ce niveau permet une vue globale de toutes les données stockées dans la BDD, et comment ces données sont inter-reliées, tout en définissant la structure de chaque utilisateur;
+                    Seuls les administrateurs (DBA) peuvent accéder et modifier ce niveau.  <br> <br>
+                    
+                    Niveau Interne: <br> <br>
+                    Ce niveau définit comment les données sont représentées sur le stockage Physique(Ordinateur, Serveur); il est donc dépendant du Hardware utilisé. <br>
+                    
+                    Cette architecture permet une séparation entre utilisateurs et admins qui simplifie la modération et l'accès aux données.
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2>Modèle Relationnel</h2></div>
+                <div class="titre-element-p2"><h2>6</h2></div>
+              </div>
+              <div class="texte-element">
+                <div class="p-element">
+
+                  <p>
+                    Un modèle Relationnel est une méthode de modélisation des données basée sur les concepts mathématiques de relations. <br> <br>
+                    
+                    Ce modèle permet l’indépendance des données, ainsi qu’une sémantique et une cohérence entre elles tout en évitant la redondance.
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2>Éléments du modèle:</h2></div>
+                <div class="titre-element-p2"><h2>7</h2></div>
+              </div>
+              <div class="texte-element">
+                <div class="p-element">
+
+                  <p>
+                    Une relation dans un modèle relationnel est une table composée de lignes et de colonnes. <br>
+                    Une base de données est donc un ensemble de tables/relations.
+                    <br> <br>
+                    Un attribut: <br> <br>
+                    
+                    Aussi appelé Colonne ou champ , est la colonne d’une relation, caractérisée par un nom. <br> <br>
+                    
+                    Un Domaine:
+                    <br> <br>
+                    Un domaine est l’ensemble des valeurs possibles pour 1 ou plusieurs attributs. <br> <br>
+                    
+                    Un tuple: <br> <br>
+                    
+                    Ou bien enregistrement, est la ligne d’une relation.<br> <br>
+                    
+                    Degré/Cardinalité:<br> <br>
+                    
+                    Le Degré est le nombre de colonnes dans la relation. <br>
+                    Ainsi, une relation a 1 attribut sera nommée unaire, a 2 attributs binaire, 3 ternaire, et toute autre relation a attributs>3 sera nommée n-aire.
+                    <br> <br>
+                    La Cardinalité d’une relation est le nombre de tuples présent dans la relation(nombres de lignes).  <br>
+                    La cardinalité n’est donc pas statique, et change au fur et à mesure que la relation se modifie.
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd" id="propriet"><h2>Propriétés des Relations:</h2></div>
+                <div class="titre-element-p2"><h2>8</h2></div>
+              </div>
+              <div class="texte-element">
+                <div class="p-element">
+
+                  <p>
+                    *Chaque relation doit avoir un nom unique. <br>
+                    *Chaque attribut a un nom distinct et doit contenir une valeur atomique. <br>
+                    *Toutes valeurs d’un attribut doivent appartenir au même domaine. <br>
+                    *Chaque ligne d’une relation est distincte, aucune ligne doit être en double. <br>
+                    
+                    Pour pouvoir appliquer ces propriétés, le concept de clés a été introduit. <br> <br>
+                    Superclé: <br>
+                    
+                    Une Superclé est un attribut, ou bien un ensemble d’attributs, permettant d’identifier de manière unique les lignes d’une relation. <br>
+                    
+                    Les superclés peuvent contenir d’autres attributs non nécessaires à l’identification des tuples. <br> <br>
+                    
+                    Clé Candidate: <br> <br>
+                    
+                    Une clé candidate est une superclé irréductible, autrement, tous les attributs de la clé candidate sont nécessaire pour l’identification; <br>
+                    - Si on prend un sous-ensemble d’attributs de la clé candidate, il est impossible de déterminer nos tuples <br>
+                    
+                    *Plusieurs clés Candidates peuvent exister dans une relation. <br>
+                    *Si cette clé est composée de plusieurs attributs, elle sera nommée Clé Composée. <br> <br>
+                    
+                    Clé Primaire: <br> <br>
+                    
+                    La clé primaire est une clé candidate choisie pour identifier les tuples de la relation. <br>
+                    
+                    Une seule clé primaire existe par relation. <br>
+                    La clé primaire est nécessaire dans une relation. <br> <br>
+                    
+                    Clé étrangère: <br> <br>
+                    
+                    La clé étrangère est un attribut ou ensemble d’attributs dans une relation servant comme clé candidate ou primaire dans une autre relation. <br>
+                    
+                    La clé étrangère est donc le lien entre les relations. <br>
+                    Il est impossible d’insérer une valeur dans la clé étrangère tant qu’elle existe pas dans sa relation originale. <br>
+                    
+                    
+                    Pour plus d’exemples et d’explications, veuillez vous référer à la partie pratique du Résumé.
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="general-infos">  
+          <h1 id="partpratique">Partie Pratique</h1>
+          <div class="infos-carres">
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2>Apprendre le SQL</h2></div>
+                <div class="titre-element-p2"><h2>1</h2></div>
+              </div>
+              <div class="texte-element">
+                <div class="p-element" id="partie1">
+                  <p>
+                    Le SQL (Structured Query Language) est un langage permettant de communiquer avec une base <br> de données.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1 bdd"><h2>MySQL</h2></div>
+              <div class="titre-element-p2"><h2>2</h2></div>
+            </div>
+            <div class="texte-element">
+              <div class="p-element">
+                <p>
+                  MySQL est un SGBDR (System de Gestion de bases de donnes Relationnel), qui utilise le langage SQL.
+                  <br /> <br>
+                  Dans ce résumé nous allons traiter les principales commandes SQL telles que:
+                  SELECT, INSERT INTO, UPDATE, DELETE, DROP TABL, etc... .
+                  De plus nous allons voir quelques fonctions SQL telles que : AVG (), COUNT (), MAX (), etc... 
+
+                </p>
+              </div>
+              </div>
+              </div>
+              
+              <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2> SHOW : </h2></div>
+                <div class="titre-element-p2"><h2>4</h2></div>
+              </div>
+              <div class="texte-element">
+
+                <div class="p-element" id="partie1">
+                  <p>
+                      Show est utilisé pour afficher des informations sur une base de données <br>
+                  SHOW DATABASES ; : <br> Pour afficher toutes les Bases de données qui existent dans notre SGBDR.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+             
+              
+        
+              
+             
+           
+             
+            
+
+               <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2>SHOW Tables </h2></div>
+                <div class="titre-element-p2"><h2>4</h2></div>
+              </div>
+              <div class="texte-element">
+
+                <div class="p-element" id="partie1">
+                  <p>
+                    Pour afficher toutes les tables qui existent dans notre Base de données.
+                  </p>
+                </div>
+
+                <div class="h-images" >
+                <img src="/assets/bdd2.png" alt="" id="pic2" >
+              </div>
+
+              </div>
+            </div>
+
+             <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd longsm"><h2>Show CREATE Table Name_table ;  </h2></div>
+                <div class="titre-element-p2"><h2>5</h2></div>
+              </div>
+              <div class="texte-element">
+
+                <div class="p-element" id="partie1">
+                  <p>
+                    Pour afficher les instructions de la création de la table.
+                  </p>
+                </div>
+
+                <div class="h-images" >
+                <img src="/assets/bdd3.png" alt="" id="pic3" >
+              </div>
+              
+              </div>
+            </div>
+
+
+
+            <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd longsm"><h2>Show Columns From Name_table;   </h2></div>
+                <div class="titre-element-p2"><h2>6</h2></div>
+              </div>
+              <div class="texte-element">
+
+                <div class="p-element" id="partie1">
+                  <p>
+                    Pour afficher la description de la table.
+                  </p>
+                </div>
+
+                <div class="h-images" >
+                <img src="/assets/bdd4.png" alt="" id="pic4" >
+              </div>
+              <div class="p-element" >
+                <p id="left" >
+                  note : on peut remplacer ’ Show Columns From ‘ par ‘DESC’.
+                </p>
+              </div>
+              <div class="h-images">
+                <img src="/assets/bdd5.png" alt=""  id="pic5" >
+              </div>
+              
+              </div>
+            </div>
+
+            
+               <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2>CREATE:   </h2></div>
+                <div class="titre-element-p2"><h2>7</h2></div>
+              </div>
+              <div class="texte-element">
+
+                <div class="p-element" id="partie1">
+                  <p>
+                  CREATE est utilisée pour créer des objets dans une base de données en SQL. <br>
+                  CREATE DATABASE Name_DB; // Exemple CREATE DATABASE tp1 ; <br>
+                  CREATE TABLE Name_table (....);
+                  </p>
+                </div>
+
+                <div class="h-images" >
+                <img src="/assets/bdd6.png" alt="" id="pic6" >
+              </div>
+              
+              </div>
+            </div>
+
+
+
+       <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2>USE:   </h2></div>
+                <div class="titre-element-p2"><h2>7</h2></div>
+              </div>
+              <div class="texte-element">
+
+                <div class="p-element" id="partie1">
+                  <p>
+                  Use est utilisée pour sélectionner une base de données existante ; <br> USE Name_BDD ; <br> Exemple : USE tp1 ;
+                  </p>
+                </div>
+
+                <div class="h-images" >
+                <img src="/assets/bdd7.png" alt="" id="pic7" >
+              </div>
+              
+              </div>
+            </div>
+
+
+
+             <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2>SELECT: </h2></div>
+                <div class="titre-element-p2"><h2>8</h2></div>
+              </div>
+              <div class="texte-element">
+
+                <div class="p-element" id="partie1">
+                  <p>
+                 Select est considérée comme un afficheur (printf), on peut afficher avec une chaine ou le résultat
+                  d’une équation mathématique, et généralement on l’utilise pour afficher nos tables dans une
+                  BDD.
+                  </p>
+                </div>
+
+                <div class="h-images" >
+                <img src="/assets/bdd8.png" alt="" id="pic8" >
+              </div>
+               
+              
+              <div class="p-element" >
+                <p id="left" >
+                  Sinon si on veut afficher toute la table on peut utiliser (*) à la place des noms de la colonne :  <br>
+                  SELECT * FROM hotel;
+                </p>
+              </div>
+              <div class="h-images">
+                <img src="/assets/bdd10.png" alt="" style="width: 300px; height: 220px;" id="pic10" >
+              </div>
+              <div class="p-element" >
+                <p id="left" >
+                  Aussi si on veut préciser notre recherche dans la table nous allons utiliser WHERE <br> Exemple : <br>
+                  SELECT * FROM hotel WHERE nomhotel = ‘AZ’;
+
+              </div>
+              <div class="h-images">
+                <img src="/assets/bdd11.png" alt=""  id="pic11">
+              </div>
+              <div class="p-element" >
+                <p id="left" >
+                  Si nous voulons sélectionner tous les attributs qui contiennent un alphabet précis nous allons <br>
+                  utiliser le mot clé LIKE a la place de =, et le % aussi : <br>
+                  SELECT * FROM hotel WHERE nomhotel LIKE ‘%A%’; <br>
+                  % on le lit : <br>
+                  %A% : quelque soit + A + quelque soit ; // un mot qui contient ‘a’
+                </p>
+              </div>
+              <div class="h-images">
+                <img src="/assets/bdd12.png" alt=""  id="pic12" >
+              </div>
+              <div class="p-element" >
+                <p id="left" >
+                  A% : A + quelque soit ; // un mot qui débute par ‘a’
+                </p>
+              </div>
+              <div class="h-images">
+                <img src="/assets/bdd13.png" alt=""  id="pic13">
+              </div>
+              <div class="p-element" >
+                <p id="left" >
+                  %A : quelque soit + A ; // un mot qui se termine par ‘a’
+                </p>
+              </div>
+              <div class="h-images">
+                <img src="/assets/bdd14.png" alt=""  id="pic14">
+              </div>
+
+
+              
+              </div>
+            </div>
+
+
+
+
+             <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2>INSERT: </h2></div>
+                <div class="titre-element-p2"><h2>9</h2></div>
+              </div>
+              <div class="texte-element">
+
+                <div class="p-element" id="partie1">
+                  <p>
+                  Insert est utilisé pour ajouter des éléments dans une table, pour cela on utilise : <br>
+                  INSERT INTO Name_Table VALUES (valeur1, valeur2...);
+                  </p>
+                </div>
+
+                <div class="h-images">
+                <img src="/assets/bdd15.png" alt=""  id="pic15" >
+              </div>
+              
+              </div>
+            </div>
+
+
+
+
+             <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2>ALTER:</h2></div>
+                <div class="titre-element-p2"><h2>10</h2></div>
+              </div>
+              <div class="texte-element">
+
+                <div class="p-element" id="partie1">
+                  <p>
+                  Alter est un mot clé pour modifier la conception de la table elle-même, il suffit juste d’écrire : <br>
+                   Alter Table Name_table [mot clé] instruction; <br>
+                   Nous avons dans le mot clé : drop et add qu’on va utiliser pour supprimer ou ajouter des
+                   instructions.
+                  Exemple <br>Si on veut ajouter une Colonne Nombre Etoile on doit utiliser la syntaxe suivante : <br>
+                   ALTER TABLE Name_table ADD COLUMN Name_column Type_column;
+                  </p>
+                </div>
+
+                <div class="h-images">
+                <img src="/assets/bdd16.png" alt=""  id="pic16" >
+                <img src="/assets/bdd17.png" alt=""  id="pic17" >
+              </div>
+
+                <div class="p-element" >
+                <p id="left" >
+                  Exemple si on a oublié de définir une clé primaire a notre table donc pas de panique, nous
+                  pouvant la définir avec ALTER comme suite :
+                  ALTER TABLE Name_table ADD PRIMARY KEY (Select_Column);
+                </p>
+              </div>
+              <div class="h-images">
+                <img src="/assets/bdd18.png" alt=""  id="pic18" >
+              </div>
+              <div class="p-element" >
+                <p id="left" >
+                  Et comme nous le remarquons, notre table a maintenant une clé primaire :
+                </p>
+              </div>
+              <div class="h-images">
+                <img src="/assets/bdd19.png" alt=""  id="pic19">
+              </div>
+              <div class="p-element" >
+                <p id="left" >
+                  On peut aussi utiliser Drop au lieu de ADD pour supprimer quelque chose dans notre table : <br>
+                   ALTER TABLE Name_table DROP COLUMN Name_column;
+                </p>
+              </div>
+              <div class="h-images">
+                <img src="/assets/bdd20.png" alt=""  id="pic20" >
+                <img src="/assets/bdd21.png" alt=""  id="pic21">
+              </div>
+
+              
+              </div>
+            </div>
+
+
+               <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2>UPDATE :  </h2></div>
+                <div class="titre-element-p2"><h2>11</h2></div>
+              </div>
+              <div class="texte-element">
+
+                <div class="p-element" id="partie1">
+                  <p>
+                 La syntaxe est comme suit : <br>
+                  Update permet de modifier une instance d’une table, on peut changer le nom ou prénom et même 
+                  les deux selon ce dont on a besoin.
+                  La syntaxe est comme suit : <br>
+                  Update name_table SET column_1= ‘valeur1’, column_2= ‘valeur2’ WHERE condition
+                  </p>
+                </div>
+
+               <div class="h-images">
+                <img src="/assets/bdd22.png" alt=""  id="pic23">
+              </div>
+              
+              </div>
+            </div>
+
+
+
+
+             <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2>DELETE : </h2></div>
+                <div class="titre-element-p2"><h2>12</h2></div>
+              </div>
+              <div class="texte-element">
+
+                <div class="p-element" id="partie1">
+                  <p>
+                   Delete est une commande pour supprimer une ou plusieurs lignes (selon la condition) dans une 
+                  table SQL. <br>
+                  La requête s’écrit comme ça : <br>
+                  DELETE FROM name_table WHERE condition;
+                  </p>
+                </div>
+
+              <div class="h-images">
+                <img src="/assets/bdd24.png" alt=""  id="pic24" >
+              </div>
+              
+              </div>
+            </div>
+
+               
+
+                <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2>DROP: </h2></div>
+                <div class="titre-element-p2"><h2>12</h2></div>
+              </div>
+              <div class="texte-element">
+
+                <div class="p-element" id="partie1">
+                  <p>
+                    On utilise DROP pour supprimer un objet (Table, BDD, View...) ; <br>
+                  DROP name_table; <br>
+                  Drop name_BDD; <br>
+                   PRIMARY KEY: <br>
+                  FOREIGN KEY:
+                  </p>
+                </div>
+              
+              </div>
+            </div>
+
+
+
+            
+          </div>
+    </main>
+    <footer>
+      <div class="up">
+        <hr />
+      </div>
+      <div class="down">
+        <div class="haut"></div>
+        <p>
+          Ce site n'est pas affilié aux sites officiels de l'université de
+          Boumerdès. Il a été créé par une équipe d'étudiants passionnés pour
+          aider les autres étudiants à réussir leurs études en informatique.
+        </p>
+
+        <p>
+          Nous remercions toutes les personnes qui ont contribué à la réussite
+          de ce site, en particulier l'équipe de Résumily.
+        </p>
+        <div class="bas">
+          <ul>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1QWWu7JSLnSfsHKbWjuicVW8LvDXKlXCs/view?usp=share_link"
+                ><img src="./assets/image/android-svgrepo-com.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://web.facebook.com/profile.php?id=100090109067553"
+                ><img src="./assets/image/facebook-svgrepo-com (3).svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="mailto:Resumily23@gmail.com"
+                ><img src="./assets/image/email-svgrepo-com.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+          <h4>© RÉSUMILY —All rights reserved</h4>
+        </div>
+      </div>
+    </footer>
+    <div id="scroll-up">
+      <button class="scroll-up-button caché">
+        <svg
+          fill="#32729a"
+          viewBox="0 0 200 200"
+          data-name="Layer 1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke="#32729a"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke="#CCCCCC"
+            stroke-width="0.4"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <title></title>
+            <path
+              d="M114,74.5a19.92,19.92,0,0,0-28.5,0L57,103a9.9,9.9,0,0,0,14,14L99.5,88.5,128,117a9.9,9.9,0,0,0,14-14Z"
+            ></path>
+            <path
+              d="M100,15a85,85,0,1,0,85,85A84.93,84.93,0,0,0,100,15Zm0,150a65,65,0,1,1,65-65A64.87,64.87,0,0,1,100,165Z"
+            ></path>
+          </g>
+        </svg>
+      </button>
+    </div>
+   
+    <script src="jeu.js"></script>
+    <script src="info-module.js"></script>
+    <script src="main.js"></script>
+   
+  </body>
+</html>

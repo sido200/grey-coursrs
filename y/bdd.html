@@ -910,16 +910,24 @@ mysql> select * from hotel;
                 <div class="titre-element-p1 bdd"><h2>DROP</h2></div>
                 <div class="titre-element-p2"><h2>14</h2></div>
               </div>
-              <div class="texte-element drop">
+              <div class="texte-element">
 
                 <div class="p-element" id="partie1">
                   <p>
                     On utilise DROP pour supprimer un objet (Table, BDD, View...) ; <br>
-                  <pre><code class="langage-sql codeligne">DROP name_table;</code></pre>    <br>
-                  <pre><code class="langage-sql codeligne"> Drop name_BDD;</code></pre>    <br>
+          
                   </p>
                 </div>
-              
+                    <div class="h-images code" >
+              <pre><code class="langage-sql codeligne">DROP table name_table;</code></pre>    
+              </div>
+                  <div class="h-images code" >
+               <pre><code class="langage-sql codeligne"> Drop database name_BDD;</code></pre>   
+              </div>
+                  <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> drop table hotel_1;
+Query OK, 0 rows affected (2.90 sec)</code></pre>
+              </div>
               </div>
             </div>
 

@@ -1008,6 +1008,9 @@ code {
   .mm {
     margin-right: 20px;
   }
+  .p-element.alter2 {
+    height: 200px;
+  }
 }
 
 /*

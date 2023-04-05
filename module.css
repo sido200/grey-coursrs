@@ -9,9 +9,10 @@ body {
   align-items: center;
   justify-content: space-around;
   height: 100px;
+  
 }
 .up {
-  height: 4px;
+  height: 4px;f
 }
 .down {
   display: flex;
@@ -441,7 +442,27 @@ code {
 .par {
   margin-right: 5px;
 }
+.important{
+  color:red;
+}
+.semi-important{
+  color: #32729a;
+}
 /*respo tablet*/
+@media screen and (max-width: 920px){
+  .element,
+  .texte-element,
+  .img-element,
+  .titre-element,
+  .p-element,
+  .nv-elemnt {
+    width: 700px;
+    overflow: visible;
+  }
+  .element img {
+    width: 400px;
+  }
+}
 @media screen and (max-width: 768px) {
   .element img {
     width: 300px;

@@ -57,7 +57,7 @@
       <div class="module-template">
         <div class="menu">
           <div class="title">
-            <h2>Bdd</h2>
+            <h2>BDD</h2>
           </div>
 
           <div class="buttons-menu">
@@ -531,6 +531,11 @@ Database changed</code></pre>
                   BDD.
                   </p>
                 </div>
+                 <div class="p-element" >
+                <p id="left" >
+                 Afficher une chaine: <br>
+                </p>
+              </div>
                <div class="h-images code" >
                 <pre><code class="language-sql">mysql> select "hello sinjab!";
 +---------------+
@@ -539,6 +544,11 @@ Database changed</code></pre>
 | hello sinjab! |
 +---------------+
 1 row in set (0.00 sec)</code></pre>
+              </div>
+               <div class="p-element" >
+                <p id="left" >
+                 Afficher une équation: <br>
+                </p>
               </div>
                 <div class="h-images code" >
                 <pre><code class="language-sql">mysql> select 5+5+6+9+8+9+(5*8);
@@ -549,7 +559,26 @@ Database changed</code></pre>
 +-------------------+
 1 row in set (0.04 sec)</code></pre>
               </div>
-              
+              <div class="p-element" >
+                <p id="left" >
+                  Dans le cas d'affichage d'un tableau: <br> Pour afficher les colonnes souhaitées seulement: <br>
+                 <pre><code class="language-sql codeligne">  SELECT nom_column1,nom_column2  FROM Nom_Table;</code></pre>
+                </p>
+              </div>
+                 <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql tabtab">mysql> select numhotel from hotel;
++----------+
+| numhotel |
++----------+
+|       13 |
+|       14 |
+|      118 |
+|      185 |
+|     1887 |
+|    18198 |
++----------+
+6 rows in set (0.08 sec)</code></pre>
+              </div>
               <div class="p-element" >
                 <p id="left" >
                   Sinon si on veut afficher toute la table on peut utiliser (*) à la place des noms de la colonne :  <br>
@@ -891,6 +920,128 @@ mysql> select * from hotel;
                   </p>
                 </div>
               
+              </div>
+            </div>
+
+
+             <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2>Primary Key</h2></div>
+                <div class="titre-element-p2"><h2>15</h2></div>
+              </div>
+              <div class="texte-element">
+
+                <div class="p-element" id="partie1">
+                  <p>
+                    On a 3 styles pour déclarer une clé primaire ( Primary key ) 
+                  </p>
+                </div>
+                 <div class="p-element" id="partie1">
+                  <p>
+                   La 1ére: 
+                  </p>
+                </div>
+                    <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> create table hotel_1(
+    -> numhotel int PRIMARY KEY,
+    -> nomhotel varchar(30),
+    -> ville char(20)
+    -> );
+Query OK, 0 rows affected (2.04 sec)</code></pre>
+              </div>
+
+                <div class="p-element" id="partie1">
+                  <p>
+                     Le 2ème:
+                  </p>
+                </div>
+                <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> create table hotel_2(
+    -> numhotel int,
+    -> nomhotel varchar(30),
+    -> ville char(20),
+    -> PRIMARY KEY (numhotel)
+    -> );
+Query OK, 0 rows affected (1.54 sec)</code></pre>
+              </div>
+                
+                <div class="p-element" id="partie1">
+                  <p>
+                   Le 3ème:
+                  </p>
+                </div>
+               <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> create table hotel_3(
+    -> numhotel int,
+    -> nomhotel varchar(30),
+    -> ville char(20),
+    -> CONSTRAINT pk_numhotel PRIMARY KEY (numhotel)
+    -> );
+Query OK, 0 rows affected (0.30 sec)</code></pre>
+              </div>
+    <div class="p-element" id="partie1">
+                  <p>
+                    Et les trois font exactement le même travail, personnellement je préfère la première. <br>
+<span >Note :</span> Pour les clés composées on peut utiliser que le 2eme et 3eme style d’écriture. 
+                  </p>
+                </div>
+<div class="p-element" id="partie1">
+                  <p>
+                    Supposons que l'on veuille faire la composition du ( nom + le numero d’hotel ) comme clé primaire, alors nous allons l’écrire comme suit : 
+                  </p>
+                </div>
+                <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> create table hotel_4(
+    -> numhotel int,
+    -> nomhotel varchar(30),
+    -> ville char(20),
+    -> PRIMARY KEY (numhotel,nomhotel)
+    -> );
+Query OK, 0 rows affected (0.30 sec)</code></pre>
+              </div>
+
+              </div>
+            </div>
+
+
+             <div class="element">
+              <div class="titre-element">
+                <div class="titre-element-p1 bdd"><h2>FOREIGN KEY</h2></div>
+                <div class="titre-element-p2"><h2>16</h2></div>
+              </div>
+              <div class="texte-element">
+
+                <div class="p-element" id="partie1">
+                  <p>
+                   Pour la clé étrangère, comme on le sait, elle est une clé qui vient d’une autre table.
+                  </p>
+                </div>
+                <div class="h-images" >
+                <img src="./assets/image/foreign_key_1.png" alt="">
+              </div>
+              <div class="p-element" id="partie1">
+                  <p>
+                 Sa syntaxe s’écrit comme suit :
+                  </p>
+                </div>
+                 <div class="h-images" >
+                <img src="./assets/image/foreign_key_2.png" alt="">
+              </div>
+              <div class="p-element" id="partie1">
+                  <p>
+                Et pour mieux comprendre la syntaxe on peut le lire comme ça : <br>
+                numhotel de la table chambre devient une référence de Numhotel de la table hotel
+                  </p>
+                </div>
+
+                <div class="h-images code" >
+                <pre class="tel-code"><code class="language-sql">mysql> create table chambre(
+    -> Numchambre int,
+    -> numhotel int,
+    -> FOREIGN KEY (numhotel) REFERENCES hotel (Numhotel)
+    -> );
+Query OK, 0 rows affected (1.85 sec)</code></pre>
+              </div>
               </div>
             </div>
 

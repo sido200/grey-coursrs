@@ -12,7 +12,7 @@ body {
   
 }
 .up {
-  height: 4px;f
+  height: 4px;
 }
 .down {
   display: flex;
@@ -447,6 +447,7 @@ code {
 }
 .semi-important{
   color: #32729a;
+  
 }
 .thl{
   justify-content:flex-start;

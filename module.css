@@ -448,6 +448,10 @@ code {
 .semi-important{
   color: #32729a;
 }
+.thl{
+  justify-content:flex-start;
+  width:100%;
+}
 /*respo tablet*/
 @media screen and (max-width: 920px){
   .element,

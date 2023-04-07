@@ -9,7 +9,6 @@ body {
   align-items: center;
   justify-content: space-around;
   height: 100px;
-  
 }
 .up {
   height: 4px;
@@ -442,19 +441,18 @@ code {
 .par {
   margin-right: 5px;
 }
-.important{
-  color:red;
+.important {
+  color: red;
 }
-.semi-important{
+.semi-important {
   color: #32729a;
-  
 }
-.thl{
-  justify-content:flex-start;
-  width:100%;
+.thl {
+  justify-content: flex-start;
+  width: 100%;
 }
 /*respo tablet*/
-@media screen and (max-width: 920px){
+@media screen and (max-width: 920px) {
   .element,
   .texte-element,
   .img-element,
@@ -866,6 +864,10 @@ code {
   }
   .mm {
     margin-right: 20px;
+  }
+  /*se*/
+  .se {
+    margin: 15px 30px 15px 0px !important;
   }
 }
 
@@ -1359,7 +1361,7 @@ iframe {
   width: 220px " height=" 270px;
 }
 /*thl*/
-#oper{
+#oper {
   margin-right: 50%;
   color: #32729a;
 }

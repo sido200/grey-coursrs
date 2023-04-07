@@ -9,7 +9,6 @@ body {
   align-items: center;
   justify-content: space-around;
   height: 100px;
-  
 }
 .up {
   height: 4px;
@@ -442,19 +441,18 @@ code {
 .par {
   margin-right: 5px;
 }
-.important{
-  color:red;
+.important {
+  color: red;
 }
-.semi-important{
+.semi-important {
   color: #32729a;
-  
 }
-.thl{
-  justify-content:flex-start;
-  width:100%;
+.thl {
+  justify-content: flex-start;
+  width: 100%;
 }
 /*respo tablet*/
-@media screen and (max-width: 920px){
+@media screen and (max-width: 920px) {
   .element,
   .texte-element,
   .img-element,
@@ -563,6 +561,12 @@ code {
   }
   .tel-code44 {
     overflow: visible;
+  }
+  .tel-code88 {
+    font-size: 13px !important ;
+  }
+  .tel-code.teltel {
+    font-size: 13px !important;
   }
 }
 /*respo tablet s et s*/
@@ -726,6 +730,9 @@ code {
   .mm {
     margin-right: 20px;
   }
+  .tel-code88 {
+    font-size: 7px !important ;
+  }
 }
 
 /*respo tel*/
@@ -866,6 +873,15 @@ code {
   }
   .mm {
     margin-right: 20px;
+  }
+  .tel-code88 {
+    font-size: 7px !important ;
+  }
+  .tel-code.teltel {
+    font-size: 7px !important;
+  }
+  .tel-code.teltel.tel3 {
+    font-size: 10px !important;
   }
 }
 
@@ -1016,6 +1032,12 @@ code {
   .p-element.alter2 {
     height: 200px;
   }
+  .tel-code88 {
+    font-size: 7px !important ;
+  }
+  .tel-code.teltel {
+    font-size: 6px !important;
+  }
 }
 /*respo grey*/
 @media screen and (max-width: 290px) {
@@ -1060,7 +1082,7 @@ code {
   .h-images img {
     width: 200px !important;
   }
-  
+
   iframe {
     width: 230px;
     height: 150px;
@@ -1075,9 +1097,8 @@ code {
     overflow: visible;
     font-size: 13px;
   }
-  
-  
-  .titre-element-p1{
+
+  .titre-element-p1 {
     background-color: #32729a;
     height: 45px;
     width: 150px;
@@ -1092,7 +1113,7 @@ code {
     width: 45px !important;
   }
   p {
-    max-width: 90% ;
+    max-width: 90%;
     height: auto;
     word-break: break-word;
   }
@@ -1136,9 +1157,8 @@ code {
   .titre-element-p1.bdd.longsmp h2 {
     font-size: 9px;
   }
-  .altercode{
+  .altercode {
     font-size: 5px !important;
-   
   }
   .tel-code {
     font-size: 7px;
@@ -1163,38 +1183,37 @@ code {
     font-size: 5.3px !important;
     left: -160px;
   }
-  .tel-code8{
-    font-size: 6px ;
-    
+  .tel-code8 {
+    font-size: 6px !important ;
   }
-  .tel-code9{
+  .tel-code9 {
     font-size: 5.6px;
   }
-  .tel-code10{
+  .tel-code10 {
     font-size: 6px;
   }
-  .tel-code11{
+  .tel-code11 {
     font-size: 6px;
   }
-  .tel-code12{
+  .tel-code12 {
     font-size: 6px;
   }
-  .tel-code13{
+  .tel-code13 {
     font-size: 6px;
   }
-  
-  .code{
+
+  .code {
     margin-top: 20% !important;
   }
-  .tel-code14{
+  .tel-code14 {
     font-size: 5px;
   }
   /*zmaaar*/
- 
-  .tel-code16{
+
+  .tel-code16 {
     font-size: 6px;
   }
-  .tel-code17{
+  .tel-code17 {
     font-size: 5.4px;
   }
   .p-element.alter {
@@ -1216,7 +1235,6 @@ code {
   .p-element.alter2 {
     height: 200px;
   }
-  
 }
 
 /*
@@ -1560,7 +1578,7 @@ iframe {
   width: 220px " height=" 270px;
 }
 /*thl*/
-#oper{
+#oper {
   margin-right: 50%;
   color: #32729a;
 }

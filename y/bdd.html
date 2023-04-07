@@ -431,7 +431,7 @@
                 </div>
 
                  <div class="h-images code" >
-                <pre class="tel-code"><code class="language-sql"> mysql> show columns from medecin;
+                <pre class="tel-code tel-code6"><code class="language-sql"> mysql> show columns from medecin;
 +--------+-------------+------+-----+---------+-------+
 | Field  | Type        | Null | Key | Default | Extra |
 +--------+-------------+------+-----+---------+-------+
@@ -450,7 +450,7 @@
                 </p>
               </div>
                <div class="h-images code" >
-                <pre class="tel-code"><code class="language-sql"> mysql> desc medicament;
+                <pre class="tel-code tel-code7"><code class="language-sql"> mysql> desc medicament;
 +-----------+------+------+-----+---------+-------+
 | Field     | Type | Null | Key | Default | Extra |
 +-----------+------+------+-----+---------+-------+
@@ -608,7 +608,7 @@ Database changed</code></pre>
           <pre class="tel-code"><code class="langage-sql tabtab"> SELECT * FROM hotel WHERE nomhotel = ‘AZ’;</code></pre>   
               </div>
              <div class="h-images code" >
-                <pre class="tel-code"><code class="language-sql">mysql> SELECT * FROM hotel WHERE nomhotel = 'AZ';
+                <pre class="tel-code tel-code8"><code class="language-sql">mysql> SELECT * FROM hotel WHERE nomhotel = 'AZ';
 +----------+----------+-------+
 | numhotel | nomhotel | ville |
 +----------+----------+-------+
@@ -618,7 +618,7 @@ Database changed</code></pre>
               </div>
               <div class="p-element" >
                 <p id="left" >
-                  Si nous voulons sélectionner tous les attributs qui contiennent un alphabet précis nous allons <br>
+                  Si nous voulons sélectionner tous les lignes qui contiennent un alphabet précis nous allons <br>
                   utiliser le mot clé LIKE a la place de =, et le % aussi : <br>
                <pre class="tel-code"><code class="langage-sql tabtab"> SELECT * FROM hotel WHERE nomhotel LIKE '%A%';</code></pre>   <br>
                   % on le lit : <br>
@@ -626,7 +626,7 @@ Database changed</code></pre>
                 </p>
               </div>
                <div class="h-images code" >
-                <pre class="tel-code"><code class="language-sql">mysql> SELECT * FROM hotel WHERE nomhotel LIKE '%a%';
+                <pre class="tel-code tel-code9"><code class="language-sql">mysql> SELECT * FROM hotel WHERE nomhotel LIKE '%a%';
 +----------+-----------+-----------+
 | numhotel | nomhotel  | ville     |
 +----------+-----------+-----------+
@@ -647,7 +647,7 @@ Database changed</code></pre>
                 </p>
               </div>
               <div class="h-images code" >
-                <pre class="tel-code"><code class="language-sql">mysql> SELECT * FROM hotel WHERE nomhotel LIKE 'a%';
+                <pre class="tel-code tel-code10" ><code class="language-sql">mysql> SELECT * FROM hotel WHERE nomhotel LIKE 'a%';
 +----------+-----------+---------+
 | numhotel | nomhotel  | ville   |
 +----------+-----------+---------+
@@ -662,7 +662,7 @@ Database changed</code></pre>
                 </p>
               </div>
               <div class="h-images code" >
-                <pre class="tel-code"><code class="language-sql">mysql> SELECT * FROM hotel WHERE nomhotel LIKE '%a';
+                <pre class="tel-code tel-code11"><code class="language-sql">mysql> SELECT * FROM hotel WHERE nomhotel LIKE '%a';
 +----------+----------+-------+
 | numhotel | nomhotel | ville |
 +----------+----------+-------+
@@ -694,7 +694,7 @@ Database changed</code></pre>
                 </div>
 
                 <div class="h-images code" >
-                <pre class="tel-code"><code class="language-sql">mysql> insert into hotel values (13,"Salim","alger");
+                <pre class="tel-code tel-code12"><code class="language-sql">mysql> insert into hotel values (13,"Salim","alger");
 Query OK, 1 row affected (0.07 sec)</code></pre>
               </div>
               
@@ -714,16 +714,16 @@ Query OK, 1 row affected (0.07 sec)</code></pre>
                 <div class="p-element alter" id="partie1">
                   <p>
                   Alter est un mot clé pour modifier la conception de la table elle-même, il suffit juste d’écrire : <br>
-                 <pre class="tel-code"><code class="langage-sql tabtab"> Alter Table Name_table [mot clé] instruction;</code></pre>  <br>
+                 <pre class="tel-code altercode"><code class="langage-sql tabtab"> Alter Table Name_table [mot clé] instruction;</code></pre>  <br>
                  <p> Nous avons dans le mot clé : drop et add qu’on va utiliser pour supprimer ou ajouter des
                    instructions.
                   Exemple: <br>Si on veut ajouter une Colonne Nombre Etoile on doit utiliser la syntaxe suivante: <br></p> 
-                 <pre class="tel-code"><code class="langage-sql tabtab"> ALTER TABLE Name_table ADD COLUMN Name_column Type_column;</code></pre> 
-                  </p>
+                 <pre class="tel-code "><code class="langage-sql tabtab"> ALTER TABLE Name_table ADD COLUMN Name_column Type_column;</code></pre> 
+                  </p> 
                 </div>
 
                 <div class="h-images code" >
-                <pre class="tel-code"><code class="language-sql">mysql> alter table hotel add column etoile int ;
+                <pre class="tel-code tel-code13"><code class="language-sql">mysql> alter table hotel add column etoile int ;
 Query OK, 0 rows affected (2.24 sec)
 Records: 0  Duplicates: 0  Warnings: 0
 
@@ -752,7 +752,7 @@ mysql> select * from hotel;
                 </p>
               </div>
                <div class="h-images code" >
-                <pre class="tel-code"><code class="language-sql">mysql> alter table hotel add primary key (numhotel);
+                <pre class="tel-code tel-code13"><code class="language-sql">mysql> alter table hotel add primary key (numhotel);
 Query OK, 0 rows affected (3.76 sec)
 Records: 0  Duplicates: 0  Warnings: 0</code></pre>
               </div>
@@ -762,7 +762,7 @@ Records: 0  Duplicates: 0  Warnings: 0</code></pre>
                 </p>
               </div>
               <div class="h-images code" >
-                <pre class="tel-code"><code class="language-sql">mysql> desc hotel;
+                <pre class="tel-code tel-code14"><code class="language-sql">mysql> desc hotel;
 +----------+-------------+------+-----+---------+-------+
 | Field    | Type        | Null | Key | Default | Extra |
 +----------+-------------+------+-----+---------+-------+
@@ -780,7 +780,7 @@ Records: 0  Duplicates: 0  Warnings: 0</code></pre>
                 </p>
               </div>
               <div class="h-images code" >
-                <pre class="tel-code"><code class="language-sql">mysql> alter table hotel drop column etoile;
+                <pre class="tel-code tel-code13"><code class="language-sql">mysql> alter table hotel drop column etoile;
 Query OK, 0 rows affected (0.47 sec)
 Records: 0  Duplicates: 0  Warnings: 0
 
@@ -818,7 +818,7 @@ mysql> select * from hotel;
                   Update permet de modifier une instance d’une table, on peut changer le nom ou prénom et même 
                   les deux selon ce dont on a besoin.
                   La syntaxe est comme suit : <br>
-                <pre class="tel-code44"><code class="langage-sql codeligne tel-code4"> Update name_table SET column_1='valeur1',column_2='valeur2' WHERE condition</code></pre> 
+                <pre class="tel-code44 tel-code15" ><code class="langage-sql codeligne"> Update name_table SET column_1='valeur1',column_2='valeur2' WHERE condition</code></pre> 
                   </p>
                 </div>
 
@@ -883,7 +883,7 @@ mysql> select * from hotel;
                 </div>
 
                <div class="h-images code" >
-                <pre class="tel-code"><code class="language-sql">mysql> delete from hotel where ville='boumerdes';
+                <pre class="tel-code tel-code16"><code class="language-sql">mysql> delete from hotel where ville='boumerdes';
 Query OK, 3 rows affected (1.20 sec)
 
 mysql> select * from hotel;
@@ -979,7 +979,7 @@ Query OK, 0 rows affected (1.54 sec)</code></pre>
                   </p>
                 </div>
                <div class="h-images code" >
-                <pre class="tel-code"><code class="language-sql">mysql> create table hotel_3(
+                <pre class="tel-code tel-code16"><code class="language-sql">mysql> create table hotel_3(
     -> numhotel int,
     -> nomhotel varchar(30),
     -> ville char(20),
@@ -994,12 +994,13 @@ Query OK, 0 rows affected (0.30 sec)</code></pre>
                   </p>
                 </div>
 <div class="p-element" id="partie1">
+                 <h3>Clé composé:</h3>
                   <p>
                     Supposons que l'on veuille faire la composition du ( nom + le numero d’hotel ) comme clé primaire, alors nous allons l’écrire comme suit : 
                   </p>
                 </div>
                 <div class="h-images code" >
-                <pre class="tel-code"><code class="language-sql">mysql> create table hotel_4(
+                <pre class="tel-code tel-code16"><code class="language-sql">mysql> create table hotel_4(
     -> numhotel int,
     -> nomhotel varchar(30),
     -> ville char(20),
@@ -1043,7 +1044,7 @@ Query OK, 0 rows affected (0.30 sec)</code></pre>
                 </div>
 
                 <div class="h-images code" >
-                <pre class="tel-code"><code class="language-sql">mysql> create table chambre(
+                <pre class="tel-code tel-code17"><code class="language-sql">mysql> create table chambre(
     -> Numchambre int,
     -> numhotel int,
     -> FOREIGN KEY (numhotel) REFERENCES hotel (Numhotel)

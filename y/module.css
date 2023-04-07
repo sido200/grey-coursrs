@@ -12,7 +12,7 @@ body {
   
 }
 .up {
-  height: 4px;f
+  height: 4px;
 }
 .down {
   display: flex;
@@ -447,6 +447,11 @@ code {
 }
 .semi-important{
   color: #32729a;
+  
+}
+.thl{
+  justify-content:flex-start;
+  width:100%;
 }
 /*respo tablet*/
 @media screen and (max-width: 920px){
@@ -1352,4 +1357,9 @@ iframe {
 }
 #pic1 {
   width: 220px " height=" 270px;
+}
+/*thl*/
+#oper{
+  margin-right: 50%;
+  color: #32729a;
 }

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+      rel="shortcut icon"
+      href="./assets/image/logo_V2.png"
+      type="image/x-icon"
+    />
+    <title>RÉSUMILY-THL</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="module.css" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WPQJ2PCGT6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WPQJ2PCGT6');
+</script>
+  <body>
+    <header>
+      <nav>
+        <i class="fa-solid fa-bars"></i>
+        <div class="logo">
+          <a href="/index.html"><img src="/assets/image/logo_V2.png" alt="" />
+            <h2>RÉSUMILY</h2></a>
+        </div>
+        <div class="items">
+          <ul>
+            <li><a href="/calcul.html">CALCULER LA MOYENNE</a></li>
+            <li><a href="/index.html#l2">LICENCE 2</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="module-template">
+
+
+      <div class="menu">
+
+      <div class="title">
+      <h2>THL</h2>
+      </div>
+
+        <div class ="buttons-menu">
+        <div class ="chapitres-menu">
+            <a href="#intro"><button>Introduction</button></a>
+            <a href="#chap1"><button>Chapitre 1</button></a>
+        </div>
+         </div>
+      </div>
+      <div class="general-infos">
+        <h1>Introduction</h1>
+         <div class="infos-carres">
+           <div class="element">
+             <div class="titre-element">
+               <div class="titre-element-p1"> 
+                 <h2 id="intro" >Le compilateur</h2> 
+               </div>
+               <div class="titre-element-p2"> 
+                 <h2>1</h2>
+               </div>
+             </div>
+             <div class="texte-element">
+                <div class="p-element thl">
+                  <p>Un compilateur est un <span >programme</span> qui : <br>
+                   prend en entrée une <span> donnée textuelle </span> source (programme, donnée xml, fichier
+                   de configuration, etc) <br>
+                    la <span> reconnaît </span> (l’analyse) pour vérifier sa correction <br>
+                    émet éventuellement un <span> message d’erreur </span> <br>
+                   le traduit dans un <span> langage cible </span>
+                   </p>
+               </div>
+               <img src="/assets/compilateur.jpg" alt="" id="img">
+             </div>
+           </div>
+
+          <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2  style="font-size: 15px; text-align: center;" >A quoi sert la THL en compilation</h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>2</h2>
+              </div>
+            </div>
+            <div class="texte-element">
+               <div class="p-element thl">
+                <p>Permet de <span> définir </span> rigoureusement(exactement) et <span> reconnaître algorithmiquement </span> (pour
+                  les langages source et cible) : <br>
+                  leur <span> vocabulaire </span> ou lexique : les mots autorisés <br>
+                  ⇒ analyse lexicale <br>
+                  ⇒ automates à nombre fini d’états, expressions régulières <br>
+                  
+                  leur <span> syntaxe</span> : la structure des phrases autorisées <br>
+                  ⇒ analyse syntaxique <br>
+                  ⇒ automates à pile, grammaires algébriques <br>
+                  
+                  leur <span> sémantique </span> : la signification des phrases autorisées <br>
+                  ⇒ analyse sémantique <br>
+                  ⇒ grammaires attribuées</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="general-infos" id="chap1">
+    
+          <h1>Chapitre 1: langage</h1>
+          <div class="infos-carres">
+          <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2  >Alphabet - Definition</h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>1</h2>
+              </div>
+            </div>
+            <div class="texte-element">
+               <div class="p-element thl">
+                <p> Un alphabet est un ensemble fini, non vide de symboles. <br>
+                  Exemples : <br>
+                  Les nombres romains : ∑1 = {I, V, X, L, C, D, M} <br>
+                  N L'ensemble des entiers n'est pas un alphabet. <br>
+                  Les nombres binaires : ∑2 = {0,1} </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2  >Mot - Definition</h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>1</h2>
+              </div>
+            </div>
+            <div class="texte-element">
+               <div class="p-element thl">
+                <p>Un mot est une suite (séquence) finie de symbole de l'alphabet X. <br>
+                  Exemples: <br>
+                  W1= I I  W2= I X</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2  >mot vide</h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>2</h2>
+              </div>
+            </div>
+            <div class="texte-element">
+               <div class="p-element thl">
+                 <p>Le mot vide noté ε est un mot particulier qui ne contient aucun
+                  symbole.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2  >longueur de mot</h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>3</h2>
+              </div>
+            </div>
+            <div class="texte-element">
+               <div class="p-element thl">
+                <p>La longueur d'un mot w (notée |w|) est le nombre de symboles qui
+                  constituent ce mot <br>
+                  Exemples : <br>
+                  W = 0101 |W|=4 <br>
+                  W= ε |W|=0</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2  style="font-size: 17px; text-align: center;" >La fermeture de kleene</h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>4</h2>
+              </div>
+            </div>
+            <div class="texte-element">
+               <div class="p-element thl">
+                <p>L’ensemble de mots sur un alphabet X est noté X* (fermeture transitive). <br>
+                  exemples : <br>
+                  Soit ∑1, ∑1*={ ε, I,II,III,IV,V,VI, ...} <br>
+                  Soit ∑2, ∑2*={ ε, 0,1,10,11,100, ...}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2>Notations</h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>5</h2>
+              </div>
+            </div>
+            <div class="texte-element">
+               <div class="p-element thl">
+                <p>soit w appartient à X <br>
+                  X est l’alphabet <br>
+                  x est une lettre de X <br>
+                  |w|X est le nombre d’occurrences de x dans w. <br>
+                  Exemple : avec X ={a,b} <br>
+                  |abb|a = 1
+                  |abb|b = 2
+                </p> 
+              </div>
+            </div>
+          </div>
+
+           <h2 id="oper">Opérations sur les mots :</h2>
+
+          <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2>La concaténation</h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>1</h2>
+              </div>
+            </div>
+            <div class="texte-element">
+               <div class="p-element thl">
+                <p>Soient w1 et w2 deux mots définis sur l'alphabet ∑, <br>
+                  <span>w1 = a1...an; w2 = b1...bm. </span> <br>
+                  La concaténation de w1 et w2 est un mot w définis sur le même
+                  alphabet. <span> w = a1...an.b1...bm. </span> <br>
+                  exemple : <br>
+                  si W1=001 et W2=1010 <br>
+                  Alors W1.W2=001.1010 W2.W1=1010.001</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2>La puissance</h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>2</h2>
+              </div>
+            </div>
+            <div class="texte-element">
+               <div class="p-element thl">
+                <p>
+                Soit un alphabet X et w2 appartient à X*. <br>
+                
+                W^n=  { ε                 si n=0 <br>
+                        et <br>
+                     { W.W^(n-1)         si n>0   <br>
+           
+                exemples : <br>
+                soit w1=01 (w1)³=010101, (w1)°=ε <br>
+                soit w2=abb (w2)²=abbabb
+              </p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2>L'egalite </h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>3</h2>
+              </div>
+            </div>
+            <div class="texte-element">
+               <div class="p-element thl">
+                <p>Deux mots sont égaux si : <br>
+                  ils sont de même longueur. <br>
+                  ils ont des lettres identiques de positionnements identiques. <br>
+                 Soit un alphabet X et w1, w2 appartient à X* tels que : <br>
+                 w1 = x1x2 ...xn Ɐ i ∈ {1,2,....n}, xi ∈ X <br>
+                 w2 = y1y2 ...yp Ɐ i ∈ {1,2,....p} yi ∈ X <br>
+                 On a w1 = w2 si et seulement si p = n et Ɐ i ∈ [1; n] : xi = yi.</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2  style="font-size: 15px; text-align: center;" > Facteurs (préfixe et suffixe): </h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>4</h2>
+              </div>
+            </div>
+            <div class="texte-element">
+               <div class="p-element thl">
+                <p>Soit un alphabet X et w, u deux mots appartiennent à X*. <br>
+                  u est un préfixe de w ⇔ il existe v ∈ X* tel que w = u.v <br>
+                  u est un suffixe de w ⇔ il existe v ∈ X* tel que w = v.u <br>
+                  Exemple : <br>
+                  soit X={0,1}, w=01100 <br>
+                   Les préfixes de w sont : ε, 0, 01, 011, 0110, <span> 01100 </span><br>
+                   Les suffixes de w sont : ε, 0, 00, 100, 1100, <span>01100</span> </p> 
+              </div>
+            </div>
+          </div>
+
+
+          <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2  style="font-size: 15px; text-align: center;" >Cas spécial (facteur propre) :</h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>4</h2>
+              </div>
+            </div>
+            <div class="texte-element">
+               <div class="p-element thl">
+                <p>u est un facteur propre de w ⇔ u est un facteur de w et w ≠ u <br>
+                  Si on reprend l’exemple précédent w=01100: <br>
+                   Les préfixes propres de w sont : ε, 0, 01, 011, 0110 <br>
+                   Les suffixes propres de w sont : ε, 0, 00, 1100, 1100</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2>mot miroir :</h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>4</h2>
+              </div>
+            </div>
+            <div class="texte-element">
+               <div class="p-element thl">
+                <p>Si W = a1a2...an, le mot miroir est : <span>Wr = an...a2a1.</span>  <br>
+                  Exemple : <br>
+                  Wr=bbca Wr=acbb</p> 
+              </div>
+            </div>
+          </div>
+               
+           
+           
+           <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2>language-Definition :</h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>1</h2>
+              </div>
+            </div>
+            <div class="texte-element">
+               <div class="p-element thl "  >
+                <p>Un <big>langage</big>  sur un alphabet X est une partie de X*. C’est donc un
+                  ensemble de mots. <br>
+                  L ⊂ X* ou L ∈ P(X*) <br>
+                  Exemple: <br>
+                  Soit X = {a,b} un alphabet. <br>
+                  - ∅ est un langage <br>
+            
+                  - { ε } est un langage <br>
+                  - {a, ba, bba} est un langage</p> 
+              </div>
+            </div>
+          </div>
+
+
+          <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2  style="font-size: 16px; text-align: center;" >Opérations sur les langages :</h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>2</h2>
+              </div>
+            </div>
+            <div class="texte-element" >
+               <div class="p-element thl" style="margin-left: 10px;">
+               
+                 <div style="word-break: break-word; width: 95%;"><h4>Soit L1, L2, A ∈ ∑* </h4> 
+                    <h4>Union:</h4> 
+                L1 ⋃ L2 ou L1 + L2 = {x | x ∈ L1 ou x ∈ L2} 
+                 <h4>Intersection :</h4> 
+                 L1 ⋂ L2 = {x|x ∈ L1 et x ∈ L2} 
+                <h4>Différence :</h4> 
+                L1 - L2 = {x|x ∈ L1 et x ∉ L2} 
+                <h4>Complémentaire :</h4> 
+                Ā={x|x ∈ ∑* et x ∉ A} 
+                <h4>Concaténation :</h4>
+                L1.L2 = {xy|x ∈ L1 et y ∈ L2} 
+                 <h4>L’égalité entre deux langages :</h4> 
+                 Deux langages A, B ⊆ X* sont <big>égaux</big>, noté A =B ⇔( A ⊆ B et B ⊆ A). 
+                 <h4>Produit de langages :</h4> 
+                <p style="word-break: break-word; margin: 0; "> Soit deux langages A, B ⊆ X*.
+                 Le <big>produit</big> de A et B est noté : <br> A◦ B ={u.v|u ∈ A et v ∈ B}. 
+                  </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+</div>
+    </main>
+    <footer>
+      <div class="up">
+        <hr />
+      </div>
+      <div class="down">
+        <div class="haut"></div>
+        <p>
+          Ce site n'est pas affilié aux sites officiels de l'université de
+          Boumerdès. Il a été créé par une équipe d'étudiants passionnés pour
+          aider les autres étudiants à réussir leurs études en informatique.
+        </p>
+
+        <p>
+          Nous remercions toutes les personnes qui ont contribué à la réussite
+          de ce site, en particulier l'équipe de Résumily.
+        </p>
+        <div class="bas">
+           <ul>
+                  <li><a href="https://drive.google.com/file/d/1QWWu7JSLnSfsHKbWjuicVW8LvDXKlXCs/view?usp=share_link"><img src="./assets/image/android-svgrepo-com.svg" alt=""></a></li>
+                  <li><a href="https://web.facebook.com/profile.php?id=100090109067553"><img src="./assets/image/facebook-svgrepo-com (3).svg" alt=""></a></li>
+                  <li><a href="mailto:Resumily23@gmail.com"><img src="./assets/image/email-svgrepo-com.svg" alt=""></a></li>
+                </ul>
+          <h4>© RÉSUMILY —All rights reserved</h4>
+        </div>
+      </div>
+    </footer>
+    <div id="scroll-up">
+      <button class="scroll-up-button caché">
+        <svg
+          fill="#32729a"
+          viewBox="0 0 200 200"
+          data-name="Layer 1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke="#32729a"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke="#CCCCCC"
+            stroke-width="0.4"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <title></title>
+            <path
+              d="M114,74.5a19.92,19.92,0,0,0-28.5,0L57,103a9.9,9.9,0,0,0,14,14L99.5,88.5,128,117a9.9,9.9,0,0,0,14-14Z"
+            ></path>
+            <path
+              d="M100,15a85,85,0,1,0,85,85A84.93,84.93,0,0,0,100,15Zm0,150a65,65,0,1,1,65-65A64.87,64.87,0,0,1,100,165Z"
+            ></path>
+          </g>
+        </svg>
+      </button>
+    </div>
+  
+    <script src="main.js"></script>
+    <script src="info-module.js"></script>
+    <script src="info-module.js"></script>
+  </body>
+</html>

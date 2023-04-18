@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -118,7 +119,7 @@
                   mais aussi des fonctions et procédures (on les appellera
                   méthodes). Et elle décrit l'état et le comportement d’un
                   objet.</p>
-    <img src="./assets/image/ClasseImage.png" alt="">
+    <img src="/asset/image/ClasseImage.png" alt="" style="width:540px; ">
     </div>
      </div>
 
@@ -130,7 +131,7 @@
     <div class="texte-element">
     <p> l’instance d’une classe est comme une occurrence, on dit qu’un
                   objet est une instance d’une classe.</p>
-    <img src="./assets/image/ClasseObjetInstance.png" alt="">
+    <img src="/asset/image/ClasseObjetInstance.png" alt="" style="width:540px; ">
     <p>
                   Donc en gros on peut schématiser l’Objet, la Classe et
                   l’Instance de cette manière : <br /><br /><strong
@@ -141,7 +142,7 @@
                   d’attributs + accès aux méthodes Remarque.
                 </p>
                 <p>
-                    <img src="./assets/image/InstanceClasseImage.png" alt="">
+                    <img src="/asset/image/InstanceClasseImage.png" alt="" style="width:540px; ">
                   <br /><strong style="color: red;"> Remarque : </strong>l’instance peut accéder à
                   toutes les méthodes de sa classe, mais elle n’est pas obligée
                   de les utiliser.
@@ -176,7 +177,7 @@
                     moteur.</p>
     </div>
     <div class="img-element">
-    <img src="./assets/image/Interaction.png" alt="">
+    <img src="/asset/image/Interaction.png" alt="" style="width:540px; ">
     </div>
         <p class="interaction">
                   Dans cet exemple la classe <strong>Conducteur</strong> a une
@@ -191,7 +192,7 @@
                   objet Conducteur alors :<br />
                 </p>
                 <div class="img-element">
-                  <img src="assets/image/InteractionSansRepence.png" alt="" />
+                  <img src="/asset/image/InteractionSansRepence.png" alt="" style="width:540px; " />
                 </div>
 
                 <p class="interaction">
@@ -200,15 +201,15 @@
                 </p>
 
                 <div class="img-element">
-                  <img src="assets/image/received_975790323596121.webp" alt="" />
+                  <img src="/asset/image/received_975790323596121.webp" alt=""  style="width:540px; " id="javaa"/>
                 </div>
 
                 <div class="img-element">
-                  <img src="assets/image/received_893955091877373.webp" alt="" />
+                  <img src="/asset/image/received_893955091877373.webp" alt="" style="width:540px; " id="jav"/>
                 </div>
 
                 <div class="img-element">
-                  <img src="assets/image/received_147711798216317.webp" alt="" />
+                  <img src="/asset/image/received_147711798216317.webp" alt="" style="width:540px; " id="ja" />
                 </div>
                 <p class="interaction">
                   Dans cet exemple, la classe <strong>Voiture</strong> définit
@@ -239,12 +240,24 @@
                   <strong>Un constructeur :</strong> est une opération
                   (Mécanisme d’instanciation ) de classe qui va construire
                   l’instance (l’objet) de la classe. Le nom de cette méthode est
-                  identique à celui de sa classe. <br /><br /><strong
-                    >Un destructeur :</strong
+                  identique à celui de sa classe. <br /><br />
+     </p>
+     <img src="/asset/image/Constructeur.png" alt="" style="width:540px; height: 300px; " id="destru">
+
+     <P>
+      <strong>Note:</strong> le constructeur nous defini les arttibuts de la classe lors de l'instentiation, de plus
+      il n'est autoriser de le definir avec un type de retour ( function ou procedure ), on le déclare juste comme une méthode public.
+     </P>
+    
+     <p> <br>
+     <br><strong>Un destructeur :</strong
                   >
                   est une opération de classe qui détruit des objets. Cette
                   méthode libère donc de l'espace mémoire.
                 </p>
+                <P>
+                  <strong>Note:</strong> on a pas besoin de définir un déstructeur dans java, car java le traite automatiquement.
+                 </P>
     </div>
      </div>
 
@@ -282,7 +295,7 @@
 pour garantir une meilleure gestion et une meilleure sécurité des données.</p>
     </div>
     <div class="img-element">
-    <img src="./assets/image/encapsulation.png" alt="">
+    <img src="/asset/image/encapsulation.png" alt="" style="width:540px;  height: 250px;">
     </div>
     <p class="interaction">La sécurité consiste à définir dans chaque méthode le niveau de visibilité (private,
 public, protect), pour limiter l’interaction des objets entre eux.
@@ -301,8 +314,12 @@ l'une des méthodes qui nous permet de modifier cet attribut (s'il existe).</p>
     <div class="texte-element">
     <p>Permet de définir une nouvelle classe en reprenant les propriétés et les
 méthodes d'une classe existante, tout en ajoutant des fonctionnalités supplémentaires.</p>
-   <img src="./assets/image/1200px-Heritage_informatique.svg.png" alt="">
-   <p>Une Classe peut appartenir à une arborescence de Classes.</p>
+   <img src="/asset/image/1200px-Heritage_informatique.svg.png" alt="" style="width:540px; height: 320px; ">
+   <p>prenon un exemple avec la classe Homme.</p>
+   <img src="/asset/image/HéritageHomme.png" alt="" style="width:540px; height: 350px; " id="herit">
+
+   <p>Pour qu'une classe B hérite d'une classe A nous allons utiliser <strong>extends</strong> .</p>
+   <img src="/asset/image/héritageFemme.png" alt="" style="width:540px; " id="heri">
     </div>
      </div>
 
@@ -312,10 +329,23 @@ méthodes d'une classe existante, tout en ajoutant des fonctionnalités supplém
     <div class="titre-element-p2"> <h2>3</h2></div>
     </div>
     <div class="texte-element">
-    <p>Permet à chaque objet d'implémenter une méthode de manière
-spécifique.</p>
-    <img src="./assets/image/Polymorphisme.png" alt="">
+    <p>On dit que l'héritage herite des méthodes et des arttibuts d'une classe, puis ajouter des arttibuts et méthodes
+      supplimentaire mais sans modifier les méthodes hérité, tandit que le polymorphisme permet de modifier ces méthodes hérité de differant manière.</p>
+   
     <p>On à implémenté la méthode DitBonjour() de manière spécifique pour chaque objet.</p>
+     <img src="/asset/image/Polymorphisme.png" alt="" style="width:540px; " id="schema">
+    
+    <p>Voici un exemple d'une classe qu'on va appeler Homme ( personne ) </p>
+    <img src="/asset/image/PolymorphismeHome.png" alt="" style="width:540px; height: 300px; " id="polymos">
+    <p> dans la classe Algerien on a changer a l'aide de (@Override) la méthode DitBonjour() </p>
+    <img src="/asset/image/PolymorphismeAlgerien.png" alt="" style="width:540px; " id="alge" >
+    <p> aussi dans la classe Americain on a modifier la méthode DitBonjour() d'une autre facon </p>
+    <img src="/asset/image/PolymorphismeAmerican.png" alt="" style="width:540px; height: 200px;" id="polymo">
+    
+    <p> de ce fait, on a transformer la méthode DitBonjour() de maniére Spécéfique. 
+      Mais si vous ne voulez pas qu'une méthode soit modifier, donc on utilise le mot clé <strong>Static</strong> dans la déclaration de la méthode dans la classe mére.   
+    </p>
+    <img src="/asset/image/PolymorphismeStatic.png" alt="" style="width:540px; height: 150px;" id="static">
     </div>
      </div>
 

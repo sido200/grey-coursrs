@@ -154,7 +154,6 @@ nav.scroll {
   max-width: 600px;
   z-index: 1;
   margin-left: 40px;
-
   text-align: justify;
 }
 #home P:first-child {
@@ -250,9 +249,6 @@ input:hover {
 .active-barre {
   transform: translateX(0%);
   transition: 0.5s;
-}
-.bdd-btn-open {
-  background-color: #b7d1cf !important;
 }
 /*footer*/
 footer {
@@ -434,5 +430,101 @@ footer img {
   }
   .items {
     width: 100vw !important;
+  }
+}
+@media screen and (max-width:430px) {
+#polymo{
+  width: 270px !important;
+ height: 190px !important;
+}  
+#static{
+  width: 270px !important;
+  height: 90px !important;
+}
+#polymos{
+  width: 270px !important;
+  height: 280px !important;
+}
+#alge{
+  width: 270px !important;
+  height: 190px !important;
+}
+#schema{
+  width: 270px !important;
+  height: 160px !important;
+}
+#heri{
+  width: 270px !important ;
+  height: 120px !important ;
+}
+#herit{
+  width: 270px !important;
+  height: 190px !important;
+}
+#destru{
+  width: 270px !important ;
+  height: 200px !important ;
+}
+#javaa{
+  width: 270px !important ;
+  height: 100px !important ;
+}
+#jav{
+  width: 270px !important ;
+  height: 180px !important;
+}
+#ja{
+  width: 270px !important ;
+  height: 140px !important;
+}
+}
+@media screen and (max-width:335px) {
+  
+  #polymo{
+    width: 250px !important;
+    height: 200px !important;
+ 
+  }  
+  #static{
+    width: 230px !important;
+   
+  }
+  #polymos{
+    width: 250px !important;
+  
+  }
+  #alge{
+    width: 250px !important;
+   
+  }
+  #schema{
+    width: 230px !important;
+   
+  }
+  #heri{
+    width: 250px !important ;
+   
+  }
+  #herit{
+    width: 255px !important;
+    height: 180px !important;
+  }
+  #destru{
+    width: 250px !important ;
+    height: 190px !important;
+   
+  }
+  #javaa{
+    width: 230px !important ;
+    height: 90px !important;
+  
+  }
+  #jav{
+    width: 219px !important ;
+    height: 198px !important;
+  }
+  #ja{
+    width: 225px !important ;
+    height: 150px !important;
   }
 }

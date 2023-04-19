@@ -199,7 +199,7 @@ nav.scroll {
 }
 
 .btn input {
-  background-color: #32729a;
+  background-color: #b7d1cf;
   height: 75px;
   width: 350px;
   border: none;
@@ -215,7 +215,6 @@ nav.scroll {
 
 #s4 input {
   margin-bottom: 20px;
-  background-color: #c9c9c9;
 }
 .btns {
   display: grid;
@@ -224,14 +223,16 @@ nav.scroll {
   justify-content: center;
   gap: 20px 200px;
 }
-
+.btn.semestre input {
+  background-color: #32729a;
+}
 .btns input {
-  background-color: #b7d1cf !important;
   height: 75px;
   width: 350px;
   border: none;
   border-radius: 40px;
   color: white;
+  background-color: #b7d1cf;
   font-size: 25px;
   font-weight: 600;
   line-height: 38px;
@@ -432,99 +433,93 @@ footer img {
     width: 100vw !important;
   }
 }
-@media screen and (max-width:430px) {
-#polymo{
-  width: 270px !important;
- height: 190px !important;
-}  
-#static{
-  width: 270px !important;
-  height: 90px !important;
+@media screen and (max-width: 430px) {
+  #polymo {
+    width: 270px !important;
+    height: 190px !important;
+  }
+  #static {
+    width: 270px !important;
+    height: 90px !important;
+  }
+  #polymos {
+    width: 270px !important;
+    height: 280px !important;
+  }
+  #alge {
+    width: 270px !important;
+    height: 190px !important;
+  }
+  #schema {
+    width: 270px !important;
+    height: 160px !important;
+  }
+  #heri {
+    width: 270px !important ;
+    height: 120px !important ;
+  }
+  #herit {
+    width: 270px !important;
+    height: 190px !important;
+  }
+  #destru {
+    width: 270px !important ;
+    height: 200px !important ;
+  }
+  #javaa {
+    width: 270px !important ;
+    height: 100px !important ;
+  }
+  #jav {
+    width: 270px !important ;
+    height: 180px !important;
+  }
+  #ja {
+    width: 270px !important ;
+    height: 140px !important;
+  }
 }
-#polymos{
-  width: 270px !important;
-  height: 280px !important;
-}
-#alge{
-  width: 270px !important;
-  height: 190px !important;
-}
-#schema{
-  width: 270px !important;
-  height: 160px !important;
-}
-#heri{
-  width: 270px !important ;
-  height: 120px !important ;
-}
-#herit{
-  width: 270px !important;
-  height: 190px !important;
-}
-#destru{
-  width: 270px !important ;
-  height: 200px !important ;
-}
-#javaa{
-  width: 270px !important ;
-  height: 100px !important ;
-}
-#jav{
-  width: 270px !important ;
-  height: 180px !important;
-}
-#ja{
-  width: 270px !important ;
-  height: 140px !important;
-}
-}
-@media screen and (max-width:335px) {
-  
-  #polymo{
+@media screen and (max-width: 335px) {
+  #polymo {
     width: 250px !important;
     height: 200px !important;
- 
-  }  
-  #static{
+  }
+  #static {
     width: 230px !important;
-   
   }
-  #polymos{
+  #polymos {
     width: 250px !important;
-  
   }
-  #alge{
+  #alge {
     width: 250px !important;
-   
   }
-  #schema{
+  #schema {
     width: 230px !important;
-   
   }
-  #heri{
+  #heri {
     width: 250px !important ;
-   
   }
-  #herit{
+  #herit {
     width: 255px !important;
     height: 180px !important;
   }
-  #destru{
+  #destru {
     width: 250px !important ;
     height: 190px !important;
-   
   }
-  #javaa{
+  #javaa {
     width: 230px !important ;
     height: 90px !important;
-  
   }
-  #jav{
+  #jav {
     width: 219px !important ;
     height: 198px !important;
   }
-  #ja{
+  #ja {
     width: 225px !important ;
     height: 150px !important;
   }
+}
+.bdd-btn-open {
+  background-color: #b7d1cf;
 }

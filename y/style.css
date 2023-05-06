@@ -154,6 +154,7 @@ nav.scroll {
   max-width: 600px;
   z-index: 1;
   margin-left: 40px;
+
   text-align: justify;
 }
 #home P:first-child {
@@ -197,9 +198,8 @@ nav.scroll {
   justify-content: space-between;
   margin-bottom: 50px;
 }
-
 .btn input {
-  background-color: #b7d1cf;
+  background-color: #32729a;
   height: 75px;
   width: 350px;
   border: none;
@@ -215,6 +215,7 @@ nav.scroll {
 
 #s4 input {
   margin-bottom: 20px;
+  background-color: #c9c9c9;
 }
 .btns {
   display: grid;
@@ -223,16 +224,14 @@ nav.scroll {
   justify-content: center;
   gap: 20px 200px;
 }
-.btn.semestre input {
-  background-color: #32729a;
-}
+
 .btns input {
+  background-color: #b7d1cf !important;
   height: 75px;
   width: 350px;
   border: none;
   border-radius: 40px;
   color: white;
-  background-color: #b7d1cf;
   font-size: 25px;
   font-weight: 600;
   line-height: 38px;
@@ -250,6 +249,9 @@ input:hover {
 .active-barre {
   transform: translateX(0%);
   transition: 0.5s;
+}
+.bdd-btn-open {
+  background-color: #b7d1cf !important;
 }
 /*footer*/
 footer {

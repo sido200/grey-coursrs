@@ -135,6 +135,15 @@ footer img {
 .off{
   background-color: #5555557c !important;
 }
+#chap2 span{
+  color: red;
+}
+#green{
+  color: rgb(83, 199, 83) !important;
+}
+#blue{
+  color: #32729a !important;
+}
 .chapitres-menu {
   display: flex;
   flex-wrap: wrap;

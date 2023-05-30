@@ -57,9 +57,10 @@
 
         <div class ="buttons-menu">
         <div class ="chapitres-menu">
-      <a href="#chap1"><button>Chapitre 1 </button></a>
+            <a href="#chap1"><button>Chapitre 1 </button></a>
      
             <a href="#TD"><button>TD's</button></a>
+            <a href="#chap2"><button>Chapitre2</button></a>
          </div>
       </div>
       </div>
@@ -197,6 +198,267 @@
    
     </div>
      </div>
+    </div> 
+     <section id="chap2">
+        <div class="general-infos">
+            <h1>Chapitre2:les modes de transmission</h1>
+             <div class="infos-carres">
+               <div class="element">
+                 <div class="titre-element">
+                   <div class="titre-element-p1"> 
+                     <h2 id="intro" style="font-size: 15px; text-align: center; font-size: 13px;" >La nature de l’information <br> transportée :</h2> 
+                   </div>
+                   <div class="titre-element-p2"> 
+                     <h2>1</h2>
+                   </div>
+                 </div>
+                 <div class="texte-element ">
+                    <div class="p-element thl "  style=" margin: 15px; " >
+                       <h4><span>Analogique: parole</span></h4>
+                      <p>
+                        Une information analogique peut prendre une infinité de valeurs continues.
+
+                      </p>
+                      <img src="/asset/image/signalanalo.png" alt="">
+                      <h4><span>Numérique:texte</span></h4>
+                      <p>
+                        Une information numérique peut prendre qu’un petit nombre de valeurs dis
+                        Continues (discrètes) dans un ensemble (s) fini.
+                      </p>
+                      <img src="/asset/image/signalnum.png" alt="">
+                      <h4><span>Le role de la couche physique:</span></h4>
+                      <p>La transmission de bits sous forme de signal (analogique/numerique)
+                        sur un support de transmission.
+                      </p>
+                   </div>
+                 </div>
+               </div>
+    
+              <div class="element">
+                <div class="titre-element">
+                  <div class="titre-element-p1"> 
+                    <h2  style="font-size: 15px; text-align: center;" >Les types de transmission:</h2> 
+                  </div>
+                  <div class="titre-element-p2"> 
+                    <h2>2</h2>
+                  </div>
+                </div>
+                <div class="texte-element ">
+                   <div class="p-element thl" style=" margin: 10px; "  >
+                   <h3><span>Transmission en parallele:</span></h3>
+                   <p>
+                    entre l’émetteur et le récepteur il y a plusieurs fils de transmission, on peut avoir 8 fils, 16,32 ... <br>
+                    - Le support de transmission s’appelle bus <br>
+                    - Le problème de ce type de transmission est quand il y aura une grande distance entre l’émetteur et le récepteur, il peut causer un déphasage (décalage). <br>
+                    Il est utilisé à l’intérieur de système de traitement (le bus de l’unité centrale de l’ordinateur).
+                   </p>
+                   <h3><span>Transmission en serie:</span></h3>
+                   <p>
+                    la suite de bits va être transmise d’une manière <strong>séquentielle</strong>. 
+                    Ce type de transmission est utilisé dans le réseau informatique.  <br>
+                    <span id="blue">En série Asynchrone :</span>
+                    l’émetteur peut commencer l’envoi à n’importe quel moment et pour chaque caractère il y aura un bit de start et un bit de stop pour se distingue entre les caractères. <br>
+                    <span id="blue"> En série synchrone : </span>
+                    il y a un temps élémentaire qui s’appelle top d’horloge qui a une valeur constante qui a un envoie régulier et constant.
+                   </p>
+                   <img src="/asset/image/emetteur.png" alt="">
+                   <p>
+                    Le bloc doit être délimite par des caractères spéciaux (Début, fin). <br>
+                    <span id="green">Exemple:</span> <br>
+                    • Transmission <span>synchrone</span> par bloc de 100 caractères de 8 bits, un drapeau de début et un autre de fin, chacun de 8 bits et un champs de contrôle de 48 bits.
+                   </p>
+                   <img src="/asset/image/exemp1.png" alt="">
+                   <p>
+                    •  nombre de bits transmis = 100*8 = 800bits
+                   </p>
+                   <img src="/asset/image/exemple1.png" alt="">
+                   <p>
+                    Nombre de bits réellement transmis = 864 bits <br>
+                    <span id="green" >Exemple 2 : </span> <br>
+                    • Transmission Asynchrone par bloc de 100 caractères de 8 bits, un drapeau de début de 1 bit et un autre de fin de 2 bits. <br>
+                    • Nombre de bits transmis = 100*8 =800 bits <br>
+                    • Nombre de bits réellement transmis = (8+1+2) *100 = 1100 bits
+                   </p>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="element">
+                <div class="titre-element">
+                  <div class="titre-element-p1"> 
+                    <h2  style="font-size: 18px; text-align: center;" > Les modes de <br> transmission :</h2> 
+                  </div>
+                  <div class="titre-element-p2"> 
+                    <h2>3</h2>
+                  </div>
+                </div>
+                <div class="texte-element ">
+                   <div class="p-element thl"  style=" margin: 20px; " >
+                    <div>
+
+                      <h4><span>Simplex:</span></h4>
+                      <p> La transmission suit un seul sens comme radio, television  ... </p> <br>
+                      <h4><span>Duplex:</span></h4> 
+                      <p>la transmission se fait en deux sens. <br>
+                        - Half duplex. <br>
+                        - Full duplex.
+                      </p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            
+              <div class="element">
+                <div class="titre-element">
+                  <div class="titre-element-p1"> 
+                    <h2  style="font-size: 15px; text-align: center;" > Le signal :</h2> 
+                  </div>
+                  <div class="titre-element-p2"> 
+                    <h2>4</h2>
+                  </div>
+                </div>
+                <div class="texte-element ">
+                   <div class="p-element thl"   style=" margin: 20px; ">
+                  <p>
+                    La donnée binaire est véhiculée sur le support de transmission sous forme de signal résultant de la propagation.
+                  </p>
+                  <div>
+
+                      <h4> <span> •  Codage en bande base: </span></h4>
+                      <p>
+                          (signal numérique) il consiste à envoyer directement les suites de bits sur le support à l’aide de signaux carrés.
+                        </p> 
+                 </div>
+                 <div>
+
+                     <h5><span id="blue" >a) Code tout ou rien:</span></h5>
+                     <p>un courant nul code le 0 et un courant positif code le 1.</p>
+                     <img src="/asset/image/codetout.png" alt="">
+                </div>
+                <div>
+
+                    <h5><span id="blue">b) No return to zero NRZ:</span></h5>
+                    <p>On représente le 1 par une valeur positif et le 0 par une valeur négatif <br>
+                      1 logique -> un premier niveau de voltage <br>
+                      0 logique -> deuxième niveau de voltage</p>
+                    <img src="/asset/image/nrz.png" alt="">
+                </div>
+                <div>
+
+                    <h5><span id="blue">c) No return to zero inverted NRZI:</span></h5> <br>
+                    <p>Le 0 a été choisi comme un élément de changement Le 1 laisse l’ancien bit tel qu’il est</p>
+                    <img src="/asset/image/nrzi.png" alt="">
+                </div>
+                <div>
+
+                    <h5><span id="blue">d) Code Manchester ou Biphase-l :</span></h5> <br>
+                    <p>1-> transition de niveau bas vers le niveau haut <br>
+                      0-> transition de niveau haut vers le niveau bas</p>
+                    <img src="/asset/image/manchester.png" alt="">
+                </div>
+                <br>
+                <div>
+
+                    <h5><span id="blue">e) Code Manchester Différentiel :</span></h5>
+                    <p>0-> transition dans le même sens que le précèdent <br>
+                       1-> transition dans le sens inverse que le précèdent
+                   </p>
+                    <img src="/asset/image/differ.png" alt=""> 
+                </div>
+                <div>
+
+                    <h5><span id="blue">f) Code Miller :</span></h5>
+                    <p>-Le niveau logique à coder pendant un moment élémentaire dépend de l'état précédent. <br>
+                      -Le niveau logique '1' provoque un changement de polarité sur le signal au milieu du moment élémentaire. <br>
+                      -Le niveau logique '0' provoque un changement de polarité sur le signal au début du moment élémentaire si le niveau logique précédent était un '0' .On laisse le signal constant si le niveau logique précédent était un '1'.</p>
+                    <img src="/asset/image/miller.png" alt="">
+                </div>
+                <div>
+
+                    <h5><span id="blue">g) Code Bipolaire :</span></h5>
+                    <p>Les niveaux 0 sont codes par une tension null  <br>
+                      Les niveaux 1 sont codes par un niveau +v et –v</p>
+                    <img src="/asset/image/bipolaire.png" alt="">
+                </div>
+                </div>
+                  
+                </div>
+              </div>
+              <div class="element">
+                <div class="titre-element">
+                  <div class="titre-element-p1"> 
+                    <h2 id="intro" style="font-size: 15px; text-align: center;" >Transmission en large <br> bande (modulation):</h2> 
+                  </div>
+                  <div class="titre-element-p2"> 
+                    <h2>4</h2>
+                  </div>
+                </div>
+                <div class="texte-element ">
+                   <div class="p-element thl "  style=" margin: 10px;  " >
+                      <h4><span >Transmission en large bande (modulation): </span></h4>
+                     <p>
+                      (signal analogique) Pour qu’un signal soit correctement reçu, il faut qu’il soit modulé, en lui donnant une forme sinusoïdale. <br>
+                      Elle consiste à transformer un signal numérique a un signal analogique. <br>
+                      L’équation du signal sous forme sinusoïdale est : <br>
+                       A(t) = A *sin (2 *pi* F*t + Ф) <br>
+                      a: amplitude <br>
+                       F: Fréquence <br>
+                        Ф : phase
+                     </p>
+                     <h4><span id="blue">a) La modulation par amplitude:</span></h4>
+                     <img src="/asset/image/modu1.png" alt="">
+                     <h4><span id="blue">b) Modulation par frequence:</span></h4>
+                     <img src="/asset/image/modu2.png" alt="">
+                     <h4><span id="blue">c) La modulation par phase:</span></h4>
+                     <p>La modulation la plus utilisé dans les modems. <br>
+                      Pour obtenir les signaux il se fait de dessiner le cercle circonscrit et placer les angles, puis parcourir la cercle dans le sens inverse de la montre <br>
+                      H: vers le haut <br>
+                      B: vers le bas <br>
+                      les angles sont :
+                      90°= π/2 180°= π
+                      0°=0 45°= π/4
+                      270°=3π/2 135°= 3π/4
+                    </p>
+                    <img src="/asset/image/modu3.png" alt="">
+                    <p>Exemple de modulation par phase de 2bits</p>
+                    <img src="/asset/image/modu4.png" alt="">
+                    <p>Augmentation de la rapidité de transmission -> augmentation de débit binaire <br>
+                     <span id="green"> Débit = Rapidité de modulation *Nbr bits </span>
+                      Tel que : R=1/t
+                      </p>
+                  </div>
+                </div>
+              </div>
+              <div class="element">
+                <div class="titre-element">
+                  <div class="titre-element-p1"> 
+                    <h2 id="intro" style="font-size: 15px; text-align: center;" >Code Gray:</h2> 
+                  </div>
+                  <div class="titre-element-p2"> 
+                    <h2>5</h2>
+                  </div>
+                </div>
+                <div class="texte-element ">
+                   <div class="p-element thl "   style=" margin: 15px; " >
+                      <h5><span>Code Gray: </span></h5>
+                     <p>
+                      Une technique pour comprendre le code Gray, ça consiste lorsqu’on ajoute un bit on inverse toute les bits précédente
+                     </p>
+                     <img src="/asset/image/modu5.png" alt="">
+                    <p>Ou une autre technique pour faire le code Gray et qui se base sur le miroir</p>
+                     <img src="/asset/image/modu6.png" alt="">
+                    <h5><span>Le diagramme Spatial:</span></h5>
+                    <p>sur 2bits (Code Gray) valence=4; 1A*4Ф</p>
+                    <img src="/asset/image/modu7.png" alt="">
+                   <h5><span>Diagramme Spatial:</span></h5>
+                   <p>sur 4bits (Code Gray) valence =16; 2A*8Ф</p>
+                   <img src="/asset/image/modu8.png" alt="">
+                  </div>
+                </div>
+              </div>
+        </div>  
+     </section>
 
       
 

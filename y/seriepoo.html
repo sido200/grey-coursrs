@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+      rel="shortcut icon"
+      href="./assets/image/logo_V2.png"
+      type="image/x-icon"
+    />
+    <title>RÉSUMILY-SERIES POO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="module.css" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WPQJ2PCGT6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WPQJ2PCGT6');
+</script>
+  <body>
+    <header>
+      <nav>
+        <i class="fa-solid fa-bars"></i>
+        <div class="logo">
+          <a href="/index.html"><img src="/assets/image/logo_V2.png" alt="" />
+            <h2>RÉSUMILY</h2></a>
+        </div>
+        <div class="items">
+          <ul>
+            <li><a href="/calcul.html">CALCULER LA MOYENNE</a></li>
+            <li><a href="/index.html#l2">LICENCE 2</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="module-template">
+
+
+      <div class="menu">
+
+      <div class="title">
+      <h2>SERIES POO</h2>
+      </div>
+
+        <div class ="buttons-menu">
+        <div class ="chapitres-menu">
+              <a href="#chap1"><button class="btn-poo-tel">SERIES 1</button></a>
+              <a href="#chap2"><button class="btn-poo-tel">SERIES 2</button></a>
+              <a href="#chap3"><button class="btn-poo-tel off">SERIES 3</button></a>
+            <a href="#TD"><button class="btn-poo-tel">TD's</button></a>
+         </div>
+      </div>
+      </div>
+      
+      <div class="general-infos">
+
+              <h1 id="chap1">SERIES 1 : </h1>
+    <div class="infos-carres">
+
+            <div class="element">
+                <div class="titre-element">
+              <div class="titre-element-p1"> <h2>Exercices 1</h2></div>
+                <div class="titre-element-p2"> <h2>1</h2></div>
+                </div>
+
+                  <div class="texte-element">
+                        <div class="p-element">
+
+                                  <img src="/asset/image/SeriesPOO/exo1.png">
+
+                                  <p> Ce programme permet à l'utilisateur de saisir deux nombres entiers, calcule leur somme, et affiche le résultat à l'écran.<br>
+                                    Pour ce faire, le programme crée trois variables entières <strong>a</strong>, <strong>b</strong> et <strong>s</strong>, où <strong>a</strong> et <strong>b</strong> sont initialisées avec les valeurs saisies par l'utilisateur à l'aide de l'objet Scanner.
+                                    La somme est ensuite calculée en ajoutant les valeurs de <strong>a</strong> et <strong>b</strong>, puis stockée dans <strong>s</strong>.
+                                    <br>Enfin, le résultat est affiché à l'écran à l'aide de la méthode println de l'objet <strong>System.out</strong>. 
+                                   </p>
+                                  <img src="/asset/image/SeriesPOO/Exec1.png">                                
+                                  
+                                  <p> <strong>Tips and tricks :</strong><br>
+                                    1. Utilisez <strong>import</strong> java.util.Scanner; pour importer la classe <strong>Scanner</strong> : Cela permet d'utiliser les fonctionnalités de la classe <strong>Scanner</strong> pour lire les entrées utilisateur à partir de la console.
+                                    <br><br>2. Créez un objet <strong>Scanner</strong> pour lire les entrées utilisateur : Vous pouvez créer un objet <strong>Scanner</strong> en utilisant le constructeur Scanner(System.in). Cet objet peut être utilisé pour lire les entrées utilisateur à partir de la console.
+                                    <br><br>3. Utilisez nextInt() pour lire des entiers : Dans le code que vous avez fourni, la méthode nextInt() de la classe <strong>Scanner</strong> est utilisée pour lire les entiers entrés par l'utilisateur.
+                                  </p>
+                          </div>
+                  </div>
+          </div>
+
+          <div class="element">
+            <div class="titre-element">
+          <div class="titre-element-p1"> <h2>Exercices 2</h2></div>
+            <div class="titre-element-p2"> <h2>2</h2></div>
+            </div>
+              <div class="texte-element">
+                    <div class="p-element">
+                            
+                              <img src="/asset/image/SeriesPOO/exo2.png">
+
+                              <p> Le programme demande à l'utilisateur de saisir une température en degrés Celsius. 
+                                Ensuite, il utilise la formule de conversion pour calculer la température en degrés Fahrenheit. 
+                                Enfin, il affiche la température en degrés Fahrenheit à l'écran.
+                                </p>
+                              
+                              <img src="/asset/image/SeriesPOO/Exec2.png">
+
+                               <p><strong>Tips and tricks : </strong><br>
+                                 <br>Voici 3 méthodes principales pour formater la sortie en Java :<br>
+                                    <br>• System.out.print(): affiche du texte à l'écran sans saut de ligne.
+                                    <br>• System.out.println(): affiche du texte à l'écran avec un saut de ligne à la fin.
+                                    <br>• System.out.printf(): permet d'afficher du texte formaté en utilisant des spécificateurs de format.
+                               <br><strong>Exemple</strong> : System.out.printf("%d C° = %d F°", C, F);
+                               </p> 
+                     </div>
+              </div>
+      </div>
+
+      <div class="element">
+        <div class="titre-element">
+      <div class="titre-element-p1"> <h2>Exercices 3</h2></div>
+        <div class="titre-element-p2"> <h2>3</h2></div>
+        </div>
+          <div class="texte-element">
+                <div class="p-element">
+                       
+                          <img src="/asset/image/SeriesPOO/exo3.png">
+                           <p> Ce programme permet de calculer le prix toutes taxes comprises <strong>(TTC)</strong> en fonction du prix 
+                            hors taxes <strong>(HT)</strong> et d'un taux de <strong>TVA</strong> fixé à 20%. Il utilise une variable constante <strong>TVA</strong> pour 
+                            stocker la valeur fixe du taux de <strong>TVA</strong> et demande à l'utilisateur d'entrer le prix <strong>HT</strong>. 
+                            Le programme calcule ensuite le prix <strong>TTC</strong> en ajoutant au prix <strong>HT</strong> le produit du prix <strong>HT</strong> par le taux de <strong>TVA</strong>. 
+                            Enfin, il affiche le résultat à l'écran avec une unité monétaire <strong>(DA)</strong>.
+                          </p>
+                          <img src="/asset/image/SeriesPOO/Exec3.png">
+                          
+                          <p><strong>Tips and tricks :</strong> <br>
+                            <br>• Le type <strong>float</strong> est utilisé pour stocker des nombres à virgule flottante en simple précision.
+                            <br>• Pour déclarer une variable <strong>float</strong>, on doit ajouter le suffixe f <strong>(Exemple : 10.5f)</strong> à la fin de la valeur assignée.
+                            <br>• Pour saisir une valeur <strong>float</strong> depuis l'entrée utilisateur, on utilise la méthode nextFloat(); de l'objet Scanner. Cette méthode lit la prochaine valeur entrée par l'utilisateur en tant que <strong>float</strong> et la retourne.
+                            <br>• <strong>final</strong>  permet de déclarer une constante (final type nomCte = valeur;)
+                            <br> <strong>Exemple</strong> : final float TVA = 0.2f; 
+                           </p>
+                  </div>
+          </div>
+  </div>
+
+  <div class="element">
+    <div class="titre-element">
+  <div class="titre-element-p1"> <h2>Exercices 4</h2></div>
+    <div class="titre-element-p2"> <h2>4</h2></div>
+    </div>
+      <div class="texte-element">
+            <div class="p-element">
+                    <p> Éliminez les parenthèses inutiles :
+                      <br>• a = b+5;<br>
+                      <br>• a = b=s + 2;
+                      <br>       ➢ <strong>Cas 1</strong> : en prenant en compte seulement a
+                      <br> ✓ On n’aura pas besoin des parenthèses car peu importe b et s le résultat de a sera le même avec ou sans parenthèses
+                              -> a= b=s + 2 ;
+                      <br>       ➢ <strong>Cas 2</strong> : en prenant en compte b et s :
+                      <br> ✓ Les parenthèses seront utiles car la variable b changera de valeur
+                      <br>Exemple :
+                    </p>
+
+                    <img src="/asset/image/table.png" alt="">
+                      <p>
+                      <br>• boolean n = a==b;
+                      <br>• n = a <lt>&lt</lt> b && b <lt>&lt</lt> s;
+                      <br>• a = (a++)*(b+s); (Les parenthèses autour de a++ sont nécessaires car l'opérateur ++ a une priorité inférieure à celle de la multiplication.)
+                      </p>
+
+                      <p> • Il est important de comprendre la priorité des opérateurs et de bien placer les parenthèses pour éviter des erreurs de calcul et rendre le code plus lisible et facile à comprendre.
+                        <br><br><strong>Exemple</strong> : a = (a++)*(b+s); Dans cette expression, les parenthèses sont nécessaires pour que l'opérateur <strong> ++</strong> soit évalué avant la multiplication.
+                        Sans les parenthèses, l'opération serait évaluée comme <strong>(a * b) + s</strong>,
+                         ce qui n'est pas l'intention du code. En ajoutant les parenthèses, l'opération est évaluée comme 
+                         <strong>(a++) * (b+s)</strong> , ce qui est le résultat attendu.
+                        <br><br><br>• En Java, les opérateurs sont évalués en fonction de leur ordre de priorité. 
+                        Voici l'ordre de priorité des opérateurs Java, du plus élevé au moins élevé :
+                        <br><br>1.<strong> Opérateurs unaires</strong> : ++, --, +(signe), -(signe), !(NON logique), ~(NON binaire)
+                        <br><br>2.<strong> Opérateurs arithmétiques</strong> : *, /, % (modulo), +, -
+                        <br><br>3.<strong> Opérateurs de décalage</strong> : <lt>&lt</lt><lt>&lt</lt> (décalage à gauche), >> (décalage à droite), >>> (décalage à droite sans signe)
+                        <br><br>4.<strong> Opérateurs de comparaison</strong> : <lt>&lt</lt>, <lt>&lt</lt>=, >, >=, instanceof
+                        <br><br>5.<strong> Opérateurs d'égalité</strong> : ==, !=
+                        <br><br>6.<strong> Opérateurs logiques</strong> : &(ET binaire), ^(XOR « OU exclusif » binaire), |(OU inclusif binaire)
+                        <br><br>7.<strong> Opérateurs conditionnels</strong> : &&(ET logique), ||(OU logique)
+                        <br><br>8.<strong> Opérateurs de l’affectation</strong> : =, +=, -=, *=, /=, %=, &=, ^=, |=, <lt>&lt</lt><lt>&lt</lt>=, >>=, >>>= Notez que l'ordre des opérations peut être modifié en utilisant des parenthèses pour grouper les opérations à effectuer en premier. Si les opérateurs ont la même priorité, la priorité sera de gauche à droite.
+                      </p>
+              </div>
+      </div>
+</div>
+
+<div class="element">
+  <div class="titre-element">
+<div class="titre-element-p1"> <h2>Exercices 5</h2></div>
+  <div class="titre-element-p2"> <h2>5</h2></div>
+  </div>
+    <div class="texte-element">
+          <div class="p-element">
+                  
+                    <img src="/asset/image/SeriesPOO/exo5.png">
+
+                    <p> 
+                      <br><br>- Dans le premier bloc, la valeur de <strong>i</strong> est initialisée à 0 puis est assignée à <strong>n</strong> qui prend donc la valeur 0. Après cela, la valeur de <strong>i</strong> est incrémentée de 1. Donc, à la fin de ce bloc, <strong>i=1</strong> et <strong>n=0</strong>.
+                      <br><br>- Dans le deuxième bloc, la valeur de <strong>i</strong> est d'abord incrémentée de 1 (donc <strong>i=11</strong>). Ensuite, la nouvelle valeur de <strong>i</strong> est assignée à n qui prend donc la valeur de 11. Donc, à la fin de ce bloc, <strong>i=11</strong> et <strong>n=11</strong>.
+                      <br><br>- Dans le troisième bloc, la valeur de <strong>i</strong> est initialisée à 20 et la valeur de <strong>j</strong> à 5. Ensuite, <strong>j</strong> est incrémentée de 1 (donc <strong>j=6</strong>) et la multiplication de <strong>i</strong> (20) et de <strong>j</strong> (6) est assignée à n, donc <strong>n=120</strong>. Après cela, la valeur de i est incrémentée de 1, donc <strong>i=21</strong>. Donc, à la fin de ce bloc, <strong>i=21</strong>, <strong>j=6</strong> et <strong>n=120</strong>.
+                      <br><br>- Dans le quatrième bloc, la valeur de <strong>i</strong> est initialisée à 15. Ensuite, la valeur 3 est ajoutée à <strong>i</strong> (donc <strong>i=18</strong>) et la nouvelle valeur de i est assignée à n qui prend donc la valeur de 18. Donc, à la fin de ce bloc, <strong>i=18</strong> et <strong>n=18</strong>.
+                      <br><br>- Dans le cinquième bloc, la valeur de <strong>i</strong> est initialisée à 3 et la valeur de <strong>j</strong> à 5. Ensuite, <strong>j</strong> est décrémentée de 1 (donc <strong>j=4</strong>) et la multiplication de <strong>i</strong> (3) et j (4) est assignée à <strong></strong>n, donc <strong>n=12</strong>. Après cela, la valeur de i est assignée à la nouvelle valeur de <strong>i</strong> multipliée par <strong>j</strong>, donc <strong>i=12</strong>. Donc, à la fin de ce bloc, <strong>i=12</strong>, <strong>j=4</strong> et <strong>n=12</strong>.
+                      <br><br><br><br><strong>Lorsque le code est compilé et exécuté, il affiche :</strong> 
+                    </p>
+                    <img src="/asset/image/SeriesPOO/Exec5.png">
+                    
+                    <p> 
+                      <br><br> • L'opérateur ++ ajoute 1 à une variable, tandis que l'opérateur -- soustrait 1. L'emplacement de l'opérateur ++ ou -- avant ou après la variable affecte le moment où l'incrémentation ou la décrémentation est effectuée.
+                      <br><br> • <strong>Post-incrémentation</strong> : Si l'opérateur ++ ou -- est après la variable, la variable sera d'abord utilisée dans l'expression, puis incrémentée ou décrémentée.
+                      <br><br> • <strong>Pré-incrémentation</strong> : Si l'opérateur ++ ou -- est avant la variable, la variable sera d'abord incrémentée ou décrémentée, puis utilisée dans l'expression.
+                      <br><br> • Les opérateurs raccourcis (+=, -=, *=, /=) permettent d'effectuer une opération arithmétique et d'affecter le résultat à la variable. Par exemple, i += 3 est équivalent à i = i + 3. 
+                      
+                      <br><br><strong>Déroulement</strong> : (important)
+                      <br><br> • La priorité des expressions dans Java est évaluée de gauche à droite 
+                      (Dans les autres langages comme « C » la priorité est évaluée de manière non spécifiée), <strong>par exemple</strong> :
+                       Soit l’expression : (int a = 5 ; int b= ++a + a++ + a++ + a;) Dans Java : le résultat sera 27
+                       <table border="1">
+                        <tr><th>Expression :</th><th>Valeur en mémoire</th></tr>
+                        <tr><td>int a=5 ;</td><td>a=5</td></tr>
+                        <tr><td>int b= ++a (« a » s’incrémente d’abord)</td><td>b=6 ; a=6</td></tr>
+                        <tr><td>b= 6 + a++ = 6 + 6 (« a » s’incrémente après le calcul)</td><td>b=12 ; a=7</td></tr>
+                        <tr><td>b= 12 + a++ = 12 + 7</td><td>b=19 ; a=8</td></tr>
+                        <tr><td>b= 19 + a = 19 + 8</td><td> b=27 ; a=8</td></tr>
+                       </table>
+                       <br> Dans C : le résultat sera 27 (évaluation non spécifiée)
+
+                    </p>
+            </div>
+    </div>
+</div>
+
+<div class="element">
+  <div class="titre-element">
+<div class="titre-element-p1"> <h2>Exercices 6</h2></div>
+  <div class="titre-element-p2"> <h2>6</h2></div>
+  </div>
+    <div class="texte-element">
+          <div class="p-element">
+                  
+                    <img src="/asset/image/SeriesPOO/exo6.png">
+
+                    <p> Les variables n, p et q sont initialisées respectivement à 10, 5 et 10.
+                      <br><br><strong> A</strong> : La variable r est initialisée à la valeur de p après que p a été affecté à la valeur de q grâce à l'opérateur d'assignation =. Le résultat de l'opération est ensuite converti en un entier à l'aide de la notation (int). Ainsi, r a la valeur 10, tout comme q et p.
+                      <br><br><strong> B</strong> : Les variables n, p et q sont toutes initialisées à 5 à l'aide de l'opérateur d'assignation =. Ensuite, la valeur de q est ajoutée à p, puis le résultat est ajouté à n grâce à l'opérateur d'addition composée +=. Ainsi, n a la valeur 15, tandis que p prend la valeur 10, et q prend la valeur 5.
+                      <br><br> <strong>C</strong> : La valeur de q est affectée à n++ si n est inférieur à p, sinon la valeur de p++ est affectée à q. Dans ce cas, n est supérieur à p, donc la valeur de p++ (qui est 10) est affectée à q. La valeur de n et de p est augmentée de 1. Ainsi, n a la valeur 15, p a la valeur 11 et q a la valeur 10.
+                      <br><br> <strong>D</strong> : La valeur de q est affectée à n++ si n est supérieur à p, sinon la valeur de p++ est affectée à q. Dans ce cas, n est supérieur à p, donc la valeur de n++ (qui est 16) est affectée à q. La valeur de n est augmentée de 1. Ainsi, n a la valeur 16, p a la valeur 11 et q a la valeur 15. 
+                    </p>
+                    <img src="/asset/image/SeriesPOO/Exec6.png">
+                    
+                    <p> 
+                      <br><br> <strong>Tips and tricks :</strong> 
+                      <br><br>• L'utilisation du ternaire peut être utile pour simplifier les instructions <strong>if-else</strong>. Cela peut rendre le code plus concis et plus facile à lire. Par exemple, la ligne q = n <lt>&lt</lt> p ? <strong>n++</strong> : <strong>p++</strong> (signification : si <strong>n</strong> est inférieure à <strong>p</strong> alors <strong>n++</strong> sinon <strong>p++</strong>) Syntaxe : <strong>condition</strong> ? <strong>expression1 (si vrai) </strong>: <strong>expression2 (si faux)</strong>
+                    </p>
+            </div>
+    </div>
+</div>
+
+<div class="element">
+  <div class="titre-element">
+<div class="titre-element-p1"> <h2>Exercices 7</h2></div>
+  <div class="titre-element-p2"> <h2>7</h2></div>
+  </div>
+    <div class="texte-element">
+          <div class="p-element">
+  
+                    <img src="/asset/image/SeriesPOO/exo7.png">
+
+                    <p> Le code utilise les opérateurs logiques || et && pour effectuer des tests de condition sur les variables n, p et k. Voici les résultats attendus pour chaque cas :
+                      <br><br><strong>Cas 1</strong> : Dans ce cas, la première condition est vraie (5 > 2) donc le programme n'a pas besoin de vérifier la seconde condition (p++ != 3), qui ne sera donc pas exécutée. La variable n est ensuite incrémentée (n = 6) et la variable k est vraie car la première condition est vraie. La sortie sera : "A : n = 6 p = 2 k = true".
+                      <br><br><strong>Cas 2</strong> : La première condition est fausse (5 n'est pas inférieur à 2), donc le programme doit vérifier la seconde condition (p++ != 3). Dans ce cas, p sera incrémenté (p = 3) et la seconde condition est vraie car p est différent de 3. La variable k sera donc vraie. La sortie sera : "B : n = 6 p = 3 k = true".
+                      <br><br><strong>Cas 3</strong> : Dans ce cas, la première condition est fausse (n est égal à 6 après avoir été préalablement incrémenté), donc le programme n'a pas besoin de vérifier la seconde condition (p++ == 3), qui ne sera donc pas exécutée. La variable k sera fausse car la première condition est fausse. La sortie sera : "C : n = 6 p = 2 k = false".
+                      <br><br><strong>Cas 4</strong> : Dans ce cas, les deux conditions sont vraies, donc les variables n et p seront incrémentées (n = 6 et p = 3). La variable k sera vraie car les deux conditions sont vraies. La sortie sera : "D : n = 6 p = 3 k = true". 
+                     </p>
+                    <img src="/asset/image/SeriesPOO/Exec7.png">
+                    
+                    <p><br><br> <strong>Tips and tricks :</strong> 
+                      <br><br> • Les expressions booléennes peuvent être simplifiées en utilisant les opérateurs logiques && (« et » logique) et || (« ou » logique). Par exemple, si vous avez une instruction if qui vérifie deux conditions, vous pouvez utiliser l'opérateur && pour les combiner en une seule expression. Cela peut rendre le code plus facile à lire et à comprendre. 
+                      <br><br> • Il est important de bien indenter le code à l'intérieur des blocs if-else. Cela aide à rendre le code plus lisible et facilite la compréhension de la logique du programme. 
+                      <br><br> • Il est également important d'éviter les conditions inutiles. Si vous utilisez plusieurs if-else pour vérifier la même condition, vous pouvez réduire le nombre de conditions en utilisant un seul if avec plusieurs instructions else if. Cela peut rendre le code plus efficace et plus facile à lire.
+                    </p>
+            </div>
+    </div>
+</div>
+
+    </div>
+
+
+    <div class="general-infos">
+
+      <h1 id="chap2">SERIES 2 : </h1>
+<div class="infos-carres">
+
+    <div class="element">
+        <div class="titre-element">
+      <div class="titre-element-p1"> <h2>Exercices 1</h2></div>
+        <div class="titre-element-p2"> <h2>1</h2></div>
+        </div>
+          <div class="texte-element">
+                <div class="p-element">
+                  
+                  <p> <br><br>• <strong>Analyse théorique du code</strong> :
+                            <br><br>✓ La variable n est initialisée à 0 et la variable k est initialisée à 1.
+                            <br><br>✓ La boucle do-while s'exécute au moins une fois car k est initialisé à 1.
+                            <br><br>✓ Si n est pair, le message "n est pair" est affiché, n est augmenté de 3 et la 
+                            boucle continue.
+                            <br><br>✓ Si n est un multiple de 3, le message "n est multiple de 3" est affiché, n est 
+                            augmenté de 5 et la boucle continue.
+                            <br><br>✓ Si n est un multiple de 5, le message "n est multiple de 5" est affiché, suivi 
+                            d'un saut de ligne, et la boucle s'arrête avec l'instruction break.
+                            <br><br>✓ Si aucun des tests précédents n'est vrai, n est simplement augmenté de 1 et 
+                            la boucle continue.
+                            <br><br>✓ À la fin de la boucle, la valeur finale de n est affichée.
+                            <br><br>Testons maintenant ce code sur Eclipse pour voir si notre analyse est correcte.
+                            <br><br><strong>Voici le code</strong> :
+                             </p>
+
+
+                          <img src="/asset/image/SeriesPOO/S2exo1-Code1.png">
+
+                          <p><br><br><strong>Le résultat attendu est</strong> :
+                            <br><br>0 est pair
+                            <br><br>3 est multiple de 3
+                            <br><br>9 est multiple de 3
+                            <br><br>15 est multiple de 3
+                            <br><br>20 est multiple de 5
+                            <br><br>La valeur finale de n est : 20
+                            <br><br><strong>Output</strong> :</p>
+
+                          <img src="/asset/image/SeriesPOO/S2Exec1-Code1.png">
+
+                          <p> Le résultat obtenu correspond bien à notre analyse théorique, donc notre réponse 
+                            est correcte.
+                            <br><br>• Si on remplace k par 0 dans le code fourni on aura comme résultat : 
+                            0 est pair
+                            <br><br>La valeur finale de n à la sortie de la boucle est 3.<br><br>
+                          </p>
+              
+
+              <p>
+                <br><br> ➢ En remplaçant la boucle do-while par while :
+                Si nous initialisons la valeur de k à 0, la boucle ne sera jamais exécutée car la 
+                condition de la boucle while sera fausse dès le départ. Le code affichera 
+                simplement "La valeur finale de n à la sortie de la boucle est 0".
+                <br><br>Voici le code modifié :
+              </p>
+              <img src="/asset/image/SeriesPOO/S2exo1-Code2.png">
+
+              <p> Le résultat obtenu est simplement :
+               <br><br> La valeur finale de n à la sortie de la boucle est 0</p>
+              <img src="/asset/image/SeriesPOO/S2Exec1-Code2.png">
+              <p>Par conséquent, la boucle do-while s'exécute au moins une fois, tandis que la 
+                boucle while ne s'exécutera pas du tout si la condition est initialement fausse. La 
+                différence entre les deux boucles est donc que la boucle do-while s'exécute au moins une fois, tandis que la boucle while peut ne pas s'exécuter du tout si la 
+                condition est initialement fausse.</p>
+
+
+                <p><br><br> <strong>Tips and tricks</strong>  : 
+
+                  <br><br> ➢ Voici quelques astuces générales sur l'utilisation de do-while
+                    et while :
+                    <br><br> • La boucle while est utile lorsque vous voulez exécuter une boucle 
+                    tant qu'une condition est vraie. Si la condition n'est jamais vraie, 
+                    la boucle ne sera jamais exécutée.
+                    <br><br> • La boucle do-while est similaire à la boucle while, mais elle 
+                    garantit que le bloc de code à l'intérieur de la boucle est exécuté 
+                    au moins une fois, peu importe la valeur de la condition.
+                    <br><br> • Il est important de s'assurer que la condition de la boucle est mise 
+                    à jour correctement dans le bloc de code à l'intérieur de la boucle, 
+                    sinon vous risquez de créer une boucle infinie.
+                    <br><br> • L'utilisation des instructions continue et break peut aider à 
+                    contrôler l'exécution de la boucle. Continue permet de sauter une 
+                    itération de la boucle et d'aller directement à la suivante, tandis 
+                    que break permet de sortir de la boucle.
+
+                </p>
+                  </div>
+          </div>
+  </div>
+
+  <div class="element">
+    <div class="titre-element">
+  <div class="titre-element-p1"> <h2>Exercices 2</h2></div>
+    <div class="titre-element-p2"> <h2>2</h2></div>
+    </div>
+      <div class="texte-element">
+            <div class="p-element">
+                    <p> ➢ Voici le programme Java pour déterminer la nième valeur de la suite de 
+                      Fibonacci de manière itérative :
+                    </p>
+                    <img src="/asset/image/SeriesPOO/S2Exo2-Code1.png">
+
+                    <p> Le programme commence par demander à l'utilisateur d'entrer un nombre entier 
+                      supérieur à 2. Si l'utilisateur entre un nombre inférieur ou égal à 2, le programme 
+                      redemandera à l'utilisateur de saisir une nouvelle valeur.<br><br>
+                      Ensuite, le programme utilise une boucle for pour calculer la nième valeur de la 
+                      suite de Fibonacci. Le premier et le deuxième terme de la suite sont initialisés à 1, et le troisième terme est calculé en additionnant les deux termes précédents. Les 
+                      termes suivants sont calculés de la même manière, jusqu'à ce que la nième valeur 
+                      soit atteinte. </p>
+                    <img src="/asset/image/SeriesPOO/S2Exec2-Code1.png">
+
+                    <p> ➢ Voici maintenant le programme Java pour déterminer la nième valeur de la 
+                      suite de Fibonacci de manière récursive :</p>
+                  <img src="/asset/image/SeriesPOO/S2Exo2-Code2.png">
+
+                  <p> Le programme commence également par demander à l'utilisateur d'entrer un 
+                    nombre entier supérieur à 2, et redemande une nouvelle valeur si l'utilisateur entre 
+                    un nombre inférieur ou égal à 2.<br><br>
+                    Ensuite, le programme utilise une méthode récursive pour calculer la nème valeur 
+                    de la suite de Fibonacci. La méthode prend en entrée le nombre n et renvoie le 
+                    nème terme de la suite de Fibonacci. Si n est inférieur ou égal à 2, la méthode 
+                    renvoie 1. Sinon, elle renvoie la somme des deux termes précédents de la suite de 
+                    Fibonacci (calculés en appelant récursivement la méthode fib). </p>
+                  <img src="/asset/image/SeriesPOO/S2Exec2-Code2.png">
+
+                  <p>
+                    Notez que la méthode récursive peut être moins efficace que la méthode itérative 
+                    pour de grandes valeurs de n, car elle utilise beaucoup de mémoire et effectue des 
+                    appels de méthode récursive.
+                  </p>
+
+                  <p>
+                    <br><br><strong>Tips and tricks</strong> :
+                    <br><br>• Avant de commencer à écrire une fonction, définissez clairement ce 
+                    que la fonction doit faire et ce que ses entrées et sorties doivent 
+                    être.
+                    <br><br>• N'oubliez pas de déclarer le type de retour de la fonction avant son 
+                    nom. Si la fonction ne retourne rien, utilisez le type "void".
+                    <br><br>• Les noms de fonction devraient être des verbes ou des phrases 
+                    verbales qui décrivent clairement ce que la fonction fait. Par 
+                    exemple, dans les deux exemples de code donnés, le nom "fib" pour la 
+                    fonction qui calcule les valeurs de la suite de Fibonacci est un 
+                    choix judicieux car il décrit clairement l'action de la fonction.
+                    <br><br>• Les fonctions peuvent prendre des paramètres. Déclarez-les entre les 
+                    parenthèses juste après le nom de la fonction. Si plusieurs 
+                    paramètres sont nécessaires, séparez-les par des virgules.
+                    <br><br>• Les fonctions doivent être conçues pour être réutilisables et 
+                    génériques autant que possible, pour minimiser la duplication de 
+                    code.
+                    <br><br>• Les fonctions récursives peuvent être utiles pour des problèmes 
+                    mathématiques tels que le calcul de la suite de Fibonacci, mais elles 
+                    peuvent également être gourmandes en ressources si elles ne sont pas 
+                    correctement optimisées. Dans ces cas-là, une approche itérative peut 
+                    être plus efficace.
+                    <br><br>➢ La récursivité :
+                    <br><br>✓ Comprendre le concept de récursivité : une fonction 
+                    récursive est une fonction qui s'appelle elle-même. Il 
+                    est important de bien comprendre comment cela fonctionne 
+                    et comment les appels récursifs sont effectués pour 
+                    éviter les boucles infinies.
+                    <br><br>✓ Avoir une condition d'arrêt : il est important d'avoir 
+                    une condition d'arrêt dans une fonction récursive, c'est à-dire une condition qui arrête l'appel récursif et 
+                    renvoie une valeur.
+                    <br><br>✓ Éviter les appels récursifs inutiles : il est important 
+                    d'éviter les appels récursifs inutiles, car cela peut 
+                    entraîner des performances médiocres ou même des erreurs 
+                    de dépassement de pile. Il faut donc s'assurer que chaque 
+                    appel récursif a un but et contribue à la résolution du 
+                    problème.
+                    <br><br>✓ Utiliser la récursivité pour résoudre des problèmes 
+                    récursifs : la récursivité est utile pour résoudre des 
+                    problèmes qui ont une structure récursive. Par exemple, 
+                    les problèmes de tri, les problèmes de recherche et les 
+                    problèmes de parcours de graphes sont souvent résolus de 
+                    manière récursive.                    
+                  </p>
+              </div>
+      </div>
+</div>
+
+<div class="element">
+<div class="titre-element">
+<div class="titre-element-p1"> <h2>Exercices 3</h2></div>
+<div class="titre-element-p2"> <h2>3</h2></div>
+</div>
+  <div class="texte-element">
+        <div class="p-element">
+                
+                  <img src="/asset/image/SeriesPOO/S2Exo3-Code1.png">
+
+                    
+                    <img src="/asset/image/SeriesPOO/S2Exec3-Code1.png">
+                    
+                    <p> Notez que le programme utilise la classe Arrays pour trier les éléments de t3 et 
+                      trouver les valeurs maximale et minimale de t3. Ces méthodes sont très pratiques 
+                      et évitent de devoir écrire notre propre code pour ces opérations.
+                  </p>
+                  
+                  <p> Tips and tricks :
+                    <br><br>• Arrays est une classe Java qui fournit des méthodes pour travailler 
+                    avec des tableaux. Certaines méthodes utiles incluent sort pour trier 
+                    un tableau dans l'ordre croissant, max et min pour trouver la valeur 
+                    maximale et minimale d'un tableau, et toString pour obtenir une 
+                    chaîne de caractères représentant le tableau. Assurez-vous de 
+                    connaître les différentes méthodes disponibles dans la classe Arrays
+                    et comment les utiliser.
+                    <br><br>• La méthode Math.random retourne un nombre aléatoire compris entre 0 
+                    et 1. Vous pouvez utiliser cette méthode pour générer des valeurs 
+                    aléatoires dans votre code. Par exemple, pour générer un nombre 
+                    aléatoire compris entre 5 et 99, vous pouvez multiplier le résultat 
+                    de Math.random par 95 (la différence entre 99 et 5) et ajouter 5 (la 
+                    valeur minimale).
+                    <br><br>• L'allocation dynamique vous permet de créer des tableaux dont la 
+                    taille est déterminée à l'exécution plutôt qu'à la compilation. En 
+                    Java, vous pouvez utiliser l'opérateur new pour allouer de la mémoire 
+                    pour un tableau. Par exemple, int[] t1 = new int[taille]; crée un 
+                    tableau d'entiers de taille taille. Assurez-vous de valider la taille 
+                    saisie par l'utilisateur pour éviter les erreurs de mémoire.
+                    <br><br>• Pour parcourir un tableau, vous pouvez utiliser une boucle for
+                    classique ou une boucle for-each. La boucle for-each est utile 
+                    lorsque vous n'avez pas besoin de connaître l'indice de chaque 
+                    élément du tableau. Par exemple, for (int val : t2) parcourt chaque 
+                    élément de t2 et stocke sa valeur dans la variable val.
+                     </p>
+          </div>
+  </div>
+</div>
+
+<div class="element">
+<div class="titre-element">
+<div class="titre-element-p1"> <h2>Exercices 4</h2></div>
+<div class="titre-element-p2"> <h2>4</h2></div>
+</div>
+<div class="texte-element">
+    <div class="p-element">
+            
+              <img src="/asset/image/SeriesPOO/S2Exo4-Code1.png">
+
+                    <p> <br><br>Ce code utilise un tableau d'entiers occurrences pour stocker les occurrences de 
+                      chaque somme possible. Il utilise ensuite une boucle for pour simuler 70000 
+                      lancers de deux dés et mettre à jour le tableau d'occurrences en fonction de 
+                      chaque lancer.
+                      <br><br>Ensuite, le code utilise une deuxième boucle for pour afficher les résultats du 
+                      nombre d'occurrences de chaque somme possible. Le code conserve également la 
+                      somme la plus fréquente et son nombre d'occurrences dans les variables 
+                      mostFrequentSum et maxOccurrence.
+                      Enfin, le code affiche la somme la plus fréquente ainsi que son nombre 
+                      d'occurrences.
+                      <br><br>Le chiffre obtenu pour la somme la plus fréquente dépendra de la simulation. En 
+                      général, la somme la plus fréquente devrait être autour de 7, car il y a plus de 
+                      combinaisons possibles pour obtenir cette somme que pour les autres sommes.
+                      <br><br>Cependant, il est possible que le résultat soit différent en raison de la nature 
+                      aléatoire de la simulation.
+                      <br><br>Notez que la méthode Math.random() renvoie un nombre aléatoire compris entre 
+                      0 et 1. Pour simuler le lancer d'un dé à 6 faces, on peut multiplier ce nombre par 6 et 
+                      ajouter 1 (pour obtenir une valeur entre 1 et 6).
+                      <br><br>Lorsque le code est compilé et exécuté, il affiche :  </p>
+                      
+                    <img src="/asset/image/SeriesPOO/S2Exec4-Code1.png">
+                    
+                    <p> <strong> Tips and tricks </strong>:
+                        <br><br>• Utilisation d'un tableau pour stocker les occurrences : Le tableau 
+                        est une structure de données très pratique pour stocker des 
+                        occurrences, car il permet de stocker facilement et efficacement des 
+                        valeurs en utilisant un indice. Dans ce code, le tableau occurrences 
+                        est utilisé pour stocker le nombre d'occurrences de chaque somme de 
+                        deux dés.
+                        <br><br>• Utilisation de Math.random() pour générer des nombres aléatoires : La 
+                        méthode Math.random() est une méthode pratique pour générer des 
+                        nombres aléatoires. Elle renvoie un double compris entre 0 (inclus) 
+                        et 1 (exclus). Pour générer un nombre aléatoire compris entre a et b, 
+                        on peut utiliser la formule : (int) (Math.random() * (b-a+1)) + a.
+                        <br><br>• Trouver la somme la plus fréquente : Pour trouver la somme la plus 
+                        fréquente, on peut parcourir le tableau occurrences en recherchant la 
+                        plus grande valeur. On peut utiliser une variable maxOccurrences pour 
+                        stocker le nombre maximum d'occurrences et une variable maxSum pour 
+                        stocker la somme correspondante. On peut utiliser une boucle for pour 
+                        itérer sur le tableau et comparer chaque valeur avec maxOccurrences. 
+                        Si une valeur est supérieure à maxOccurrences, on met à jour 
+                        maxOccurrences et maxSum.
+                        
+              </p>
+      </div>
+</div>
+</div>
+
+<div class="element">
+<div class="titre-element">
+<div class="titre-element-p1"> <h2>Exercices 5</h2></div>
+<div class="titre-element-p2"> <h2>5</h2></div>
+</div>
+<div class="texte-element">
+  <div class="p-element">
+          
+            <img src="/asset/image/SeriesPOO/S2Exo5-Code1.png">
+            <p> La méthode operation prend en entrée deux valeurs réelles x et y ainsi qu'un 
+                caractère op. Elle renvoie le résultat correspondant à l'opération indiquée par op, 
+                qui peut être +, -, * ou /. Si op est un autre caractère, la méthode effectue une 
+                addition par défaut.
+            </p>
+              
+              <img src="/asset/image/SeriesPOO/S2Exec5-Code1.png">
+              <p>Le programme principal (méthode main) appelle la méthode operation quatre fois 
+                avec des valeurs connues de x, y et des opérateurs différents, et affiche les 
+                résultats. </p>
+
+            <p>
+                <strong> Tips and tricks </strong>:
+                <br><br>• La structure de contrôle switch est utilisée pour évaluer 
+                différentes valeurs d'une variable et exécuter le code 
+                correspondant au cas correspondant.
+                <br><br>• Utilisation de la méthode sc.next().charAt(0); pour lire un 
+                caractère depuis l'entrée utilisateur :
+                <br><br>L'objet Scanner permet de lire l'entrée utilisateur depuis la console. 
+                Pour lire un caractère, on utilise la sc.next().charAt(0); qui permet de 
+                lire le premier caractère de la prochaine chaîne de caractères saisie 
+                par l'utilisateur. Dans l'exemple donné, cette méthode est utilisée pour 
+                lire le caractère d'opération saisi par l'utilisateur (dans la variable 
+                'op'). Le caractère saisi est ensuite utilisé dans la structure de 
+                contrôle switch pour déterminer quelle opération arithmétique doit être 
+                effectuée.
+                <br><br>Par exemple, si l'utilisateur entre le caractère "+", la méthode 
+                sc.next().charAt(0); retournera le caractère '+'.
+
+            </p>
+    </div>
+</div>
+</div>
+
+<div class="element">
+<div class="titre-element">
+<div class="titre-element-p1"> <h2>Exercices 6</h2></div>
+<div class="titre-element-p2"> <h2>6</h2></div>
+</div>
+<div class="texte-element">
+  <div class="p-element">
+            <img src="/asset/image/SeriesPOO/S2Exo6-Code1.png">
+            <p>Le code fournit une implémentation de deux méthodes permettant de travailler 
+                avec des nombres premiers.
+                <br><br>La première méthode, « boolean premierTest (int n) », prend en entrée un nombre 
+                entier n et renvoie un booléen true si n est un nombre premier et false sinon. Elle 
+                vérifie si n est divisible par tous les nombres entre 2 et n/2, si oui, elle renvoie false, 
+                sinon elle renvoie true.
+                <br><br>La deuxième méthode, « void chercherNbPremier(int n) », prend en entrée un 
+                nombre entier n et affiche à l'écran tous les nombres premiers compris entre 2 et n
+                en utilisant la fonction premierTest. Elle utilise une boucle for pour parcourir tous 
+                les entiers entre 2 et n, et appelle la fonction premierTest pour chaque entier. Si 
+                premierTest renvoie true, l'entier est affiché à l'écran.
+                <br><br>Dans le programme principal, la méthode chercherNbPremier est appelée avec 
+                n=100 pour afficher tous les nombres premiers entre 2 et 100. Le temps 
+                d'exécution de la méthode chercherNbPremier est également calculé en utilisant 
+                la fonction System.currentTimeMillis() pour mesurer le temps écoulé avant et 
+                après l'exécution de la méthode. Ce temps est affiché à l'écran en secondes avec 
+                une précision de 5 chiffres après la virgule.
+                <br><br>Enfin, le code a été optimisé pour améliorer les performances. Pour cela, la 
+                méthode premierTest ne teste que les diviseurs impairs plutôt que tous les 
+                diviseurs entre 2 et n/2, car si un nombre n est divisible par un nombre pair, alors il 
+                est aussi divisible par 2 et n ne peut donc pas être un nombre premier. Cette 
+                optimisation permet de réduire le nombre de tests effectués et donc d'améliorer 
+                les performances du programme.
+            </p>
+                    <img src="/asset/image/SeriesPOO/S2Exec6-Code1.png">
+                    <img src="" alt="">
+                    <p><strong> Tips and tricks </strong>:
+                        <br><br>• La méthode System.currentTimeMillis() est utilisée pour 
+                        mesurer le temps d'exécution d'une partie du code. Voici 
+                        quelques astuces pour son utilisation :
+                        <br><br>1. Appeler la méthode System.currentTimeMillis() avant et après le bloc 
+                        de code à mesurer.
+                        <br><br>2. Soustraire le temps de fin du temps de début pour obtenir le temps 
+                        écoulé en millisecondes.
+                        <br><br>3. Diviser le temps écoulé par 1000.0 pour obtenir le temps écoulé en 
+                        secondes.
+                        <br><br>4. Utilisez la méthode printf pour afficher le temps écoulé avec un 
+                        nombre précis de décimales.
+                         </p>
+    </div>
+</div>
+</div>
+
+<div class="element">
+<div class="titre-element">
+<div class="titre-element-p1"> <h2>Exercices 7</h2></div>
+<div class="titre-element-p2"> <h2>7</h2></div>
+</div>
+<div class="texte-element">
+  <div class="p-element">
+          
+            <img src="/asset/image/SeriesPOO/S2Exo7-Code1.png">
+
+            
+                    <img src="/asset/image/SeriesPOO/S2Exec7-Code1.png">
+                    <p>
+                        <strong>Tips and tricks</strong> :
+                         <br><br>• La fonction affseq() affiche une séquence de nombres de 0 à n en 
+                        utilisant la récursivité descendante. L'idée principale est que la 
+                        fonction appelle elle-même avec un paramètre réduit à chaque appel 
+                        jusqu'à atteindre la condition d'arrêt, qui est lorsque n est égal à 
+                        0. À ce stade, la fonction affiche simplement 0 et retourne.
+                        <br><br>• La fonction affseqInv() affiche une séquence de nombres de n à 0 en 
+                        utilisant la récursivité. L'astuce ici consiste à placer l'affichage 
+                        du nombre avant l'appel récursif. De cette façon, les nombres sont 
+                        affichés dans l'ordre décroissant.
+                        <br><br>• La fonction somme_un_a() calcule la somme des nombres de 1 à n en 
+                        utilisant la récursivité ascendante. L'idée principale est que la 
+                        fonction appelle elle-même avec un paramètre qui est augmenté à 
+                        chaque appel jusqu'à atteindre la condition d'arrêt, qui est lorsque 
+                        n est égal à 1. À ce stade, la fonction retourne simplement 1.
+                        <br><br>• La fonction facto() calcule la factorielle d'un nombre en utilisant 
+                        la récursivité descendante. L'astuce ici consiste à appeler la 
+                        fonction elle-même avec un paramètre réduit à chaque appel jusqu'à 
+                        atteindre la condition d'arrêt, qui est lorsque n est égal à 0 ou 1. 
+                        À ce stade, la fonction retourne simplement 1.
+                    </p>
+                   
+    </div>
+</div>
+</div>
+
+<div class="element">
+  <div class="titre-element">
+  <div class="titre-element-p1"> <h2>Exercices 8</h2></div>
+  <div class="titre-element-p2"> <h2>8</h2></div>
+  </div>
+  <div class="texte-element">
+    <div class="p-element">
+            
+              <img src="/asset/image/SeriesPOO/S2Exo8-Code1.png">
+              
+                     
+              <img src="/asset/image/SeriesPOO/poo.png"  >
+              
+              <p> La méthode construitTriangle remplit le tableau 2D triangle avec les coefficients 
+                de Pascal en utilisant les règles décrites dans l'énoncé. 
+                <br><br>La méthode creer_HauteurTriangle initialise la structure de données 2D pour stocker les 
+                coefficients, en créant d'abord un tableau 2D de taille nbNiveaux et en initialisant 
+                les tableaux relatifs à chaque niveau avec la taille appropriée. La méthode 
+                afficheTriangle affiche simplement le contenu de triangle à l'écran.
+                <br><br>La méthode main demande à l'utilisateur d'entrer le nombre de niveaux pour le 
+                triangle de Pascal, initialise la structure de données avec la méthode 
+                creer_HauteurTriangle, remplit le tableau avec les coefficients de Pascal en 
+                appelant construitTriangle, puis affiche le résultat avec afficheTriangle.
+                
+              </p>
+               <p><strong> Tips and tricks </strong>:
+                <br><br>• Pour déclarer une matrice en Java, vous devez utiliser la syntaxe 
+                suivante :
+                <br><br>type[][] nomMatrice = new type[nbLignes][nbColonnes];
+                <br><br>Par exemple, pour déclarer une matrice d'entiers de 3 lignes et 4 
+                colonnes :
+                <br><br>int[][] matrice = new int[3][4];
+                <br><br>• Vous pouvez également créer une matrice avec un nombre variable de 
+                colonnes pour chaque ligne. Pour cela, vous devez déclarer la matrice 
+                en utilisant un tableau à une dimension, puis initialiser chaque 
+                élément avec un tableau à une dimension de taille variable.
+                <br><br>type[][] nomMatrice = new type[nbLignes][];
+                <br><br>for (int i = 0; i < nbLignes; i++) {
+                nomMatrice[i] = new type[nbColonnes];
+                }
+                <br><br>• Pour accéder aux éléments d'une matrice, vous pouvez utiliser les 
+                indices de ligne et de colonne. L'indice de la première ligne et de 
+                la première colonne est 0. Pour accéder à un élément spécifique, 
+                <br><br>utilisez la syntaxe suivante :
+                nomMatrice[ligne][colonne]
+                <br><br>Pour passer une matrice en tant qu'argument à une méthode, vous devez 
+                spécifier le type de la matrice suivi de deux paires de crochets. Par 
+                exemple, pour une méthode qui prend en entrée une matrice d'entiers de 
+                taille variable :
+                <br><br>public static void maMethode(int[][] matrice) {
+                // Code
+                }
+                <br><br>For each :
+                <br><br>• Pour afficher une matrice à l'aide d'une boucle for each, vous 
+                pouvez utiliser la syntaxe suivante :
+                <br><br>int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+                <br><br>&nbsp; for (int[] row : matrix) {
+                    <br><br>&nbsp; &nbsp; for (int value : row) {
+                        <br> &nbsp; &nbsp; &nbsp;&nbsp;  System.out.print(value + " ");
+                        <br>&nbsp; &nbsp; &nbsp; }
+                        <br>&nbsp; &nbsp; System.out.println();
+                        <br><br>}
+
+                 </p>
+      </div>
+
+  </div>
+  </div>
+
+
+</div>
+
+
+        <h1 id="TD">Exercices</h1>
+          <div class="divs-pdf">
+          
+
+            <div class="doc">
+                <a
+                  href="https://drive.google.com/drive/folders/1ZIy6bgr7zCf0m5soL9sts93tr9RRfxFR"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="icon"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#32729a"
+                    stroke="#32729a"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M576 102.4H268.8c-14.08 0-25.6 11.52-25.6 25.6v742.4c0 14.08 11.52 25.6 25.6 25.6h512c14.08 0 25.6-11.52 25.6-25.6V332.8L576 102.4z"
+                        fill="#ffff"
+                      ></path>
+                      <path
+                        d="M780.8 908.8H268.8c-21.76 0-38.4-16.64-38.4-38.4V128c0-21.76 16.64-38.4 38.4-38.4h312.32L819.2 327.68V870.4c0 21.76-16.64 38.4-38.4 38.4zM268.8 115.2c-7.68 0-12.8 5.12-12.8 12.8v742.4c0 7.68 5.12 12.8 12.8 12.8h512c7.68 0 12.8-5.12 12.8-12.8V337.92L570.88 115.2H268.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                      <path
+                        d="M576 307.2c0 14.08 11.52 25.6 25.6 25.6h204.8L576 102.4v204.8z"
+                        fill="#ffff008181"
+                      ></path>
+                      <path
+                        d="M806.4 345.6H601.6c-21.76 0-38.4-16.64-38.4-38.4V102.4c0-5.12 2.56-10.24 7.68-11.52 5.12-2.56 10.24-1.28 14.08 2.56l230.4 230.4c3.84 3.84 5.12 8.96 2.56 14.08-1.28 5.12-6.4 7.68-11.52 7.68zM588.8 133.12V307.2c0 7.68 5.12 12.8 12.8 12.8h174.08L588.8 133.12zM332.8 435.2h371.2v25.6H332.8zM332.8 524.8h371.2v25.6H332.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                      <path
+                        d="M332.8 614.4h371.2v25.6H332.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                      <path
+                        d="M332.8 716.8h371.2v25.6H332.8z"
+                        fill="#ffff32729a"
+                      ></path>
+                    </g>
+                  </svg>
+                  <h4>COURS</h4>
+                </a>
+              </div>
+
+            <div class="doc">
+              <a
+                href="https://drive.google.com/drive/folders/1bI1DtzJb0nGJ-pMivKCgHj3-3P4AT9e2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  viewBox="0 0 1024 1024"
+                  class="icon"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#32729a"
+                  stroke="#32729a"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M576 102.4H268.8c-14.08 0-25.6 11.52-25.6 25.6v742.4c0 14.08 11.52 25.6 25.6 25.6h512c14.08 0 25.6-11.52 25.6-25.6V332.8L576 102.4z"
+                      fill="#ffff"
+                    ></path>
+                    <path
+                      d="M780.8 908.8H268.8c-21.76 0-38.4-16.64-38.4-38.4V128c0-21.76 16.64-38.4 38.4-38.4h312.32L819.2 327.68V870.4c0 21.76-16.64 38.4-38.4 38.4zM268.8 115.2c-7.68 0-12.8 5.12-12.8 12.8v742.4c0 7.68 5.12 12.8 12.8 12.8h512c7.68 0 12.8-5.12 12.8-12.8V337.92L570.88 115.2H268.8z"
+                      fill="#ffff32729a"
+                    ></path>
+                    <path
+                      d="M576 307.2c0 14.08 11.52 25.6 25.6 25.6h204.8L576 102.4v204.8z"
+                      fill="#ffff008181"
+                    ></path>
+                    <path
+                      d="M806.4 345.6H601.6c-21.76 0-38.4-16.64-38.4-38.4V102.4c0-5.12 2.56-10.24 7.68-11.52 5.12-2.56 10.24-1.28 14.08 2.56l230.4 230.4c3.84 3.84 5.12 8.96 2.56 14.08-1.28 5.12-6.4 7.68-11.52 7.68zM588.8 133.12V307.2c0 7.68 5.12 12.8 12.8 12.8h174.08L588.8 133.12zM332.8 435.2h371.2v25.6H332.8zM332.8 524.8h371.2v25.6H332.8z"
+                      fill="#ffff32729a"
+                    ></path>
+                    <path
+                      d="M332.8 614.4h371.2v25.6H332.8z"
+                      fill="#ffff32729a"
+                    ></path>
+                    <path
+                      d="M332.8 716.8h371.2v25.6H332.8z"
+                      fill="#ffff32729a"
+                    ></path>
+                  </g>
+                </svg>
+                <h4>TP01:INTRO</h4>
+              </a>
+            </div>
+        
+        </div>
+          </div>
+
+      </div>
+      </div>
+    </main>
+    <footer>
+      <div class="up">
+        <hr />
+      </div>
+      <div class="down">
+        <div class="haut"></div>
+        <p>
+          Ce site n'est pas affilié aux sites officiels de l'université de
+          Boumerdès. Il a été créé par une équipe d'étudiants passionnés pour
+          aider les autres étudiants à réussir leurs études en informatique.
+        </p>
+
+        <p>
+          Nous remercions toutes les personnes qui ont contribué à la réussite
+          de ce site, en particulier l'équipe de Résumily.
+        </p>
+        <div class="bas">
+           <ul>
+                  <li><a href="https://drive.google.com/file/d/1QWWu7JSLnSfsHKbWjuicVW8LvDXKlXCs/view?usp=share_link"><img src="./assets/image/android-svgrepo-com.svg" alt=""></a></li>
+                  <li><a href="https://web.facebook.com/profile.php?id=100090109067553"><img src="./assets/image/facebook-svgrepo-com (3).svg" alt=""></a></li>
+                  <li><a href="mailto:Resumily23@gmail.com"><img src="./assets/image/email-svgrepo-com.svg" alt=""></a></li>
+                </ul>
+          <h4>© RÉSUMILY —All rights reserved</h4>
+        </div>
+      </div>
+    </footer>
+    <div id="scroll-up">
+      <button class="scroll-up-button caché">
+        <svg
+          fill="#32729a"
+          viewBox="0 0 200 200"
+          data-name="Layer 1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke="#32729a"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke="#CCCCCC"
+            stroke-width="0.4"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <title></title>
+            <path
+              d="M114,74.5a19.92,19.92,0,0,0-28.5,0L57,103a9.9,9.9,0,0,0,14,14L99.5,88.5,128,117a9.9,9.9,0,0,0,14-14Z"
+            ></path>
+            <path
+              d="M100,15a85,85,0,1,0,85,85A84.93,84.93,0,0,0,100,15Zm0,150a65,65,0,1,1,65-65A64.87,64.87,0,0,1,100,165Z"
+            ></path>
+          </g>
+        </svg>
+      </button>
+    </div>
+    <script src="main.js"></script>
+    <script src="info-module.js"></script>
+  </body>
+</html>

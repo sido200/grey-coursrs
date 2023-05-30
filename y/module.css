@@ -132,6 +132,18 @@ footer img {
   cursor: pointer;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
+.off{
+  background-color: #5555557c !important;
+}
+#chap2 span{
+  color: red;
+}
+#green{
+  color: rgb(83, 199, 83) !important;
+}
+#blue{
+  color: #32729a !important;
+}
 .chapitres-menu {
   display: flex;
   flex-wrap: wrap;
@@ -630,6 +642,9 @@ code {
     cursor: pointer;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   }
+  #tall{
+    font-size: 15px !important;
+  }
   .element img,
   .h-images img {
     width: 200px !important;
@@ -733,6 +748,7 @@ code {
   .tel-code88 {
     font-size: 7px !important ;
   }
+  
 }
 
 /*respo tel*/

@@ -60,6 +60,7 @@
             <a href="#intro"><button>Introduction</button></a>
             <a href="#chap1"><button>Chapitre 1</button></a>
             <a href="#chap2"><button>Chapitre 2</button></a>
+            <a href="#chap3"><button>Chapitre 3</button></a>
         </div>
          </div>
       </div>
@@ -654,6 +655,172 @@ Un langage est ambigu si toutes les grammaires qui l’engendrent sont ambiguës
           • Une grammaire d’un langage L permet de générer tous les mots appartenant à ce langage. <br>
 • Une automate pour un langage L est un programme qui prend en entrée un mot w et répond
 oui si w appartient à L et non sinon.
+      </p> 
+      
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+<div class="general-infos" id="chap3">
+    
+  <h1>Chapitre 3: Automates à états finis</h1>
+  <div class="infos-carres">
+  <div class="element">
+    <div class="titre-element">
+      <div class="titre-element-p1"> 
+        <h2>Intoduction</h2> 
+      </div>
+      <div class="titre-element-p2"> 
+        <h2>1</h2>
+      </div>
+    </div>
+    <div class="texte-element">
+       <div class="p-element thl">
+        <p> Les automates finis ont des applications importantes : <br>
+           -Définition de certains aspects des langages naturels ou artificiels <br>
+           -Description de machines physiques (circuits  ́électroniques, machines à calculer, distributeur
+          d’objets, etc.) <br>
+           -Définition de protocoles de communication dans des réseaux <br>
+           -Description de systèmes de commandes (comme le système de commandes
+          d’un ascenseur)... etc</p> 
+      
+
+      </div>
+    </div>
+  </div>
+  <div class="element">
+    <div class="titre-element">
+      <div class="titre-element-p1"> 
+        <h2>Définition</h2> 
+      </div>
+      <div class="titre-element-p2"> 
+        <h2>2</h2>
+      </div>
+    </div>
+    <div class="texte-element">
+       <div class="p-element thl">
+        <p>Un automate à états finis est la plus simple machine abstraite (programme) qui reconnaît les langages
+          réguliers (type3), il n'utilise aucune mémoire auxiliaire. <br>
+          <img src="/assets/image/definition formelle d'un automate.png" alt="">
+      </p> 
+      
+
+      </div>
+    </div>
+  </div>
+  <div class="element">
+    <div class="titre-element">
+      <div class="titre-element-p1"> 
+        <h2>Représentation d'un automate A</h2> 
+      </div>
+      <div class="titre-element-p2"> 
+        <h2>3</h2>
+      </div>
+    </div>
+    <div class="texte-element">
+       <div class="p-element thl">
+       <p> <img src="/assets/image/representation d'un automate.png" alt="">
+       </p>
+       
+      
+
+      </div>
+    </div>
+  </div>
+  <div class="element">
+    <div class="titre-element">
+      <div class="titre-element-p1"> 
+        <h2>Langage reconnu par un automate L(A)</h2> 
+      </div>
+      <div class="titre-element-p2"> 
+        <h2>4</h2>
+      </div>
+    </div>
+    <div class="texte-element">
+       <div class="p-element thl">
+        <p> 
+        <big class="semi-important ">Définition du L(A) :</big> <br>
+        C'est l'ensemble de mots lus à partir de la configuration initiale (q0, w) jusqu'à la configuration finale
+(qf , ε)<br>
+L(A) = {w ∈ ∑* | (q0; w)⊢ * (qf , ε); qf ∈ F } <br>
+      <big class="semi-important">Machine a Ruban : </big> <br>
+      <img src="/assets/image/machine a Ruban.png" alt=""> <br>
+      Ça va nous aider à comprendre, à partir de l'état initial, les quatre cas possibles : <br>
+(q0, w) ⊢* (qf , ε), qf ∈ F ⤇ w ∈ L(A) <br>
+(On termine la lecture du mot sur le ruban et on est sur un état final.) <br>
+(q0, w) ⊢* (qf , ε), qf ∉ F ⤇ w ∉ L(A) <br>
+(On termine la lecture du mot sur le ruban et on est sur un état non final.) <br>
+(q0, w) ⊢* (qi, w’ ), Ɐ qi ∈ Q, δ(qi, w’) n’existe pas ⤇ w ∉ L(A) (blocage). <br>
+(On ne peut terminer la lecture d'un mot car il n'existe pas une transition correspondante.) <br>
+(q0, ε) ⊢* (qf , ε), qf ∈ F ⤇ ε ∈ L(A)
+(L'etat initial est final.) <br>
+<big class="important">
+  Remarques
+</big> <br>
+A1 et A2 sont dites automates équivalentes  L(A1)=L(A2) <br>
+ Une paire (q,w), où q ∈ Q est un état, et w ∈ ∑*, est appelée une configuration. <br>
+ <big class="semi-important">Dérivation directe :</big> <br>
+ ((q, aw) ⊢ (q’, w)) ⇔ (δ(q, a) = q0 tq δ est la fonction de transition, a ∈ Σ et w ∈ Σ*.) <br>
+(Pensez à la machine a Ruban ) <br>
+Dans ce cas la, on dit qu’on a lu le symbole a. <br>
+<big class="semi-important">Dérivation indirecte :</big> <br>
+On dit qu'une configuration (q, w1) dérive indirectement une autre configuration (p,w2), si et seulement
+s'il existe 0, 1 ou plusieurs dérivations directes qui, à partir de (q,w1), conduisent à la configuration
+(p,w2). On note (q; w1) ⊢* (p; w2).
+</p>
+      </div>
+    </div>
+  </div>
+  <div class="element">
+    <div class="titre-element">
+      <div class="titre-element-p1"> 
+        <h2>Notations</h2> 
+      </div>
+      <div class="titre-element-p2"> 
+        <h2>5</h2>
+      </div>
+    </div>
+    <div class="texte-element">
+       <div class="p-element thl">
+        <p>  
+         <img  src="/assets/image/Notations.png" alt="">
+         <br>
+          <big class="semi-important">Exemple :</big> <br>
+            L1={w ∈ {0, 1}* , w sont les multiples de 4 quand ils sont interprétés en décimal} <br>
+Il faux comprendre la condition d’abord ; <br>
+w sont les multiples de 4 quand ils sont interprétés en décimal, cela veut dire : <br>
+w = 0, w = 4 (ou bien 100), w = 8(ou bien 1000)... etc. 
+         
+          <br>
+          <img src="/assets/image/exemple-multiples de quatre.png" alt="">
+          <br>
+          A = ({0,1}, {q0,q1,q2,q3}, δ, q0;{q0}) <br>
+Selon l’automate (vérification) :  <br>
+W0= 0 =0[4]∈ L1 w1= 1 = 1[4] ∉L1 w2=10 = 2 en decimal = 2[4] ∉L1 <br>
+W3 = 11 = 3 en decimal = 3[4] ∉L1 w4 = 100 = 4 en decimal = 0[4]∈L1
+      </p> 
+      
+
+      </div>
+    </div>
+  </div>
+  <div class="element">
+    <div class="titre-element">
+      <div class="titre-element-p1"> 
+        <h2>(AEFD), (AEFN) et (AEFC)</h2> 
+      </div>
+      <div class="titre-element-p2"> 
+        <h2>6</h2>
+      </div>
+    </div>
+    <div class="texte-element">
+       <div class="p-element thl">
+        <p>
+          Soit A = (Σ, Q, δ, q0, F ) tq : Σ ={a,b}/ Q = {q0,q1}/F = {q0,q1} <br>
+         <img src="/assets/image/AEFD, AEFC et AEFN.png" alt="">
       </p> 
       
 

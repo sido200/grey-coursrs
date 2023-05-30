@@ -181,6 +181,9 @@ footer img {
   height: 45px;
   width: 200px;
 }
+.titre-element-p1 h2{
+  text-align: center;
+}
 .titre-element-p2 {
   display: flex;
   flex-wrap: wrap;

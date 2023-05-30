@@ -59,6 +59,7 @@
         <div class ="chapitres-menu">
             <a href="#intro"><button>Introduction</button></a>
             <a href="#chap1"><button>Chapitre 1</button></a>
+            <a href="#chap2"><button>Chapitre 2</button></a>
         </div>
          </div>
       </div>
@@ -338,7 +339,7 @@
                 <h2  style="font-size: 15px; text-align: center;" >Cas spécial (facteur propre) :</h2> 
               </div>
               <div class="titre-element-p2"> 
-                <h2>4</h2>
+                <h2>5</h2>
               </div>
             </div>
             <div class="texte-element">
@@ -357,7 +358,7 @@
                 <h2>mot miroir :</h2> 
               </div>
               <div class="titre-element-p2"> 
-                <h2>4</h2>
+                <h2>6</h2>
               </div>
             </div>
             <div class="texte-element">
@@ -377,7 +378,7 @@
                 <h2>language-Definition :</h2> 
               </div>
               <div class="titre-element-p2"> 
-                <h2>1</h2>
+                <h2>7</h2>
               </div>
             </div>
             <div class="texte-element">
@@ -402,7 +403,7 @@
                 <h2  style="font-size: 16px; text-align: center;" >Opérations sur les langages :</h2> 
               </div>
               <div class="titre-element-p2"> 
-                <h2>2</h2>
+                <h2>8</h2>
               </div>
             </div>
             <div class="texte-element" >
@@ -429,7 +430,239 @@
               </div>
             </div>
           </div>
+          <div class="element">
+            <div class="titre-element">
+              <div class="titre-element-p1"> 
+                <h2  style="font-size: 16px; text-align: center;" >Propriétés <br> des opérations :</h2> 
+              </div>
+              <div class="titre-element-p2"> 
+                <h2>9</h2>
+              </div>
+            </div>
+            <div class="texte-element" >
+               <div class="p-element thl" style="margin-left: 10px;">
+                <img src="/assets/image/Propriétés des opérations.png" alt="" id="img">
+              </div>
+            </div>
+          </div>
+          
 </div>
+<div class="general-infos" id="chap2">
+    
+  <h1>Chapitre 2: Grammaire</h1>
+  <div class="infos-carres">
+  <div class="element">
+    <div class="titre-element">
+      <div class="titre-element-p1"> 
+        <h2>Notions de Grammaires</h2> 
+      </div>
+      <div class="titre-element-p2"> 
+        <h2>1</h2>
+      </div>
+    </div>
+    <div class="texte-element">
+       <div class="p-element thl">
+        <p> Les grammaires sont des systèmes générateurs de langages. <br>
+        <big class="semi-important ">Définition:</big> <br>
+        une grammaire est un 4-uplet: où G = (T, N, S, R): <br>
+         T : un ensemble fini de symboles terminaux sur lequel est défini le langage <br>
+         N: un ensemble fini de symboles non terminaux qui n’apparaissent pas
+        dans les mots générés, mais qui sont utilisés au cours de la génération <br>
+         S∈ N: symbole de départ non terminal appelé axiome <br>
+         R: ensemble fini α → β,de Règles de Production (R.P) où α, β∈ (T U N)* <br> 
+         <big class="semi-important ">Conventions:</big> <br>
+           T : lettre minuscule (ex: a, b, 0,1...) <br>
+          N :lettre majuscule (ex: A, B, ...) 
+          On ne donne que le R. <br>
+         Si a → b1, a → b2 , ..., a → bn alors on écrit a → b1/ b2 /.../ bn <br>
+         <big class="semi-important ">EXEMPLE</big> <br>
+         G1 = (T, N, S, R) avec <br>
+          T={a, b} <br>
+           N={S, A, B} <br>
+         R={S → AB, A → aB, B → b } <br>
+        G2 = ({a , + , * , - , / , %}, {E} , E , {E→E+E|E*E | E/E | E-E | E%E | (E) | a }) ; <br>
+      <big class="important ">Remarque</big> <br>
+       La règle X→bX peut être utilisée plusieurs fois, elle est alors dite récursive.</p> 
+      
+
+      </div>
+    </div>
+  </div>
+  <div class="element">
+    <div class="titre-element">
+      <div class="titre-element-p1"> 
+        <h2>La relation dérive</h2> 
+      </div>
+      <div class="titre-element-p2"> 
+        <h2>2</h2>
+      </div>
+    </div>
+    <div class="texte-element">
+       <div class="p-element thl">
+        <p><big class="semi-important "> • Dérivation directe (en une étape)</big> <br> 
+        <big class="semi-important ">Définition:</big> <br>
+        Soit G(T,N, S,R) une grammaire, <br>
+        (permet de dériver v de u (noté u =>v)) →
+        <br>
+        • u = xαy  <br>
+        • v = xβy <br>
+        • α→ βest une règle de R. <br>
+        
+         <big class="semi-important ">EXEMPLE</big> <br>
+         G1 = (S→ aSb, S → ε) <br>
+         Dérivation directe 1: S=>aSb <br>
+         Dérivation directe 2: aSb=>aaSbb <br>
+         Une grammaire génère les mots par dérivation <br>
+        <big class="semi-important "> • Dérivation indirecte (en plusieurs étapes)</big> <br> 
+      
+        On note u *=>v <br>
+        
+         <big class="semi-important ">EXEMPLE 1</big> <br>
+         G1 = (S → aSb/ε) <br>
+         S=>aSb =>aaSbb =>aaaSbbb =>aaaaSbbbb =>...anSbn =>an bn.(S->ε) <br>
+         S *⇒anbn. <br>
+         <big class="semi-important ">EXEMPLE 2</big> <br>
+         G2 = (S → abNSc.....(1) <br>
+         S → ε.............(2) <br>
+         bNa → abN.....(3) <br>
+         bNb → bbN.....(4) <br>
+         bNc → bc........(5)) <br>
+         Par dérivation indirecte, on peut obtenir le mot w= aabbcc à partir de l’axiome S comme
+         suit: <br>
+         S ⇒abNSc ⇒abNabNScc ⇒abNabNcc ⇒aabNbNcc ⇒aabNbcc ⇒aabbNcc ⇒aabbcc. <br>
+      </p> 
+      
+
+      </div>
+    </div>
+  </div>
+  <div class="element">
+    <div class="titre-element">
+      <div class="titre-element-p1"> 
+        <h2>Langage généré par une grammaire</h2> 
+      </div>
+      <div class="titre-element-p2"> 
+        <h2>3</h2>
+      </div>
+    </div>
+    <div class="texte-element">
+       <div class="p-element thl">
+        <p>
+        <big class="semi-important ">Définition:</big> <br>
+        Le langage généré par une grammaire G = (T, N, S, R) est l’ensemble des mots sur T qui peuvent 
+        être dérivés à partir de S ,noté L(G) est donné par: <br>
+        L(G) = {w ∈ T*| S *⇒w}<br> 
+       
+         <big class="semi-important ">EXEMPLE</big> <br>
+         G1 = (S → aSb....(1) , S → ε........(2) ) <br>
+         Pour obtenir L(G), nous allons tenter toutes les dérivations à partir de l’axiome S: <br>
+         S ⇒ ε. <br>
+         S ⇒ aSb ⇒ab. <br>
+         S ⇒aSb ⇒aaSbb ⇒aabb. <br>
+         S ⇒aSb ⇒aaSbb ⇒aaaSbbb....anSbn ⇒anbn. <br>
+         L = {anbn, n ≥ 0}. <br>
+      <big class="important ">Remarque</big> <br>
+      1 .G1 et G2 sont dites grammaires équivalentes ⇔ L(G1)=L(G2) <br>
+      2 Pour une grammaire G, un seul langage est engendré (noté L(G)). <br>
+      3 Par contre, un langage peut être engendré par plusieurs grammaires (dites équivalentes) </p> 
+      
+
+      </div>
+    </div>
+  </div>
+  <div class="element">
+    <div class="titre-element">
+      <div class="titre-element-p1"> 
+        <h2>Problème: a ∈ L(G) ?</h2> 
+      </div>
+      <div class="titre-element-p2"> 
+        <h2>4</h2>
+      </div>
+    </div>
+    <div class="texte-element">
+       <div class="p-element thl">
+        <p> Solutions: suite de dérivations ou arbre de dérivations. <br>
+        <big class="semi-important ">l’arbre de dérivations:</big> <br>
+        représentation graphique de dérivation pour un mot sous <br>
+        forme d’arbres, avec les conventions suivantes: <br>
+        *la racine de l’arbre est l’axiome S <br>
+        *les branches de l’arbre sont les dérivations (R.P) successives <br>
+        *les feuilles de l’arbre sont étiquetées par des symboles terminaux du w <br>
+        
+         <big class="semi-important ">EXEMPLE</big> <br>
+         G = (S → abT/baT, T → bT/ε) br
+         Le mot w = abb L(G) car on peut obtenir le mot w à partir de l’axiome S : S =>abT <br> ⇒abbT⇒abbε <br>
+         ou à travers l’arbre de dérivation suivant : <br>
+     <img src="/assets/image/arbre de derivation-exemple.png" alt=""> <br>
+     <big class="semi-important ">  Mot ambigu</big> <br>
+     Un mot est dit ambigu s’il existe plusieurs arbres de dérivation pour ce mot <br>
+     Exemple G = (S → S + S/S - S/a ) <br>
+     Le mot w = a + a - a est ambigu car il existe deux arbres de dérivation différents pour ce
+     mot: <br>
+<img src="/assets/image/mot ambigu.png" alt=""> <br>
+  <big class="semi-important "> Grammaire ambiguë</big> <br>
+Une grammaire est dite ambiguë s’il existe au moins un mot ambigu engendré par cette
+grammaire <br>
+<big class="semi-important ">Langage ambigu</big> <br>
+Un langage est ambigu si toutes les grammaires qui l’engendrent sont ambiguës.
+
+
+</p>
+      </div>
+    </div>
+  </div>
+  <div class="element">
+    <div class="titre-element">
+      <div class="titre-element-p1"> 
+        <h2>Classification de grammaire</h2> 
+      </div>
+      <div class="titre-element-p2"> 
+        <h2>5</h2>
+      </div>
+    </div>
+    <div class="texte-element">
+       <div class="p-element thl">
+        <p> La classification de Chomsky est un moyen permettant de maîtriser la complexité des langages.<br>
+       <img src="/assets/image/Hierarchie e chomsky.png" alt=""> <br>
+       <img src="/assets/image/Classification de grammaire.png" alt=""> <br>
+         <big class="semi-important ">EXEMPLE</big> <br>
+         G=(S → aS/aB, B → bB/ε). (Type3 Grammaire régulière à droite) <br>
+         on ne peut avoir mélange entre les règles A → Bα ou A → αB <br>
+         G=(S → aSb/ε)(type2) <br>
+         G = (S → abc, S → aSBc,cB → WB, WB → W X, W X → BX, BX → Bc, bB → bb ) <br>
+         Selon le format de règles, la grammaires G est de type 1. <br>
+         L(G)={(a^n)(b^n)(c^n), n ≥ 0}
+      </p> 
+      
+
+      </div>
+    </div>
+  </div>
+  <div class="element">
+    <div class="titre-element">
+      <div class="titre-element-p1"> 
+        <h2>Récapitulatif: </h2> 
+      </div>
+      <div class="titre-element-p2"> 
+        <h2>6</h2>
+      </div>
+    </div>
+    <div class="texte-element">
+       <div class="p-element thl">
+        <p>
+          <big class="semi-important">Grammaire v/s automate v/s Langage:</big> <br>
+          • Une grammaire d’un langage L permet de générer tous les mots appartenant à ce langage. <br>
+• Une automate pour un langage L est un programme qui prend en entrée un mot w et répond
+oui si w appartient à L et non sinon.
+      </p> 
+      
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
     </main>
     <footer>
       <div class="up">
